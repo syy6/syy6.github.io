@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m"
+						 xmlns:core="sap.ui.core">
+    
+<template:alias name=".FIELD" value="sap.fe.controls.field.FieldHelper">
+	<template:if test="{= ${dataPoint>Visualization}}">
+        <template:then>
+            <template:if test="{= ${dataPoint>Visualization/$EnumMember} === 'com.sap.vocabularies.UI.v1.VisualizationType/Rating'}">
+                <template:then>
+                    <RatingIndicator enabled="false"
+                        binding="{= ${dataPoint>@@.MODEL.getNavigationBinding} }"
+                        maxValue="{dataPoint>TargetValue@@.MODEL.value}"
+                        value="{dataPoint>Value@@.MODEL.value}"/>
+                </template:then>
+                <template:elseif test="{= ${dataPoint>Visualization/$EnumMember} === 'com.sap.vocabularies.UI.v1.VisualizationType/Progress'}">
+                    <ProgressIndicator enabled="false"
+                        binding="{= ${dataPoint>@@.MODEL.getNavigationBinding} }"
+                        percentValue="{dataPoint>Value@@.MODEL.value}"/>
+                </template:elseif>
+            </template:if>
+        </template:then>
+        <template:else>
+            <template:with path="dataPoint>Value" var="property">
+                <ObjectStatus
+                    icon="{=(${dataPoint>CriticalityRepresentation/$EnumMember} === 'com.sap.vocabularies.UI.v1.CriticalityRepresentationType/WithoutIcon') ? '' : ${path: 'dataPoint>Criticality/$Path', formatter: '.FIELD.buildExpressionForCriticalityIcon'}}"
+                    state="{path: 'dataPoint>Criticality/$Path', formatter: '.FIELD.buildExpressionForCriticalityColor'}"
+                    text="{= ${property>$Path@com.sap.vocabularies.Common.v1.Text} ? ${property>$Path@@.FIELD.buildExpressionForTextValue} : ${property>@@.MODEL.value} }"/>
+            </template:with>
+        </template:else>
+    </template:if>
+</template:alias>
+</core:FragmentDefinition>

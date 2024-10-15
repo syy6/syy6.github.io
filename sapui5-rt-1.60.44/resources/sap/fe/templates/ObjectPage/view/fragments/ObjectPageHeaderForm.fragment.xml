@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns="sap.m"
+xmlns:fe="sap.fe" xmlns:core="sap.ui.core">
+	<VBox displayInline="true">
+		<template:if test="{headerForm>@@.MODEL.label}">
+			<Title text="{headerForm>@@.MODEL.label}"></Title>
+		</template:if>
+				<template:if test="{= ${headerForm>Target/$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.FieldGroup') > -1}">
+					<template:then>
+						<template:with path="headerForm>Target/$AnnotationPath/Data" var="formElements">
+							<template:repeat list="{formElements>}" var="dataField">
+								<template:if test="{= ${dataField>$Type} !== 'com.sap.vocabularies.UI.v1.DataFieldForAction' &amp;&amp; ${dataField>$Type} !== 'com.sap.vocabularies.UI.v1.DataFieldWithIntentBasedNavigation'}">
+									<template:then>
+										<HBox binding ="{= ${headerForm>Target/$AnnotationPath}.split('/').length > 1 ? ${headerForm>Target/$AnnotationPath@@sap.fe.templates.ObjectPage.AnnotationHelper.getBindingPathForOPTableandForm}  : '' }">
+											<Label text="{dataField>@@.MODEL.label} : " visible="{= ${dataField>@@.MODEL.label} ? 'true':'false'}" class="sapUiTinyMarginEnd" vAlign="{= ${dataField>Value/$Path@com.sap.vocabularies.UI.v1.MultiLineText} === true ? 'Middle' : 'Inherit' }"/>
+											<core:Fragment fragmentName="sap.fe.controls.field.Field" type="XML" />
+										</HBox>
+									</template:then>
+								</template:if>
+							</template:repeat>
+						</template:with>
+					</template:then>
+				</template:if>
+	</VBox>
+</core:FragmentDefinition>

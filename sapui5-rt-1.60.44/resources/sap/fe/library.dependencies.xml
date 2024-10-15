@@ -1,0 +1,1275 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.fe">
+  <module name="sap/fe/AppComponent.js" size="5627" compressedSize="2407">
+    <description>----------------------------------------------------------------------------------</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/fe/controllerextensions/Routing.js"/>
+      <module name="sap/fe/core/BusyHelper.js"/>
+      <module name="sap/fe/core/internal/testableHelper.js"/>
+      <module name="sap/fe/model/DraftModel.js"/>
+      <module name="sap/fe/model/NamedBindingModel.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/mdc/odata/v4/ValueListHelper.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/Form.js" size="1019" compressedSize="791">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/fe/core/AnnotationHelper.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/mdc/XMLComposite.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/MessageButton.js" size="8533" compressedSize="3555">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/fe/MessagePopover.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/MessageFilter.js" size="638" compressedSize="460">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/MessagePopover.js" size="980" compressedSize="741">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/MessageItem.js"/>
+      <module name="sap/m/MessagePopover.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/Paginator.js" size="4792" compressedSize="2602">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/core/XMLComposite.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/actions/draft.js" size="7928" compressedSize="2275">
+    <description>Provides static functions for the draft programming model</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/actions/messageHandling.js" size="6468" compressedSize="3490">
+    <description>Static functions for Fiori Message Handling</description>
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/MessageItem.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/MessageView.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/actions/nonDraft.js" size="577" compressedSize="185">
+    <description>Provides static functions for the non-draft programming model</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/actions/operations.js" size="15360" compressedSize="4774">
+    <description>Provides static functions to call OData actions (bound/import) and functions (bound/import)</description>
+    <requires>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/mdc/base/Field.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controllerextensions/AppState.js" size="7795" compressedSize="2642">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/mvc/ControllerExtension.js"/>
+      <module name="sap/ui/core/routing/HashChanger.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controllerextensions/ContextManager.js" size="1922" compressedSize="765">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/mvc/ControllerExtension.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controllerextensions/EditFlow.js" size="8418" compressedSize="2989">
+    <description>global Promise</description>
+    <requires>
+      <module name="sap/fe/actions/messageHandling.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/XMLTemplateProcessor.js"/>
+      <module name="sap/ui/core/mvc/ControllerExtension.js"/>
+      <module name="sap/ui/core/util/XMLPreprocessor.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controllerextensions/Routing.js" size="21679" compressedSize="6539">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/fe/viewFactory.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/ui/core/mvc/ControllerExtension.js"/>
+      <module name="sap/ui/core/routing/HashChanger.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controllerextensions/Transaction.js" size="20463" compressedSize="7314">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/fe/actions/draft.js"/>
+      <module name="sap/fe/actions/messageHandling.js"/>
+      <module name="sap/fe/actions/nonDraft.js"/>
+      <module name="sap/fe/actions/operations.js"/>
+      <module name="sap/fe/model/DraftModel.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/mvc/ControllerExtension.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml" size="1500">
+    <requires>
+      <module name="sap/fe/controls/ViewSwitchContainer/Visualizations.fragment.xml" conditional="true"/>
+      <module name="sap/fe/controls/table/Table.fragment.xml" conditional="true"/>
+      <module name="sap/fe/experimental/ViewSwitchContainer.js"/>
+      <module name="sap/fe/experimental/ViewSwitchContainerItem.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/ViewSwitchContainer/Visualizations.fragment.xml" size="959">
+    <requires>
+      <module name="sap/fe/controls/table/Table.fragment.xml" conditional="true"/>
+      <module name="sap/fe/experimental/ViewSwitchContainerItem.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/_Form/Form.control.xml" size="2371">
+    <requires>
+      <module name="sap/fe/controls/field/DataPoint.fragment.xml" conditional="true"/>
+      <module name="sap/fe/controls/field/Field.fragment.xml" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js" conditional="true"/>
+      <module name="sap/ui/core/XMLComposite.js"/>
+      <module name="sap/ui/layout/form/ColumnElementData.js" conditional="true"/>
+      <module name="sap/ui/layout/form/ColumnLayout.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/_Paginator/Paginator.control.xml" size="1131">
+    <requires>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/ui/core/XMLComposite.js"/>
+      <module name="sap/uxap/ObjectPageHeaderActionButton.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/ContactDetails.fragment.xml" size="2693">
+    <requires>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/mdc/base/Field.js"/>
+      <module name="sap/ui/mdc/base/FieldInfo.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetails.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsAddressItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsEmailItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsItem.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsPhoneItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContentHandler.js"/>
+      <module name="sap/ui/mdc/base/info/LinkHandler.js"/>
+      <module name="sap/ui/mdc/base/info/LinkItem.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/DataField.fragment.xml" size="7309">
+    <requires>
+      <module name="sap/m/ObjectIdentifier.js" conditional="true"/>
+      <module name="sap/m/ObjectMarker.js" conditional="true"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/mdc/base/Field.js"/>
+      <module name="sap/ui/mdc/base/FieldInfo.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/FieldValueHelp.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/FieldValueHelpMTableWrapper.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContentHandler.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/LinkHandler.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/LinkItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/flp/info/LinkHandler.js" conditional="true"/>
+      <module name="sap/ui/unified/Currency.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/DataFieldForAction.fragment.xml" size="1463">
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/mdc/Column.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/DataFieldForAnnotation.fragment.xml" size="1009">
+    <requires>
+      <module name="sap/fe/controls/field/ContactDetails.fragment.xml" conditional="true"/>
+      <module name="sap/fe/controls/field/DataPoint.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/DataPoint.fragment.xml" size="2020">
+    <requires>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/ProgressIndicator.js" conditional="true"/>
+      <module name="sap/m/RatingIndicator.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/DraftPopOverAdminData.fragment.xml" size="2021">
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/Field.fragment.xml" size="2422">
+    <requires>
+      <module name="sap/fe/controls/field/DataField.fragment.xml" conditional="true"/>
+      <module name="sap/fe/controls/field/DataFieldForAction.fragment.xml" conditional="true"/>
+      <module name="sap/fe/controls/field/DataFieldForAnnotation.fragment.xml" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/FieldHelper.js" size="10247" compressedSize="5650">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/mdc/ResourceModel.js"/>
+      <module name="sap/ui/mdc/odata/v4/CommonHelper.js"/>
+      <module name="sap/ui/model/odata/v4/AnnotationHelper.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/field/ValueListTable.fragment.xml" size="2342">
+    <requires>
+      <module name="sap/m/Column.js" conditional="true"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/mdc/odata/v4/Field.fragment.xml" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/table/Actions.fragment.xml" size="2232">
+    <requires>
+      <module name="sap/m/Button.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/table/Columns.fragment.xml" size="1906">
+    <requires>
+      <module name="sap/fe/controls/field/Field.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/mdc/Column.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/table/Table.fragment.xml" size="2039">
+    <requires>
+      <module name="sap/fe/controls/table/Actions.fragment.xml"/>
+      <module name="sap/fe/controls/table/Columns.fragment.xml"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/mdc/Table.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/controls/table/TableHelper.js" size="1802" compressedSize="658">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/core/AnnotationHelper.js" size="7733" compressedSize="3699">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/base/Log.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/core/BusyHelper.js" size="7608" compressedSize="1120">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/fe/core/internal/testableHelper.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/core/CommonUtils.js" size="430" compressedSize="292">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/mvc/View.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/core/internal/testableHelper.js" size="11089" compressedSize="1862">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/experimental/ViewSwitchContainer.js" size="4446" compressedSize="1648">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/mdc/Table.js"/>
+      <module name="sap/ui/table/Table.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/experimental/ViewSwitchContainerItem.js" size="1010" compressedSize="658">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/library-h2-preload.js" size="12039">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/f/Avatar.js" conditional="true"/>
+      <module name="sap/f/DynamicPage.js"/>
+      <module name="sap/f/DynamicPageHeader.js"/>
+      <module name="sap/f/DynamicPageTitle.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Breadcrumbs.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/Column.js" conditional="true"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DraftIndicator.js" conditional="true"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageItem.js"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/m/MessagePopover.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/MessageView.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/ObjectIdentifier.js" conditional="true"/>
+      <module name="sap/m/ObjectMarker.js" conditional="true"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ProgressIndicator.js"/>
+      <module name="sap/m/RatingIndicator.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/base/SyncPromise.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/core/XMLComposite.js"/>
+      <module name="sap/ui/core/XMLTemplateProcessor.js"/>
+      <module name="sap/ui/core/cache/CacheManager.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/core/mvc/ControllerExtension.js"/>
+      <module name="sap/ui/core/mvc/View.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/core/routing/HashChanger.js"/>
+      <module name="sap/ui/core/util/XMLPreprocessor.js"/>
+      <module name="sap/ui/fl/variants/VariantManagement.js" conditional="true"/>
+      <module name="sap/ui/layout/form/ColumnElementData.js" conditional="true"/>
+      <module name="sap/ui/layout/form/ColumnLayout.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js" conditional="true"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/mdc/Column.js"/>
+      <module name="sap/ui/mdc/FilterBar.js"/>
+      <module name="sap/ui/mdc/ResourceModel.js"/>
+      <module name="sap/ui/mdc/Table.js"/>
+      <module name="sap/ui/mdc/XMLComposite.js"/>
+      <module name="sap/ui/mdc/base/Field.js"/>
+      <module name="sap/ui/mdc/base/FieldInfo.js"/>
+      <module name="sap/ui/mdc/base/FieldValueHelp.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/FieldValueHelpMTableWrapper.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetails.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsAddressItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsEmailItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsItem.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsPhoneItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContentHandler.js"/>
+      <module name="sap/ui/mdc/base/info/LinkHandler.js"/>
+      <module name="sap/ui/mdc/base/info/LinkItem.js"/>
+      <module name="sap/ui/mdc/flp/info/LinkHandler.js" conditional="true"/>
+      <module name="sap/ui/mdc/odata/v4/CommonHelper.js"/>
+      <module name="sap/ui/mdc/odata/v4/Field.fragment.xml" conditional="true"/>
+      <module name="sap/ui/mdc/odata/v4/ValueListHelper.js"/>
+      <module name="sap/ui/mdc/odata/v4/microchart/MicroChart.js" conditional="true"/>
+      <module name="sap/ui/model/ChangeReason.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/base/ManagedObjectModel.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/v4/AnnotationHelper.js"/>
+      <module name="sap/ui/model/odata/v4/Context.js"/>
+      <module name="sap/ui/model/odata/v4/ODataContextBinding.js"/>
+      <module name="sap/ui/model/odata/v4/ODataListBinding.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/table/Table.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="sap/ui/unified/Currency.js" conditional="true"/>
+      <module name="sap/ushell/ui/footerbar/AddBookmarkButton.js"/>
+      <module name="sap/uxap/BlockBase.js"/>
+      <module name="sap/uxap/ObjectPageDynamicHeaderTitle.js"/>
+      <module name="sap/uxap/ObjectPageHeaderActionButton.js"/>
+      <module name="sap/uxap/ObjectPageLayout.js"/>
+      <module name="sap/uxap/ObjectPageSection.js" conditional="true"/>
+      <module name="sap/uxap/ObjectPageSubSection.js" conditional="true"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/fe/library.js"/>
+      <module name="sap/fe/manifest.json"/>
+      <module name="sap/fe/AppComponent.js"/>
+      <module name="sap/fe/Form.js"/>
+      <module name="sap/fe/MessageButton.js"/>
+      <module name="sap/fe/MessageFilter.js"/>
+      <module name="sap/fe/MessagePopover.js"/>
+      <module name="sap/fe/Paginator.js"/>
+      <module name="sap/fe/actions/draft.js"/>
+      <module name="sap/fe/actions/messageHandling.js"/>
+      <module name="sap/fe/actions/nonDraft.js"/>
+      <module name="sap/fe/actions/operations.js"/>
+      <module name="sap/fe/controllerextensions/AppState.js"/>
+      <module name="sap/fe/controllerextensions/ContextManager.js"/>
+      <module name="sap/fe/controllerextensions/EditFlow.js"/>
+      <module name="sap/fe/controllerextensions/Routing.js"/>
+      <module name="sap/fe/controllerextensions/Transaction.js"/>
+      <module name="sap/fe/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml"/>
+      <module name="sap/fe/controls/ViewSwitchContainer/Visualizations.fragment.xml"/>
+      <module name="sap/fe/controls/_Form/Form.control.xml"/>
+      <module name="sap/fe/controls/_Paginator/Paginator.control.xml"/>
+      <module name="sap/fe/controls/field/ContactDetails.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataField.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataFieldForAction.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataFieldForAnnotation.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataPoint.fragment.xml"/>
+      <module name="sap/fe/controls/field/DraftPopOverAdminData.fragment.xml"/>
+      <module name="sap/fe/controls/field/Field.fragment.xml"/>
+      <module name="sap/fe/controls/field/FieldHelper.js"/>
+      <module name="sap/fe/controls/field/ValueListTable.fragment.xml"/>
+      <module name="sap/fe/controls/table/Actions.fragment.xml"/>
+      <module name="sap/fe/controls/table/Columns.fragment.xml"/>
+      <module name="sap/fe/controls/table/Table.fragment.xml"/>
+      <module name="sap/fe/controls/table/TableHelper.js"/>
+      <module name="sap/fe/core/AnnotationHelper.js"/>
+      <module name="sap/fe/core/BusyHelper.js"/>
+      <module name="sap/fe/core/CommonUtils.js"/>
+      <module name="sap/fe/core/internal/testableHelper.js"/>
+      <module name="sap/fe/experimental/ViewSwitchContainer.js"/>
+      <module name="sap/fe/experimental/ViewSwitchContainerItem.js"/>
+      <module name="sap/fe/model/DraftModel.js"/>
+      <module name="sap/fe/model/NamedBindingModel.js"/>
+      <module name="sap/fe/templates/ListReport.view.xml"/>
+      <module name="sap/fe/templates/ListReport/ListReportController.controller.js"/>
+      <module name="sap/fe/templates/ListReport/ShareSheet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage.view.xml"/>
+      <module name="sap/fe/templates/ObjectPage/AnnotationHelper.js"/>
+      <module name="sap/fe/templates/ObjectPage/ObjectPageController.controller.js"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Actions.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/DummyBlock.js"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/DummyBlock.view.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/FooterContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderExpandedAndSnappedContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageHeaderForm.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml"/>
+      <module name="sap/fe/viewFactory.js"/>
+    </includes>
+  </module>
+  <module name="sap/fe/library-preload.js" size="144019">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/f/Avatar.js" conditional="true"/>
+      <module name="sap/f/DynamicPage.js"/>
+      <module name="sap/f/DynamicPageHeader.js"/>
+      <module name="sap/f/DynamicPageTitle.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Breadcrumbs.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/Column.js" conditional="true"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DraftIndicator.js" conditional="true"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageItem.js"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/m/MessagePopover.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/MessageView.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/ObjectIdentifier.js" conditional="true"/>
+      <module name="sap/m/ObjectMarker.js" conditional="true"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ProgressIndicator.js"/>
+      <module name="sap/m/RatingIndicator.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/base/SyncPromise.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/core/XMLComposite.js"/>
+      <module name="sap/ui/core/XMLTemplateProcessor.js"/>
+      <module name="sap/ui/core/cache/CacheManager.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/core/mvc/ControllerExtension.js"/>
+      <module name="sap/ui/core/mvc/View.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/core/routing/HashChanger.js"/>
+      <module name="sap/ui/core/util/XMLPreprocessor.js"/>
+      <module name="sap/ui/fl/variants/VariantManagement.js" conditional="true"/>
+      <module name="sap/ui/layout/form/ColumnElementData.js" conditional="true"/>
+      <module name="sap/ui/layout/form/ColumnLayout.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js" conditional="true"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/mdc/Column.js"/>
+      <module name="sap/ui/mdc/FilterBar.js"/>
+      <module name="sap/ui/mdc/ResourceModel.js"/>
+      <module name="sap/ui/mdc/Table.js"/>
+      <module name="sap/ui/mdc/XMLComposite.js"/>
+      <module name="sap/ui/mdc/base/Field.js"/>
+      <module name="sap/ui/mdc/base/FieldInfo.js"/>
+      <module name="sap/ui/mdc/base/FieldValueHelp.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/FieldValueHelpMTableWrapper.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetails.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsAddressItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsEmailItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsItem.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsPhoneItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContentHandler.js"/>
+      <module name="sap/ui/mdc/base/info/LinkHandler.js"/>
+      <module name="sap/ui/mdc/base/info/LinkItem.js"/>
+      <module name="sap/ui/mdc/flp/info/LinkHandler.js" conditional="true"/>
+      <module name="sap/ui/mdc/odata/v4/CommonHelper.js"/>
+      <module name="sap/ui/mdc/odata/v4/Field.fragment.xml" conditional="true"/>
+      <module name="sap/ui/mdc/odata/v4/ValueListHelper.js"/>
+      <module name="sap/ui/mdc/odata/v4/microchart/MicroChart.js" conditional="true"/>
+      <module name="sap/ui/model/ChangeReason.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/base/ManagedObjectModel.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/v4/AnnotationHelper.js"/>
+      <module name="sap/ui/model/odata/v4/Context.js"/>
+      <module name="sap/ui/model/odata/v4/ODataContextBinding.js"/>
+      <module name="sap/ui/model/odata/v4/ODataListBinding.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/table/Table.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="sap/ui/unified/Currency.js" conditional="true"/>
+      <module name="sap/ushell/ui/footerbar/AddBookmarkButton.js"/>
+      <module name="sap/uxap/BlockBase.js"/>
+      <module name="sap/uxap/ObjectPageDynamicHeaderTitle.js"/>
+      <module name="sap/uxap/ObjectPageHeaderActionButton.js"/>
+      <module name="sap/uxap/ObjectPageLayout.js"/>
+      <module name="sap/uxap/ObjectPageSection.js" conditional="true"/>
+      <module name="sap/uxap/ObjectPageSubSection.js" conditional="true"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/fe/AppComponent.js"/>
+      <module name="sap/fe/Form.js"/>
+      <module name="sap/fe/MessageButton.js"/>
+      <module name="sap/fe/MessageFilter.js"/>
+      <module name="sap/fe/MessagePopover.js"/>
+      <module name="sap/fe/Paginator.js"/>
+      <module name="sap/fe/actions/draft.js"/>
+      <module name="sap/fe/actions/messageHandling.js"/>
+      <module name="sap/fe/actions/nonDraft.js"/>
+      <module name="sap/fe/actions/operations.js"/>
+      <module name="sap/fe/controllerextensions/AppState.js"/>
+      <module name="sap/fe/controllerextensions/ContextManager.js"/>
+      <module name="sap/fe/controllerextensions/EditFlow.js"/>
+      <module name="sap/fe/controllerextensions/Routing.js"/>
+      <module name="sap/fe/controllerextensions/Transaction.js"/>
+      <module name="sap/fe/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml"/>
+      <module name="sap/fe/controls/ViewSwitchContainer/Visualizations.fragment.xml"/>
+      <module name="sap/fe/controls/_Form/Form.control.xml"/>
+      <module name="sap/fe/controls/_Paginator/Paginator.control.xml"/>
+      <module name="sap/fe/controls/field/ContactDetails.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataField.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataFieldForAction.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataFieldForAnnotation.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataPoint.fragment.xml"/>
+      <module name="sap/fe/controls/field/DraftPopOverAdminData.fragment.xml"/>
+      <module name="sap/fe/controls/field/Field.fragment.xml"/>
+      <module name="sap/fe/controls/field/FieldHelper.js"/>
+      <module name="sap/fe/controls/field/ValueListTable.fragment.xml"/>
+      <module name="sap/fe/controls/table/Actions.fragment.xml"/>
+      <module name="sap/fe/controls/table/Columns.fragment.xml"/>
+      <module name="sap/fe/controls/table/Table.fragment.xml"/>
+      <module name="sap/fe/controls/table/TableHelper.js"/>
+      <module name="sap/fe/core/AnnotationHelper.js"/>
+      <module name="sap/fe/core/BusyHelper.js"/>
+      <module name="sap/fe/core/CommonUtils.js"/>
+      <module name="sap/fe/core/internal/testableHelper.js"/>
+      <module name="sap/fe/experimental/ViewSwitchContainer.js"/>
+      <module name="sap/fe/experimental/ViewSwitchContainerItem.js"/>
+      <module name="sap/fe/library.js"/>
+      <module name="sap/fe/manifest.json"/>
+      <module name="sap/fe/model/DraftModel.js"/>
+      <module name="sap/fe/model/NamedBindingModel.js"/>
+      <module name="sap/fe/templates/ListReport.view.xml"/>
+      <module name="sap/fe/templates/ListReport/ListReportController.controller.js"/>
+      <module name="sap/fe/templates/ListReport/ShareSheet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage.view.xml"/>
+      <module name="sap/fe/templates/ObjectPage/AnnotationHelper.js"/>
+      <module name="sap/fe/templates/ObjectPage/ObjectPageController.controller.js"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Actions.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/DummyBlock.js"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/DummyBlock.view.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/FooterContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderExpandedAndSnappedContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageHeaderForm.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml"/>
+      <module name="sap/fe/viewFactory.js"/>
+    </includes>
+  </module>
+  <module name="sap/fe/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/f/Avatar.js" conditional="true"/>
+      <module name="sap/f/DynamicPage.js"/>
+      <module name="sap/f/DynamicPageHeader.js"/>
+      <module name="sap/f/DynamicPageTitle.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Breadcrumbs.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/Column.js" conditional="true"/>
+      <module name="sap/m/ColumnListItem.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/DraftIndicator.js" conditional="true"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageItem.js"/>
+      <module name="sap/m/MessagePage.js"/>
+      <module name="sap/m/MessagePopover.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/MessageView.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/ObjectIdentifier.js" conditional="true"/>
+      <module name="sap/m/ObjectMarker.js" conditional="true"/>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ProgressIndicator.js"/>
+      <module name="sap/m/RatingIndicator.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Table.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/base/SyncPromise.js"/>
+      <module name="sap/ui/core/ComponentContainer.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/MessageType.js"/>
+      <module name="sap/ui/core/UIComponent.js"/>
+      <module name="sap/ui/core/XMLComposite.js"/>
+      <module name="sap/ui/core/XMLTemplateProcessor.js"/>
+      <module name="sap/ui/core/cache/CacheManager.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/core/mvc/ControllerExtension.js"/>
+      <module name="sap/ui/core/mvc/View.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/core/routing/HashChanger.js"/>
+      <module name="sap/ui/core/util/XMLPreprocessor.js"/>
+      <module name="sap/ui/fl/variants/VariantManagement.js" conditional="true"/>
+      <module name="sap/ui/layout/form/ColumnElementData.js" conditional="true"/>
+      <module name="sap/ui/layout/form/ColumnLayout.js"/>
+      <module name="sap/ui/layout/form/Form.js"/>
+      <module name="sap/ui/layout/form/FormContainer.js"/>
+      <module name="sap/ui/layout/form/FormElement.js" conditional="true"/>
+      <module name="sap/ui/layout/form/SimpleForm.js"/>
+      <module name="sap/ui/mdc/Column.js"/>
+      <module name="sap/ui/mdc/FilterBar.js"/>
+      <module name="sap/ui/mdc/ResourceModel.js"/>
+      <module name="sap/ui/mdc/Table.js"/>
+      <module name="sap/ui/mdc/XMLComposite.js"/>
+      <module name="sap/ui/mdc/base/Field.js"/>
+      <module name="sap/ui/mdc/base/FieldInfo.js"/>
+      <module name="sap/ui/mdc/base/FieldValueHelp.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/FieldValueHelpMTableWrapper.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetails.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsAddressItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsEmailItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsItem.js"/>
+      <module name="sap/ui/mdc/base/info/ContactDetailsPhoneItem.js" conditional="true"/>
+      <module name="sap/ui/mdc/base/info/ContentHandler.js"/>
+      <module name="sap/ui/mdc/base/info/LinkHandler.js"/>
+      <module name="sap/ui/mdc/base/info/LinkItem.js"/>
+      <module name="sap/ui/mdc/flp/info/LinkHandler.js" conditional="true"/>
+      <module name="sap/ui/mdc/odata/v4/CommonHelper.js"/>
+      <module name="sap/ui/mdc/odata/v4/Field.fragment.xml" conditional="true"/>
+      <module name="sap/ui/mdc/odata/v4/ValueListHelper.js"/>
+      <module name="sap/ui/mdc/odata/v4/microchart/MicroChart.js" conditional="true"/>
+      <module name="sap/ui/model/ChangeReason.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/base/ManagedObjectModel.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/v4/AnnotationHelper.js"/>
+      <module name="sap/ui/model/odata/v4/Context.js"/>
+      <module name="sap/ui/model/odata/v4/ODataContextBinding.js"/>
+      <module name="sap/ui/model/odata/v4/ODataListBinding.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="sap/ui/table/Table.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="sap/ui/unified/Currency.js" conditional="true"/>
+      <module name="sap/ushell/library-preload.json"/>
+      <module name="sap/ushell/ui/footerbar/AddBookmarkButton.js"/>
+      <module name="sap/uxap/BlockBase.js"/>
+      <module name="sap/uxap/ObjectPageDynamicHeaderTitle.js"/>
+      <module name="sap/uxap/ObjectPageHeaderActionButton.js"/>
+      <module name="sap/uxap/ObjectPageLayout.js"/>
+      <module name="sap/uxap/ObjectPageSection.js" conditional="true"/>
+      <module name="sap/uxap/ObjectPageSubSection.js" conditional="true"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/fe/AppComponent.js"/>
+      <module name="sap/fe/Form.js"/>
+      <module name="sap/fe/MessageButton.js"/>
+      <module name="sap/fe/MessageFilter.js"/>
+      <module name="sap/fe/MessagePopover.js"/>
+      <module name="sap/fe/Paginator.js"/>
+      <module name="sap/fe/actions/draft.js"/>
+      <module name="sap/fe/actions/messageHandling.js"/>
+      <module name="sap/fe/actions/nonDraft.js"/>
+      <module name="sap/fe/actions/operations.js"/>
+      <module name="sap/fe/controllerextensions/AppState.js"/>
+      <module name="sap/fe/controllerextensions/ContextManager.js"/>
+      <module name="sap/fe/controllerextensions/EditFlow.js"/>
+      <module name="sap/fe/controllerextensions/Routing.js"/>
+      <module name="sap/fe/controllerextensions/Transaction.js"/>
+      <module name="sap/fe/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml"/>
+      <module name="sap/fe/controls/ViewSwitchContainer/Visualizations.fragment.xml"/>
+      <module name="sap/fe/controls/_Form/Form.control.xml"/>
+      <module name="sap/fe/controls/_Paginator/Paginator.control.xml"/>
+      <module name="sap/fe/controls/field/ContactDetails.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataField.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataFieldForAction.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataFieldForAnnotation.fragment.xml"/>
+      <module name="sap/fe/controls/field/DataPoint.fragment.xml"/>
+      <module name="sap/fe/controls/field/DraftPopOverAdminData.fragment.xml"/>
+      <module name="sap/fe/controls/field/Field.fragment.xml"/>
+      <module name="sap/fe/controls/field/FieldHelper.js"/>
+      <module name="sap/fe/controls/field/ValueListTable.fragment.xml"/>
+      <module name="sap/fe/controls/table/Actions.fragment.xml"/>
+      <module name="sap/fe/controls/table/Columns.fragment.xml"/>
+      <module name="sap/fe/controls/table/Table.fragment.xml"/>
+      <module name="sap/fe/controls/table/TableHelper.js"/>
+      <module name="sap/fe/core/AnnotationHelper.js"/>
+      <module name="sap/fe/core/BusyHelper.js"/>
+      <module name="sap/fe/core/CommonUtils.js"/>
+      <module name="sap/fe/core/internal/testableHelper.js"/>
+      <module name="sap/fe/experimental/ViewSwitchContainer.js"/>
+      <module name="sap/fe/experimental/ViewSwitchContainerItem.js"/>
+      <module name="sap/fe/library.js"/>
+      <module name="sap/fe/manifest.json"/>
+      <module name="sap/fe/model/DraftModel.js"/>
+      <module name="sap/fe/model/NamedBindingModel.js"/>
+      <module name="sap/fe/templates/ListReport.view.xml"/>
+      <module name="sap/fe/templates/ListReport/ListReportController.controller.js"/>
+      <module name="sap/fe/templates/ListReport/ShareSheet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage.view.xml"/>
+      <module name="sap/fe/templates/ObjectPage/AnnotationHelper.js"/>
+      <module name="sap/fe/templates/ObjectPage/ObjectPageController.controller.js"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Actions.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/DummyBlock.js"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/DummyBlock.view.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/FooterContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderExpandedAndSnappedContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageHeaderForm.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml"/>
+      <module name="sap/fe/viewFactory.js"/>
+    </includes>
+  </module>
+  <module name="sap/fe/library.js" size="2521" compressedSize="955">
+    <description>Initialization Code and shared classes of library sap.fe</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/SyncPromise.js"/>
+      <module name="sap/ui/core/util/XMLPreprocessor.js"/>
+      <module name="sap/ui/mdc/XMLComposite.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/manifest.json" size="1085">
+  </module>
+  <module name="sap/fe/messagebundle.properties" size="7868">
+  </module>
+  <module name="sap/fe/messagebundle_ar.properties" size="11512">
+  </module>
+  <module name="sap/fe/messagebundle_bg.properties" size="13006">
+  </module>
+  <module name="sap/fe/messagebundle_ca.properties" size="8053">
+  </module>
+  <module name="sap/fe/messagebundle_cs.properties" size="8097">
+  </module>
+  <module name="sap/fe/messagebundle_da.properties" size="7753">
+  </module>
+  <module name="sap/fe/messagebundle_de.properties" size="7969">
+  </module>
+  <module name="sap/fe/messagebundle_el.properties" size="12909">
+  </module>
+  <module name="sap/fe/messagebundle_en.properties" size="7663">
+  </module>
+  <module name="sap/fe/messagebundle_en_US_sappsd.properties" size="14844">
+  </module>
+  <module name="sap/fe/messagebundle_en_US_saptrc.properties" size="9173">
+  </module>
+  <module name="sap/fe/messagebundle_es.properties" size="8027">
+  </module>
+  <module name="sap/fe/messagebundle_et.properties" size="7875">
+  </module>
+  <module name="sap/fe/messagebundle_fi.properties" size="8039">
+  </module>
+  <module name="sap/fe/messagebundle_fr.properties" size="8084">
+  </module>
+  <module name="sap/fe/messagebundle_hi.properties" size="12595">
+  </module>
+  <module name="sap/fe/messagebundle_hr.properties" size="7831">
+  </module>
+  <module name="sap/fe/messagebundle_hu.properties" size="8413">
+  </module>
+  <module name="sap/fe/messagebundle_it.properties" size="7836">
+  </module>
+  <module name="sap/fe/messagebundle_iw.properties" size="11155">
+  </module>
+  <module name="sap/fe/messagebundle_ja.properties" size="9532">
+  </module>
+  <module name="sap/fe/messagebundle_kk.properties" size="12741">
+  </module>
+  <module name="sap/fe/messagebundle_ko.properties" size="9235">
+  </module>
+  <module name="sap/fe/messagebundle_lt.properties" size="8167">
+  </module>
+  <module name="sap/fe/messagebundle_lv.properties" size="8265">
+  </module>
+  <module name="sap/fe/messagebundle_ms.properties" size="7725">
+  </module>
+  <module name="sap/fe/messagebundle_nl.properties" size="7777">
+  </module>
+  <module name="sap/fe/messagebundle_no.properties" size="7751">
+  </module>
+  <module name="sap/fe/messagebundle_pl.properties" size="8126">
+  </module>
+  <module name="sap/fe/messagebundle_pt.properties" size="8140">
+  </module>
+  <module name="sap/fe/messagebundle_ro.properties" size="8008">
+  </module>
+  <module name="sap/fe/messagebundle_ru.properties" size="12874">
+  </module>
+  <module name="sap/fe/messagebundle_sh.properties" size="7822">
+  </module>
+  <module name="sap/fe/messagebundle_sk.properties" size="8175">
+  </module>
+  <module name="sap/fe/messagebundle_sl.properties" size="7848">
+  </module>
+  <module name="sap/fe/messagebundle_sv.properties" size="7861">
+  </module>
+  <module name="sap/fe/messagebundle_th.properties" size="12650">
+  </module>
+  <module name="sap/fe/messagebundle_tr.properties" size="8267">
+  </module>
+  <module name="sap/fe/messagebundle_uk.properties" size="12827">
+  </module>
+  <module name="sap/fe/messagebundle_vi.properties" size="9731">
+  </module>
+  <module name="sap/fe/messagebundle_zh_CN.properties" size="8484">
+  </module>
+  <module name="sap/fe/messagebundle_zh_TW.properties" size="8545">
+  </module>
+  <module name="sap/fe/model/DraftModel.js" size="23701" compressedSize="6404">
+    <description>Provides class sap.fe.model.DraftModel</description>
+    <requires>
+      <module name="sap/fe/core/internal/testableHelper.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/model/ChangeReason.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/v4/Context.js"/>
+      <module name="sap/ui/model/odata/v4/ODataContextBinding.js"/>
+      <module name="sap/ui/model/odata/v4/ODataListBinding.js"/>
+      <module name="sap/ui/model/resource/ResourceModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/model/NamedBindingModel.js" size="3766" compressedSize="1309">
+    <description>Provides class sap.fe.model.DraftModel</description>
+    <requires>
+      <module name="sap/fe/core/internal/testableHelper.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ListReport.view.xml" size="2876">
+    <requires>
+      <module name="sap/f/DynamicPage.js"/>
+      <module name="sap/f/DynamicPageHeader.js"/>
+      <module name="sap/f/DynamicPageTitle.js"/>
+      <module name="sap/fe/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml"/>
+      <module name="sap/fe/templates/ListReport/ListReportController.controller.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/ui/fl/variants/VariantManagement.js" conditional="true"/>
+      <module name="sap/ui/mdc/FilterBar.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ListReport/ListReportController.controller.js" size="9914" compressedSize="2322">
+    <description>global hasher</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/fe/actions/messageHandling.js"/>
+      <module name="sap/fe/controllerextensions/ContextManager.js"/>
+      <module name="sap/fe/controllerextensions/EditFlow.js"/>
+      <module name="sap/fe/controllerextensions/Routing.js"/>
+      <module name="sap/fe/controllerextensions/Transaction.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ListReport/ShareSheet.fragment.xml" size="806">
+    <requires>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ushell/ui/footerbar/AddBookmarkButton.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage.view.xml" size="4827">
+    <requires>
+      <module name="sap/f/Avatar.js" conditional="true"/>
+      <module name="sap/fe/Paginator.js"/>
+      <module name="sap/fe/templates/ObjectPage/ObjectPageController.controller.js"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Actions.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/FooterContent.fragment.xml" conditional="true"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderExpandedAndSnappedContent.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml"/>
+      <module name="sap/m/Breadcrumbs.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Link.js" conditional="true"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+      <module name="sap/uxap/ObjectPageDynamicHeaderTitle.js"/>
+      <module name="sap/uxap/ObjectPageLayout.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/AnnotationHelper.js" size="16907" compressedSize="8208">
+    <description>This class contains annotation helpers that might be used from several templates or controls</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/ObjectPageController.controller.js" size="3434" compressedSize="1742">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;        (c) Copyright 2009-2017 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/fe/controllerextensions/ContextManager.js"/>
+      <module name="sap/fe/controllerextensions/EditFlow.js"/>
+      <module name="sap/fe/controllerextensions/Routing.js"/>
+      <module name="sap/fe/controllerextensions/Transaction.js"/>
+      <module name="sap/ui/core/mvc/Controller.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/Actions.fragment.xml" size="3004">
+    <requires>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/uxap/ObjectPageHeaderActionButton.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/DummyBlock.js" size="489" compressedSize="353">
+    <requires>
+      <module name="sap/uxap/BlockBase.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/DummyBlock.view.xml" size="183">
+    <requires>
+      <module name="sap/ui/core/mvc/XMLView.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml" size="2032">
+    <requires>
+      <module name="sap/fe/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml" conditional="true"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml" conditional="true"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml" conditional="true"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/FooterContent.fragment.xml" size="1137">
+    <requires>
+      <module name="sap/fe/MessageButton.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/DraftIndicator.js" conditional="true"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderContent.fragment.xml" size="1325">
+    <requires>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml" size="1091">
+    <requires>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml" conditional="true"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml" conditional="true"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml" conditional="true"/>
+      <module name="sap/m/VBox.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPointContent.fragment.xml" size="1501">
+    <requires>
+      <module name="sap/m/ObjectNumber.js" conditional="true"/>
+      <module name="sap/m/ObjectStatus.js" conditional="true"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/unified/Currency.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderExpandedAndSnappedContent.fragment.xml" size="734">
+    <requires>
+      <module name="sap/m/ObjectMarker.js" conditional="true"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderFacet.fragment.xml" size="2455">
+    <requires>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderDataPoint.fragment.xml" conditional="true"/>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageHeaderForm.fragment.xml" conditional="true"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Text.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/ui/mdc/odata/v4/microchart/MicroChart.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderImage.fragment.xml" size="921">
+    <requires>
+      <module name="sap/f/Avatar.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderProgressIndicator.fragment.xml" size="2055">
+    <requires>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/ProgressIndicator.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/HeaderRatingIndicator.fragment.xml" size="2231">
+    <requires>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/RatingIndicator.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml" size="977">
+    <requires>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/Facet.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageForm.fragment.xml" size="3633">
+    <requires>
+      <module name="sap/fe/Form.js" conditional="true"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageHeaderForm.fragment.xml" size="1578">
+    <requires>
+      <module name="sap/fe/controls/field/Field.fragment.xml" conditional="true"/>
+      <module name="sap/m/HBox.js" conditional="true"/>
+      <module name="sap/m/Label.js" conditional="true"/>
+      <module name="sap/m/Title.js" conditional="true"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageTable.fragment.xml" size="458">
+    <requires>
+      <module name="sap/fe/controls/ViewSwitchContainer/ViewSwitchContainer.fragment.xml"/>
+      <module name="sap/ui/core/Fragment.js"/>
+    </requires>
+  </module>
+  <module name="sap/fe/templates/ObjectPage/view/fragments/Section.fragment.xml" size="4199">
+    <requires>
+      <module name="sap/fe/templates/ObjectPage/view/fragments/ObjectPageBlockandMoreBlocks.fragment.xml" conditional="true"/>
+      <module name="sap/ui/core/CustomData.js" conditional="true"/>
+      <module name="sap/ui/core/Fragment.js"/>
+      <module name="sap/uxap/ObjectPageSection.js" conditional="true"/>
+      <module name="sap/uxap/ObjectPageSubSection.js" conditional="true"/>
+    </requires>
+  </module>
+  <module name="sap/fe/viewFactory.js" size="6451" compressedSize="2394">
+    <description>Provides control sap.ui.core.mvc.View.</description>
+    <requires>
+      <module name="sap/ui/core/cache/CacheManager.js"/>
+      <module name="sap/ui/core/mvc/View.js"/>
+      <module name="sap/ui/model/base/ManagedObjectModel.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+</library>

@@ -1,0 +1,25 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m"
+						 xmlns:core="sap.ui.core">
+	<!--
+        /**
+         * This fragment renders a DataFieldForAnnotation, e.g. Datapoint or Contact
+         * @param annotationPath context to the target of a annotation path
+         * @returns
+         */
+    -->
+
+	<template:if test="{= ${annotationPath>}.indexOf('com.sap.vocabularies.UI.v1.DataPoint') >= 0}">
+		<template:then>
+			<template:with path="annotationPath>" var="dataPoint">
+				<core:Fragment fragmentName="sap.fe.controls.field.DataPoint" type="XML"/>
+			</template:with>
+		</template:then>
+		<template:elseif test="{= ${annotationPath>}.indexOf('com.sap.vocabularies.Communication.v1.Contact') >= 0}">
+			<template:with path="annotationPath>" var="contact">
+					<core:Fragment fragmentName="sap.fe.controls.field.ContactDetails" type="XML"/>
+			</template:with>
+		</template:elseif>
+	</template:if>
+
+</core:FragmentDefinition>

@@ -1,0 +1,1 @@
+sap.ui.define(["jquery.sap.global","./common.debug.mode","./common.load.script"],function(q,d,l){"use strict";return a;function a(p){var u=q.sap.getModulePath(p),i;if(d){sap.ui.require(["sap/ui/core/Core"],function(c){c.boot();});}else{for(i=0;i<4;i++){l(u+"/core-min-"+i+".js");}}}});

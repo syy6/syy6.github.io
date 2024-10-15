@@ -1,0 +1,32 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns="sap.m" xmlns:mdc="sap.ui.mdc"
+xmlns:core="sap.ui.core" xmlns:fe="sap.fe" xmlns:feexp="sap.fe.experimental">
+	<feexp:ViewSwitchContainer height="100%">
+		<feexp:items>
+			<template:if test="{=${facet>Target/$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.PresentationVariant') > -1}">
+				<template:then>
+					<template:repeat list="{facet>Target/$AnnotationPath/Visualizations}" var="vscItem">
+						<core:Fragment fragmentName="sap.fe.controls.ViewSwitchContainer.Visualizations" type="XML" />
+					</template:repeat>
+				</template:then>
+				<template:else>
+					<feexp:ViewSwitchContainerItem iconurl="sap-icon://table-view" height="100%">
+						<feexp:content>
+							<template:if test="{=${navProperty>$kind}.indexOf('NavigationProperty') > -1}">
+								<template:then>
+									<template:with path="navProperty>" var="collection">
+										<core:Fragment fragmentName="sap.fe.controls.table.Table" type="XML" />
+									</template:with>
+								</template:then>
+								<template:else>
+									<template:with path="entitySet>" var="collection">
+										<core:Fragment fragmentName="sap.fe.controls.table.Table" type="XML" />
+									</template:with>
+								</template:else>
+							</template:if>
+						</feexp:content>
+					</feexp:ViewSwitchContainerItem>
+				</template:else>
+			</template:if>
+		</feexp:items>
+	</feexp:ViewSwitchContainer>
+</core:FragmentDefinition>

@@ -1,0 +1,80 @@
+{
+  "_version": "1.9.0",
+  "sap.app": {
+    "id": "sap.ushell",
+    "type": "library",
+    "embeds": [
+      "components/appfinder",
+      "components/factsheet",
+      "components/homepage",
+      "components/shell/MeArea",
+      "components/shell/Notifications",
+      "components/shell/Search",
+      "components/shell/ShellElements",
+      "components/shell/UserImage",
+      "components/shell/defaults",
+      "components/tiles/cdm/applauncher",
+      "components/tiles/cdm/applauncherdynamic",
+      "plugins/PluginLifeCycleWrapper",
+      "plugins/appwarmup",
+      "plugins/ghostapp",
+      "plugins/rta-personalize",
+      "plugins/rta",
+      "renderers/fiori2/search/container"
+    ],
+    "applicationVersion": {
+      "version": "1.60.40"
+    },
+    "title": "SAP library: sap.ushell",
+    "description": "SAP library: sap.ushell",
+    "resources": "resources.json",
+    "offline": true,
+    "openSourceComponents": [
+      {
+        "name": "touchpunch",
+        "packagedWithMySelf": true,
+        "version": "0.0.0"
+      },
+      {
+        "name": "resize_event",
+        "packagedWithMySelf": true,
+        "version": "0.0.0"
+      }
+    ]
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_belize",
+      "sap_belize_hcb",
+      "sap_belize_hcw",
+      "sap_belize_plus",
+      "sap_bluecrystal",
+      "sap_hcb"
+    ]
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.60",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.60.42"
+        },
+        "sap.ui.layout": {
+          "minVersion": "1.60.42"
+        },
+        "sap.m": {
+          "minVersion": "1.60.42"
+        },
+        "sap.ui.table": {
+          "minVersion": "1.60.42",
+          "lazy": true
+        }
+      }
+    },
+    "library": {
+      "i18n": false
+    }
+  }
+}

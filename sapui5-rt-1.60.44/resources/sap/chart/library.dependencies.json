@@ -1,0 +1,605 @@
+{
+  "modules" : [
+    {
+      "name" : "sap/chart/AutoScaleMode.js",
+      "description" : "Provides enumeration for sap.chart.AutoScaleMode",
+      "size" : 929,
+      "compressedSize" : 218,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/Chart.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 132598,
+      "compressedSize" : 56703,
+      "required" : ["sap/base/Log.js", "sap/chart/AutoScaleMode.js", "sap/chart/ChartLog.js", "sap/chart/ScaleBehavior.js", "sap/chart/SeriesColorTracker.js", "sap/chart/TimeUnitType.js", "sap/chart/coloring/Colorings.js", "sap/chart/data/Dimension.js", "sap/chart/data/HierarchyDimension.js", "sap/chart/data/Measure.js", "sap/chart/data/TimeDimension.js", "sap/chart/library.js", "sap/chart/pagination/PagingController.js", "sap/chart/utils/ChartTypeAdapterUtils.js", "sap/chart/utils/ChartUtils.js", "sap/chart/utils/DataSourceUtils.js", "sap/chart/utils/DateFormatUtil.js", "sap/chart/utils/MeasureSemanticsUtils.js", "sap/chart/utils/RoleFitter.js", "sap/chart/utils/SelectionAPIUtils.js", "sap/chart/utils/ValueAxisScaleUtils.js", "sap/ui/Device.js", "sap/ui/core/BusyIndicatorUtils.js", "sap/ui/core/Control.js", "sap/ui/core/LocaleData.js", "sap/ui/core/theming/Parameters.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/FilterType.js", "sap/ui/model/analytics/ODataModelAdapter.js", "sap/ui/model/analytics/odata4analytics.js", "sap/ui/thirdparty/jquery.js", "sap/viz/ui5/controls/VizFrame.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js", "sap/viz/ui5/data/Dataset.js", "sap/viz/ui5/data/DimensionDefinition.js", "sap/viz/ui5/data/FlattenedDataset.js", "sap/viz/ui5/data/MeasureDefinition.js", "sap/viz/ui5/format/ChartFormatter.js", "sap/viz/ui5/utils/CommonUtil.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/ChartLog.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 465,
+      "compressedSize" : 354,
+      "required" : ["sap/base/Log.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/ChartType.js",
+      "description" : "Provides enumeration sap.chart.ChartType",
+      "size" : 4165,
+      "compressedSize" : 1152,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/ColoringType.js",
+      "description" : "Provides enumeration sap.chart.ColoringType",
+      "size" : 30973,
+      "compressedSize" : 242,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/ScaleBehavior.js",
+      "description" : "Provides enumeration for sap.chart.ScaleBehavior",
+      "size" : 729,
+      "compressedSize" : 220,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/SeriesColorTracker.js",
+      "description" : "Keep track of series colors on different *pages*.",
+      "size" : 3798,
+      "compressedSize" : 1490,
+      "required" : ["sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/TimeUnitType.js",
+      "description" : "Provides enumeration sap.chart.TimeUnitType",
+      "size" : 1428,
+      "compressedSize" : 342,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/ColorPalette.js",
+      "size" : 5447,
+      "compressedSize" : 4621,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/ColoringUtils.js",
+      "size" : 7142,
+      "compressedSize" : 3946,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/data/TimeDimension.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/Colorings.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 3301,
+      "compressedSize" : 1818,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/criticality/Criticality.js", "sap/chart/coloring/emphasis/Emphasis.js", "sap/chart/coloring/gradation/Gradation.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/CriticalityType.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 792,
+      "compressedSize" : 252,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/criticality/Criticality.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 8544,
+      "compressedSize" : 3617,
+      "required" : ["sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/CriticalityType.js", "sap/chart/coloring/criticality/DimensionValues.js", "sap/chart/coloring/criticality/measureValues/MeasureValues.js", "sap/chart/data/MeasureSemantics.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/criticality/DimensionValues.js",
+      "size" : 4312,
+      "compressedSize" : 2211,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/CriticalityType.js", "sap/chart/data/TimeDimension.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/criticality/measureValues/MeasureUtils.js",
+      "size" : 14305,
+      "compressedSize" : 7391,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/CriticalityType.js", "sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js", "sap/chart/data/MeasureSemantics.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/criticality/measureValues/MeasureValues.js",
+      "size" : 8677,
+      "compressedSize" : 3757,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/criticality/measureValues/MeasureUtils.js", "sap/chart/data/MeasureSemantics.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js",
+      "size" : 11585,
+      "compressedSize" : 5299,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/CriticalityType.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/emphasis/DimensionValues.js",
+      "size" : 2227,
+      "compressedSize" : 1127,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/criticality/DimensionValues.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/emphasis/Emphasis.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 2363,
+      "compressedSize" : 1175,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/emphasis/DimensionValues.js", "sap/chart/data/TimeDimension.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/gradation/DelineatedDimensionValues.js",
+      "size" : 3756,
+      "compressedSize" : 1921,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js", "sap/chart/data/MeasureSemantics.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/gradation/DelineatedMeasures.js",
+      "size" : 3928,
+      "compressedSize" : 2169,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js", "sap/chart/data/MeasureSemantics.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/gradation/Gradation.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 5656,
+      "compressedSize" : 2531,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/gradation/DelineatedDimensionValues.js", "sap/chart/coloring/gradation/DelineatedMeasures.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js", "sap/chart/data/MeasureSemantics.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js",
+      "size" : 12651,
+      "compressedSize" : 6948,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js",
+      "size" : 4401,
+      "compressedSize" : 2040,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/data/Dimension.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 4655,
+      "compressedSize" : 1140,
+      "required" : ["sap/chart/utils/ChartUtils.js", "sap/ui/core/Element.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/data/DimensionRoleType.js",
+      "description" : "Provides enumeration sap.chart.DimensionRoleType",
+      "size" : 1321,
+      "compressedSize" : 232,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/data/HierarchyDimension.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 1545,
+      "compressedSize" : 546,
+      "required" : ["sap/chart/data/Dimension.js", "sap/chart/utils/ChartUtils.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/data/Measure.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 6847,
+      "compressedSize" : 1311,
+      "required" : ["sap/chart/data/MeasureSemantics.js", "sap/chart/utils/ChartUtils.js", "sap/ui/core/Element.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/data/MeasureRoleType.js",
+      "description" : "Provides enumeration sap.chart.MeasureRoleType",
+      "size" : 2370,
+      "compressedSize" : 230,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/data/MeasureSemantics.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 809,
+      "compressedSize" : 234,
+      "required" : ["ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/data/TimeDimension.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 2051,
+      "compressedSize" : 676,
+      "required" : ["sap/chart/data/Dimension.js", "sap/chart/utils/ChartUtils.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/library-h2-preload.js",
+      "size" : 12124,
+      "required" : ["sap/base/Log.js", "sap/base/util/deepEqual.js", "sap/ui/Device.js", "sap/ui/core/BusyIndicatorUtils.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "sap/ui/core/LocaleData.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/FilterType.js", "sap/ui/model/Sorter.js", "sap/ui/model/analytics/ODataModelAdapter.js", "sap/ui/model/analytics/odata4analytics.js", "sap/ui/thirdparty/jquery.js", "sap/viz/library.js", "sap/viz/ui5/controls/VizFrame.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js", "sap/viz/ui5/data/Dataset.js", "sap/viz/ui5/data/DimensionDefinition.js", "sap/viz/ui5/data/FlattenedDataset.js", "sap/viz/ui5/data/MeasureDefinition.js", "sap/viz/ui5/format/ChartFormatter.js", "sap/viz/ui5/utils/CommonUtil.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/chart/library.js", "sap/chart/manifest.json", "sap/chart/AutoScaleMode.js", "sap/chart/Chart.js", "sap/chart/ChartLog.js", "sap/chart/ChartType.js", "sap/chart/ColoringType.js", "sap/chart/ScaleBehavior.js", "sap/chart/SeriesColorTracker.js", "sap/chart/TimeUnitType.js", "sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/Colorings.js", "sap/chart/coloring/CriticalityType.js", "sap/chart/coloring/criticality/Criticality.js", "sap/chart/coloring/criticality/DimensionValues.js", "sap/chart/coloring/criticality/measureValues/MeasureUtils.js", "sap/chart/coloring/criticality/measureValues/MeasureValues.js", "sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js", "sap/chart/coloring/emphasis/DimensionValues.js", "sap/chart/coloring/emphasis/Emphasis.js", "sap/chart/coloring/gradation/DelineatedDimensionValues.js", "sap/chart/coloring/gradation/DelineatedMeasures.js", "sap/chart/coloring/gradation/Gradation.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js", "sap/chart/data/Dimension.js", "sap/chart/data/DimensionRoleType.js", "sap/chart/data/HierarchyDimension.js", "sap/chart/data/Measure.js", "sap/chart/data/MeasureRoleType.js", "sap/chart/data/MeasureSemantics.js", "sap/chart/data/TimeDimension.js", "sap/chart/pagination/PagingController.js", "sap/chart/utils/ChartTypeAdapterUtils.js", "sap/chart/utils/ChartUtils.js", "sap/chart/utils/DataSourceUtils.js", "sap/chart/utils/DateFormatUtil.js", "sap/chart/utils/MeasureSemanticsUtils.js", "sap/chart/utils/RoleFitter.js", "sap/chart/utils/RoleMapper.js", "sap/chart/utils/SelectionAPIUtils.js", "sap/chart/utils/ValueAxisScaleUtils.js"]
+    },
+    {
+      "name" : "sap/chart/library-preload.js",
+      "size" : 163877,
+      "required" : ["sap/base/Log.js", "sap/base/util/deepEqual.js", "sap/ui/Device.js", "sap/ui/core/BusyIndicatorUtils.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "sap/ui/core/LocaleData.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/FilterType.js", "sap/ui/model/Sorter.js", "sap/ui/model/analytics/ODataModelAdapter.js", "sap/ui/model/analytics/odata4analytics.js", "sap/ui/thirdparty/jquery.js", "sap/viz/library.js", "sap/viz/ui5/controls/VizFrame.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js", "sap/viz/ui5/data/Dataset.js", "sap/viz/ui5/data/DimensionDefinition.js", "sap/viz/ui5/data/FlattenedDataset.js", "sap/viz/ui5/data/MeasureDefinition.js", "sap/viz/ui5/format/ChartFormatter.js", "sap/viz/ui5/utils/CommonUtil.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/chart/AutoScaleMode.js", "sap/chart/Chart.js", "sap/chart/ChartLog.js", "sap/chart/ChartType.js", "sap/chart/ColoringType.js", "sap/chart/ScaleBehavior.js", "sap/chart/SeriesColorTracker.js", "sap/chart/TimeUnitType.js", "sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/Colorings.js", "sap/chart/coloring/CriticalityType.js", "sap/chart/coloring/criticality/Criticality.js", "sap/chart/coloring/criticality/DimensionValues.js", "sap/chart/coloring/criticality/measureValues/MeasureUtils.js", "sap/chart/coloring/criticality/measureValues/MeasureValues.js", "sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js", "sap/chart/coloring/emphasis/DimensionValues.js", "sap/chart/coloring/emphasis/Emphasis.js", "sap/chart/coloring/gradation/DelineatedDimensionValues.js", "sap/chart/coloring/gradation/DelineatedMeasures.js", "sap/chart/coloring/gradation/Gradation.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js", "sap/chart/data/Dimension.js", "sap/chart/data/DimensionRoleType.js", "sap/chart/data/HierarchyDimension.js", "sap/chart/data/Measure.js", "sap/chart/data/MeasureRoleType.js", "sap/chart/data/MeasureSemantics.js", "sap/chart/data/TimeDimension.js", "sap/chart/library.js", "sap/chart/manifest.json", "sap/chart/pagination/PagingController.js", "sap/chart/utils/ChartTypeAdapterUtils.js", "sap/chart/utils/ChartUtils.js", "sap/chart/utils/DataSourceUtils.js", "sap/chart/utils/DateFormatUtil.js", "sap/chart/utils/MeasureSemanticsUtils.js", "sap/chart/utils/RoleFitter.js", "sap/chart/utils/RoleMapper.js", "sap/chart/utils/SelectionAPIUtils.js", "sap/chart/utils/ValueAxisScaleUtils.js"]
+    },
+    {
+      "name" : "sap/chart/library-preload.json",
+      "size" : 0,
+      "required" : ["sap/base/Log.js", "sap/base/util/deepEqual.js", "sap/ui/Device.js", "sap/ui/core/BusyIndicatorUtils.js", "sap/ui/core/Control.js", "sap/ui/core/Element.js", "sap/ui/core/LocaleData.js", "sap/ui/core/format/DateFormat.js", "sap/ui/core/library-preload.json", "sap/ui/core/library.js", "sap/ui/core/theming/Parameters.js", "sap/ui/model/Filter.js", "sap/ui/model/FilterOperator.js", "sap/ui/model/FilterType.js", "sap/ui/model/Sorter.js", "sap/ui/model/analytics/ODataModelAdapter.js", "sap/ui/model/analytics/odata4analytics.js", "sap/ui/thirdparty/jquery.js", "sap/viz/library-preload.json", "sap/viz/library.js", "sap/viz/ui5/controls/VizFrame.js", "sap/viz/ui5/controls/common/BaseControl.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js", "sap/viz/ui5/data/Dataset.js", "sap/viz/ui5/data/DimensionDefinition.js", "sap/viz/ui5/data/FlattenedDataset.js", "sap/viz/ui5/data/MeasureDefinition.js", "sap/viz/ui5/format/ChartFormatter.js", "sap/viz/ui5/utils/CommonUtil.js", "ui5loader-autoconfig.js"],
+      "includes" : ["sap/chart/AutoScaleMode.js", "sap/chart/Chart.js", "sap/chart/ChartLog.js", "sap/chart/ChartType.js", "sap/chart/ColoringType.js", "sap/chart/ScaleBehavior.js", "sap/chart/SeriesColorTracker.js", "sap/chart/TimeUnitType.js", "sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/Colorings.js", "sap/chart/coloring/CriticalityType.js", "sap/chart/coloring/criticality/Criticality.js", "sap/chart/coloring/criticality/DimensionValues.js", "sap/chart/coloring/criticality/measureValues/MeasureUtils.js", "sap/chart/coloring/criticality/measureValues/MeasureValues.js", "sap/chart/coloring/criticality/measureValues/ThresholdsUtils.js", "sap/chart/coloring/emphasis/DimensionValues.js", "sap/chart/coloring/emphasis/Emphasis.js", "sap/chart/coloring/gradation/DelineatedDimensionValues.js", "sap/chart/coloring/gradation/DelineatedMeasures.js", "sap/chart/coloring/gradation/Gradation.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureUtils.js", "sap/chart/coloring/gradation/rankedMeasureValues/RankedMeasureValues.js", "sap/chart/data/Dimension.js", "sap/chart/data/DimensionRoleType.js", "sap/chart/data/HierarchyDimension.js", "sap/chart/data/Measure.js", "sap/chart/data/MeasureRoleType.js", "sap/chart/data/MeasureSemantics.js", "sap/chart/data/TimeDimension.js", "sap/chart/library.js", "sap/chart/manifest.json", "sap/chart/pagination/PagingController.js", "sap/chart/utils/ChartTypeAdapterUtils.js", "sap/chart/utils/ChartUtils.js", "sap/chart/utils/DataSourceUtils.js", "sap/chart/utils/DateFormatUtil.js", "sap/chart/utils/MeasureSemanticsUtils.js", "sap/chart/utils/RoleFitter.js", "sap/chart/utils/RoleMapper.js", "sap/chart/utils/SelectionAPIUtils.js", "sap/chart/utils/ValueAxisScaleUtils.js"]
+    },
+    {
+      "name" : "sap/chart/library.js",
+      "description" : "Initialization Code and shared classes of library sap.chart.",
+      "size" : 11144,
+      "compressedSize" : 3289,
+      "required" : ["sap/chart/AutoScaleMode.js", "sap/chart/ChartType.js", "sap/chart/ColoringType.js", "sap/chart/ScaleBehavior.js", "sap/chart/coloring/CriticalityType.js", "sap/chart/data/Dimension.js", "sap/chart/data/DimensionRoleType.js", "sap/chart/data/Measure.js", "sap/chart/data/MeasureRoleType.js", "sap/chart/data/MeasureSemantics.js", "sap/chart/utils/ChartTypeAdapterUtils.js", "sap/chart/utils/RoleFitter.js", "sap/ui/core/library.js", "sap/viz/library.js", "sap/viz/ui5/format/ChartFormatter.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/manifest.json",
+      "size" : 1112,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle.properties",
+      "size" : 2531,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_ar.properties",
+      "size" : 8412,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_bg.properties",
+      "size" : 10375,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_ca.properties",
+      "size" : 3284,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_cs.properties",
+      "size" : 3384,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_da.properties",
+      "size" : 2907,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_de.properties",
+      "size" : 2969,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_el.properties",
+      "size" : 10182,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_en.properties",
+      "size" : 2531,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_en_US_sappsd.properties",
+      "size" : 10646,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_es.properties",
+      "size" : 3310,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_et.properties",
+      "size" : 2526,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_fi.properties",
+      "size" : 2840,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_fr.properties",
+      "size" : 3480,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_he.properties",
+      "size" : 7065,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_hi.properties",
+      "size" : 8343,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_hr.properties",
+      "size" : 3080,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_hu.properties",
+      "size" : 3233,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_it.properties",
+      "size" : 2729,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_iw.properties",
+      "size" : 6741,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_ja.properties",
+      "size" : 4718,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_kk.properties",
+      "size" : 10656,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_ko.properties",
+      "size" : 4472,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_lt.properties",
+      "size" : 3502,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_lv.properties",
+      "size" : 3230,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_ms.properties",
+      "size" : 2643,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_nl.properties",
+      "size" : 2771,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_no.properties",
+      "size" : 2842,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_pl.properties",
+      "size" : 3120,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_pt.properties",
+      "size" : 3232,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_ro.properties",
+      "size" : 3368,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_ru.properties",
+      "size" : 11914,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_sh.properties",
+      "size" : 3092,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_sk.properties",
+      "size" : 3378,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_sl.properties",
+      "size" : 3311,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_sv.properties",
+      "size" : 2726,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_th.properties",
+      "size" : 9353,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_tr.properties",
+      "size" : 3416,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_uk.properties",
+      "size" : 10240,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_vi.properties",
+      "size" : 5885,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_zh_CN.properties",
+      "size" : 3364,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/messages/messagebundle_zh_TW.properties",
+      "size" : 3593,
+      "required" : [],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/pagination/PagingController.js",
+      "description" : "helper for paging mode.",
+      "size" : 10928,
+      "compressedSize" : 6006,
+      "required" : ["sap/ui/model/Sorter.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/ChartTypeAdapterUtils.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 937,
+      "compressedSize" : 457,
+      "required" : ["sap/chart/utils/ChartUtils.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/ChartUtils.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 3981,
+      "compressedSize" : 2557,
+      "required" : ["sap/base/util/deepEqual.js", "sap/chart/ChartType.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/DataSourceUtils.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 11101,
+      "compressedSize" : 5735,
+      "required" : ["sap/chart/TimeUnitType.js", "sap/chart/data/Dimension.js", "sap/chart/data/HierarchyDimension.js", "sap/chart/data/Measure.js", "sap/chart/data/TimeDimension.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/DateFormatUtil.js",
+      "description" : "Parse and Format Date String depending on sap.ui.core.format.DateFormat",
+      "size" : 816,
+      "compressedSize" : 439,
+      "required" : ["sap/chart/TimeUnitType.js", "sap/ui/core/format/DateFormat.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/MeasureSemanticsUtils.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 18173,
+      "compressedSize" : 8464,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/ColoringType.js", "sap/chart/coloring/ColorPalette.js", "sap/chart/coloring/ColoringUtils.js", "sap/chart/coloring/CriticalityType.js", "sap/chart/coloring/criticality/Criticality.js", "sap/chart/data/MeasureSemantics.js", "sap/chart/utils/ChartUtils.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/RoleFitter.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 22548,
+      "compressedSize" : 11636,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/TimeUnitType.js", "sap/chart/utils/ChartUtils.js", "sap/chart/utils/DateFormatUtil.js", "sap/chart/utils/RoleMapper.js", "sap/ui/thirdparty/jquery.js", "sap/viz/ui5/controls/common/feeds/AnalysisObject.js", "sap/viz/ui5/controls/common/feeds/FeedItem.js", "sap/viz/ui5/data/DimensionDefinition.js", "sap/viz/ui5/data/MeasureDefinition.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/RoleMapper.js",
+      "description" : "! SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 11372,
+      "compressedSize" : 5082,
+      "required" : ["sap/chart/ChartLog.js", "sap/chart/data/MeasureSemantics.js", "sap/chart/data/TimeDimension.js", "sap/chart/utils/ChartUtils.js", "sap/chart/utils/DateFormatUtil.js", "sap/chart/utils/MeasureSemanticsUtils.js", "sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/SelectionAPIUtils.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 5524,
+      "compressedSize" : 2045,
+      "required" : ["sap/ui/thirdparty/jquery.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    },
+    {
+      "name" : "sap/chart/utils/ValueAxisScaleUtils.js",
+      "description" : "SAP UI development toolkit for HTML5 (SAPUI5)\n\n(c) Copyright 2009-2018 SAP SE. All rights reserved",
+      "size" : 5389,
+      "compressedSize" : 2622,
+      "required" : ["sap/chart/AutoScaleMode.js", "sap/chart/ChartLog.js", "sap/chart/ScaleBehavior.js", "sap/chart/utils/ChartUtils.js", "ui5loader-autoconfig.js"],
+      "includes" : []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+/*!
+ * UI development toolkit for HTML5 (OpenUI5)
+ * (c) Copyright 2009-2018 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/core/library","sap/m/HyphenationSupport"],function(c,H){"use strict";var T=c.TextAlign;var a=c.TitleLevel;var b={};b.render=function(r,t){var A=t._getTitle(),l=(A?A.getLevel():t.getLevel())||a.Auto,d=l==a.Auto,s=d?"div":l,e=H.getTextForRender(t,"main");r.write("<",s);r.writeControlData(t);r.addClass("sapMTitle");r.addClass("sapMTitleStyle"+(t.getTitleStyle()||a.Auto));r.addClass(t.getWrapping()?"sapMTitleWrap":"sapMTitleNoWrap");r.addClass("sapUiSelectable");var w=t.getWidth();if(!w){r.addClass("sapMTitleMaxWidth");}else{r.addStyle("width",w);}var f=t.getTextAlign();if(f&&f!=T.Initial){r.addClass("sapMTitleAlign"+f);}if(t.getParent()instanceof sap.m.Toolbar){r.addClass("sapMTitleTB");}var g=A?A.getTooltip_AsString():t.getTooltip_AsString();if(g){r.writeAttributeEscaped("title",g);}if(d){r.writeAttribute("role","heading");r.writeAttribute("aria-level",t._getAriaLevel());}H.writeHyphenationClass(r,t);r.writeClasses();r.writeStyles();r.write("><span");r.writeAttribute("id",t.getId()+"-inner");r.write(">");r.writeEscaped(e);r.write("</span></",s,">");};return b;},true);

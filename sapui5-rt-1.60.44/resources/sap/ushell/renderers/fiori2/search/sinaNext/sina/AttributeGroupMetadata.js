@@ -1,0 +1,1 @@
+sinaDefine(['../core/core','./SinaObject','./AttributeType','./AttributeMetadataBase'],function(c,S,A,a){"use strict";return a.derive({_meta:{properties:{type:{required:false,default:A.Group},label:{required:false},isSortable:{required:false,default:false},template:{required:false},attributes:{required:true}}}});});

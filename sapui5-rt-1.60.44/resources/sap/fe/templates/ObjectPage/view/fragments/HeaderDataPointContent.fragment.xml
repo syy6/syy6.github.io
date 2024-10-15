@@ -1,0 +1,28 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified"
+						 xmlns:mdcBase="sap.ui.mdc.base">
+
+
+	<Title id="header::{path: 'headerFacet>', formatter: '.AH.getStableIdPartFromFacet'}::{path: 'dataPoint>', formatter: '.AH.getStableIdPartFromDataPoint'}::Title"
+		   level="H3" text="{dataPoint>Title@@.MODEL.value}"
+		   visible="{= !!${dataPoint>Title}}"/>
+	<template:with path="dataPoint>Value" var="property">
+		<template:if test="{property>$Path@Org.OData.Measures.V1.Unit}">
+			<template:then>
+				<ObjectNumber number="{= ${property>@@.MODEL.value} || '{' + ${dataPoint>@sapui.name} + '}'}" emphasized="false"
+					unit="{property>$Path@Org.OData.Measures.V1.Unit@@.MODEL.value}"/>
+			</template:then>
+			<template:elseif test="{property>$Path@Org.OData.Measures.V1.ISOCurrency}">
+				<u:Currency value="{= ${property>@@.MODEL.value} || '{' + ${dataPoint>@sapui.name} + '}'}"
+					currency="{property>$Path@Org.OData.Measures.V1.ISOCurrency@@.MODEL.value}"
+					useSymbol="false"/>
+			</template:elseif>
+			<template:else>
+			<ObjectStatus
+				state="{path: 'dataPoint>', formatter: '.AH.buildExpressionForCriticality'}"
+				text="{= ${property>$Path@com.sap.vocabularies.Common.v1.Text} ? ${property>$Path@com.sap.vocabularies.Common.v1.Text@@.MODEL.value} : ${property>@@.MODEL.value} }"/>
+			</template:else>
+		</template:if>
+	</template:with>
+
+</core:FragmentDefinition>

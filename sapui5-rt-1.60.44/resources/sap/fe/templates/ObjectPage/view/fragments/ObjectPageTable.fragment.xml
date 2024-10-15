@@ -1,0 +1,9 @@
+<core:FragmentDefinition
+		xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		xmlns="sap.m"
+		xmlns:mdc="sap.ui.mdc"
+		xmlns:core="sap.ui.core">
+		<template:with path="facet>Target/$AnnotationPath" var="navProperty" helper="sap.fe.core.AnnotationHelper.getNavigationCollection">
+			<core:Fragment fragmentName="sap.fe.controls.ViewSwitchContainer.ViewSwitchContainer" type="XML"/>
+		</template:with>
+</core:FragmentDefinition>

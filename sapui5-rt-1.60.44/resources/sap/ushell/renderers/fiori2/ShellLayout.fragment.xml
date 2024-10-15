@@ -1,0 +1,42 @@
+<core:FragmentDefinition
+        xmlns="sap.ushell.ui.shell" xmlns:lp="sap.ushell.ui.launchpad" xmlns:core="sap.ui.core">
+    <ShellLayout
+            floatingContainerVisible="false"
+            toolAreaVisible="{/currentState/toolAreaVisible}"
+            headerVisible="{/currentState/headerVisible}"
+            backgroundColorForce="false"
+            showBrandLine="false"
+            showAnimation="false"
+            enableCanvasShapes="{/enableBackGroundShapes}"
+            id="shell">
+        <canvasSplitContainer>
+            <SplitContainer
+                    id="shell-split"
+                    showSecondaryContent="{/currentState/showPane}"
+                    subHeader="{path: '/currentState/subHeader', factory: '.shellUpdateAggItem'}"
+                    secondaryContent="{path: '/currentState/paneContent', factory: '.shellUpdateAggItem'}">
+                <content>
+                    <lp:ViewPortContainer
+                            id="viewPortContainer"
+                            defaultState="Center"
+                            afterSwitchState=".onAfterViewPortSwitchState"
+                            afterNavigate=".onAfterNavigate">
+                    </lp:ViewPortContainer>
+                </content>
+                <secondaryContent>
+
+                </secondaryContent>
+            </SplitContainer>
+        </canvasSplitContainer>
+        <rightFloatingContainer>
+            <!-- top="6.875" -> header 2.875rem + dashboard notifications preview margin top 4rem -->
+            <RightFloatingContainer
+                id="right-floating-container"
+                top="6.875" 
+                hideItemsAfterPresentation="true"
+                visible="{/currentState/showRightFloatingContainer}"
+                floatingContainerItems="{ path: '/currentState/RightFloatingContainerItems', factory: '.shellUpdateAggItem'}"
+                insertItemsWithAnimation="{ path: '/animationMode', formatter: '.isAnimationModeNotMinimal' }" />
+        </rightFloatingContainer>
+    </ShellLayout>
+</core:FragmentDefinition>

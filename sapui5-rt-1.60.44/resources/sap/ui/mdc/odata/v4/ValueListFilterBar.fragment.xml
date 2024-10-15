@@ -1,0 +1,23 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		   xmlns="sap.m"
+		   xmlns:core="sap.ui.core"
+		   xmlns:mdc="sap.ui.mdc"
+>
+
+	<!-- PLEASE NOTE: this is a workaround until we can create the XML composite controls outside XML views as well -->
+
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+
+		<mdc:FilterBar
+				metadataContexts="{ model: 'entitySet', path:'',  name: 'entitySet'},{ model: 'entitySet', path:'$Type', name: 'selectionFields'}"
+				listBindingNames="'VH::{valueList>CollectionPath}"
+				conditionModelName="filter"
+				searchOnStart="false"
+				liveUpdate="true"
+				hideBasicSearch="true"
+				enablePersonalization="false"
+		/>
+
+	</template:alias>
+
+</core:FragmentDefinition>

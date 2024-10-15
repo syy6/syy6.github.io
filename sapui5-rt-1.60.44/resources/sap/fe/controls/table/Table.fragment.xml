@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns="sap.m" xmlns:mdc="sap.ui.mdc"
+xmlns:core="sap.ui.core" xmlns:fe="sap.fe" xmlns:feexp="sap.fe.experimental">
+
+	<mdc:Table
+						id="{= 'template::'+ ${collection>@sapui.name} + '::Table'}"
+						busy="{ui>/busy}"
+						type="ResponsiveTable"
+						rowPress="{=  ${viewData>/navigation} &amp;&amp; ${viewData>/navigation}[${collection>@sapui.name}] &amp;&amp; ${viewData>/navigation}[${collection>@sapui.name}]['detail']
+							? ${viewData>/navigation}[${collection>@sapui.name}]['detail']['outbound']
+								? '.routing.navigateOutbound(\'' + ${viewData>/navigation/detail/outbound} + '\', ${$parameters>bindingContext})'
+								: ( ${viewData>/navigation}[${collection>@sapui.name}]['detail']['route'] 
+									? '.routing.navigateToContext(${$parameters>bindingContext} )' 
+									: undefined ) 
+							: undefined }"
+						rowAction="{= ${viewData>/navigation} &amp;&amp; ${viewData>/navigation}[${collection>@sapui.name}] &amp;&amp; ${viewData>/navigation}[${collection>@sapui.name}]['detail'] ? 'Navigation' : undefined }"
+						height="100%"
+						width="100%"
+						rows="{= '{path:\'' + (${collection>$kind} === 'EntitySet' ? '/' : '') + ${collection>@sapui.name} + '\',parameters:{id: \'' + ${collection>@sapui.name} +'\', $count : true, $$groupId : \'$auto.associations\' }, events : {dataReceived : \'.handlers.onDataReceived\'}}' }"
+						selectionMode="Multi"
+						selectionChange = "{= '.contextManager.setContexts(\'template::' + ${collection>@sapui.name} + '::Table\''+ ',${$source>/getSelectedContexts})'}"
+						showRowCount="true"
+						header="{collection>./@com.sap.vocabularies.UI.v1.HeaderInfo/TypeNamePlural}"
+				>
+					<mdc:actions>
+						<core:Fragment fragmentName="sap.fe.controls.table.Actions" type="XML" />
+					</mdc:actions>
+					<mdc:columns>
+						<core:Fragment fragmentName="sap.fe.controls.table.Columns" type="XML" />
+					</mdc:columns>
+				</mdc:Table>
+</core:FragmentDefinition>

@@ -1,0 +1,80 @@
+<core:View xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+		   xmlns="sap.m"
+		   xmlns:core="sap.ui.core"
+		   xmlns:f="sap.f"
+		   xmlns:mdc="sap.ui.mdc"
+		   xmlns:v="sap.ui.fl.variants"
+		   controllerName="sap.fe.templates.ListReport.ListReportController"
+		   template:require="sap.fe.core.AnnotationHelper">
+
+	<template:with path="entitySet>$Type" var="entityType">
+		<f:DynamicPage id="template::listReportPage" showFooter="false">
+			<f:title>
+				<f:DynamicPageTitle>
+					<f:heading>
+						<template:if test="{= ${viewData>/noPageVariantManagement} }">
+							<template:then>
+								<template:if test="{= ${manifest>/sap.app/appSubTitle} }">
+									<template:then>
+										<Title id="template::listReportPageTitle"
+											   text="{manifest>/sap.app/appSubTitle}"></Title>
+									</template:then>
+
+									<template:else>
+										<Title id="template::lisReportPageTitle"
+											   text="{manifest>/sap.app/title}"></Title>
+									</template:else>
+								</template:if>
+							</template:then>
+
+							<template:else>
+								<v:VariantManagement id="template::listReportPageVariantManagement"
+													 for="template::Page"
+													 showSave="false"
+													 showSaveAs="false"
+													 showManage="false"
+													 showSetAsDefault="false"
+													 showExecuteOnSelection="false"
+													 showShare="false"/>
+							</template:else>
+						</template:if>
+
+					</f:heading>
+					<f:actions>
+						<!--
+						Disabling share button for now. It shall be picked up later.
+						<Button id="template:listReportShareButton"
+								icon="sap-icon://action"
+								press=".handlers.onShareListReportActionButtonPress"
+								type="Transparent"/> -->
+					</f:actions>
+					<f:snappedContent>
+						<Text id="template::listReportFilterSummary" text="{sap.fe.templates.ListReport>/filterSummary}"></Text>
+					</f:snappedContent>
+				</f:DynamicPageTitle>
+			</f:title>
+			<f:header>
+				<f:DynamicPageHeader pinnable="true">
+					<f:content>
+
+						<mdc:FilterBar id="template::listReportFilterBar"
+									  listBindingNames="{entitySet>@sapui.name}"
+									  metadataContexts="{ model: 'entitySet', path:'',  name: 'entitySet'}"
+									  search=".handlers.onSearch"
+									  change=".handlers.onFilterBarChange"
+									  conditionModelName="sap.fe.cm"
+									  searchOnStart="{= ${viewData>/filterOnStart} === false ? false : true }"
+									  liveUpdate="{= ${viewData>/filterLiveUpdate} === false ? false : true }"
+									  filterSummary="{sap.fe.templates.ListReport>/filterSummary}"/>
+					</f:content>
+				</f:DynamicPageHeader>
+			</f:header>
+			<f:content>
+				<core:Fragment fragmentName="sap.fe.controls.ViewSwitchContainer.ViewSwitchContainer" type="XML"/>				
+			</f:content>
+			<f:footer>
+			</f:footer>
+		</f:DynamicPage>
+	</template:with>
+
+</core:View>

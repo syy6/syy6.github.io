@@ -1,0 +1,2999 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.suite.ui.commons">
+  <module name="sap/suite/ui/commons/BulletChart.js" size="1426" compressedSize="424" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/BulletMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/BulletChartData.js" size="1116" compressedSize="332" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/BulletMicroChartData.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/BusinessCard.js" size="2355" compressedSize="741" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/BusinessCardRenderer.js" size="3661" compressedSize="2208" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/commons/Label.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CalculationBuilder.js" size="27483" compressedSize="14412">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarToggleButton.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderExpression.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderFunction.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderInput.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderItem.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/TitleLevel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CalculationBuilderExpression.js" size="56243" compressedSize="32835">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/FlexAlignItems.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexDirection.js"/>
+      <module name="sap/m/FlexRendertype.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/InputType.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/ListType.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageStrip.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarToggleButton.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StepInput.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderItem.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderValidationResult.js"/>
+      <module name="sap/suite/ui/commons/ControlProxy.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-core.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-selectable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-widget.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CalculationBuilderFunction.js" size="3480" compressedSize="649">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CalculationBuilderGroup.js" size="2394" compressedSize="676">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CalculationBuilderInput.js" size="37863" compressedSize="19503">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarToggleButton.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderItem.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CalculationBuilderItem.js" size="21103" compressedSize="11605">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-core.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-widget.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CalculationBuilderValidationResult.js" size="1344" compressedSize="473">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CalculationBuilderVariable.js" size="2030" compressedSize="560">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ChartContainer.js" size="45267" compressedSize="22355">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/delegate/ScrollEnablement.js"/>
+      <module name="sap/viz/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ChartContainerContent.js" size="7017" compressedSize="2557">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/SelectionDetails.js"/>
+      <module name="sap/m/SelectionDetailsItem.js"/>
+      <module name="sap/m/SelectionDetailsItemLine.js"/>
+      <module name="sap/suite/ui/commons/ChartContainer.js"/>
+      <module name="sap/ui/base/Event.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ChartContainerContentRenderer.js" size="782" compressedSize="238">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ChartContainerRenderer.js" size="1861" compressedSize="966">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ChartContainerToolbarPlaceholder.js" size="1045" compressedSize="308">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ChartContainerToolbarPlaceholderRenderer.js" size="780" compressedSize="206">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ChartTile.js" size="2340" compressedSize="995" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/InfoTile.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ChartTileRenderer.js" size="2779" compressedSize="1434" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/InfoTileRenderer.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ColumnData.js" size="1082" compressedSize="327" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartData.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ColumnMicroChart.js" size="1290" compressedSize="429" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/ColumnMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ColumnMicroChartLabel.js" size="1211" compressedSize="339" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartLabel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ComparisonChart.js" size="1310" compressedSize="436" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ComparisonData.js" size="1156" compressedSize="335" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ControlProxy.js" size="705" compressedSize="384">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/CountingNavigationItem.js" size="1544" compressedSize="404" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/ux3/NavigationItem.js"/>
+      <module name="sap/ui/ux3/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/DateRangeScroller.js" size="20898" compressedSize="8476" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.DateRangeScroller.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/ui/commons/Label.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/DateRangeScrollerRenderer.js" size="4033" compressedSize="2007" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/DateRangeSlider.js" size="18168" compressedSize="8009" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.DateRangeSlider.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/DateRangeSliderInternal.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/DateRangeSliderInternal.js" size="33852" compressedSize="14741" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/ui/commons/Label.js"/>
+      <module name="sap/ui/commons/RangeSlider.js"/>
+      <module name="sap/ui/commons/Slider.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/DateRangeSliderInternalRenderer.js" size="13990" compressedSize="5136" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/commons/RangeSliderRenderer.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/DateRangeSliderRenderer.js" size="1107" compressedSize="414" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/DeltaMicroChart.js" size="1285" compressedSize="426" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/DeltaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/DynamicContainer.js" size="1180" compressedSize="343" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.DynamicContainer.</description>
+    <requires>
+      <module name="sap/m/SlideTile.js"/>
+      <module name="sap/m/SlideTileRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/FacetOverview.js" size="8547" compressedSize="4480" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.FacetOverview.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/FacetOverviewRenderer.js" size="2844" compressedSize="1766" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/FeedItem.js" size="2332" compressedSize="1014" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.FeedItem.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/FeedItemHeader.js" size="3601" compressedSize="1496" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.FeedItemHeader.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/ListItemBase.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/FeedItemHeaderRenderer.js" size="4014" compressedSize="2289" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ListItemBaseRenderer.js"/>
+      <module name="sap/suite/ui/commons/util/FeedItemUtils.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/FeedTile.js" size="11658" compressedSize="5339" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.FeedTile.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/FeedItemUtils.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/FeedTileRenderer.js" size="4775" compressedSize="2683" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/util/FeedItemUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/GenericTile.js" size="1173" compressedSize="342" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.GenericTile.</description>
+    <requires>
+      <module name="sap/m/GenericTile.js"/>
+      <module name="sap/m/GenericTileRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/GenericTile2X2.js" size="9456" compressedSize="5477" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.GenericTile2X2.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/GenericTile2X2Renderer.js" size="5762" compressedSize="2992" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/HarveyBallMicroChart.js" size="1359" compressedSize="441" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/HarveyBallMicroChartItem.js" size="1225" compressedSize="345" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartItem.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/HeaderCell.js" size="2313" compressedSize="748" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/HeaderCellItem.js" size="1509" compressedSize="453" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/HeaderCellRenderer.js" size="2806" compressedSize="1450" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/HeaderContainer.js" size="18607" compressedSize="10028" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/core/delegate/ScrollEnablement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/HeaderContainerRenderer.js" size="2501" compressedSize="1488" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/InfoTile.js" size="3361" compressedSize="1637" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/InfoTileRenderer.js" size="6710" compressedSize="2528" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/JamContent.js" size="1130" compressedSize="341" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/FeedContent.js"/>
+      <module name="sap/m/FeedContentRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/KpiTile.js" size="2013" compressedSize="706" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/KpiTileRenderer.js" size="2400" compressedSize="1416" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/LaunchTile.js" size="2271" compressedSize="949" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/LaunchTileRenderer.js" size="2106" compressedSize="1129" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/LinkActionSheet.js" size="4507" compressedSize="2267" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/LinkActionSheetRenderer.js" size="2155" compressedSize="1055" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ActionSheetRenderer.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MicroAreaChart.js" size="1305" compressedSize="423" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/AreaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MicroAreaChartItem.js" size="1155" compressedSize="333" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/AreaMicroChartItem.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MicroAreaChartLabel.js" size="1177" compressedSize="335" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/AreaMicroChartLabel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MicroAreaChartPoint.js" size="1153" compressedSize="335" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/microchart/AreaMicroChartPoint.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MicroProcessFlow.js" size="15919" compressedSize="8513">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MicroProcessFlowItem.js" size="9923" compressedSize="4838">
+    <description>Provides control MicroProcessFlowItem.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/MicroProcessFlow.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MonitoringContent.js" size="3397" compressedSize="1416" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MonitoringContentRenderer.js" size="2244" compressedSize="1148" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MonitoringTile.js" size="3113" compressedSize="1474" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/InfoTile.js"/>
+      <module name="sap/suite/ui/commons/MonitoringContent.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/MonitoringTileRenderer.js" size="1142" compressedSize="493" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/InfoTileRenderer.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NewsContent.js" size="1131" compressedSize="342" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/NewsContent.js"/>
+      <module name="sap/m/NewsContentRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NoteTaker.js" size="35823" compressedSize="19750" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/NoteTakerCard.js"/>
+      <module name="sap/suite/ui/commons/NoteTakerFeeder.js"/>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/Carousel.js"/>
+      <module name="sap/ui/commons/ListBox.js"/>
+      <module name="sap/ui/commons/SearchField.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ListItem.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NoteTakerCard.js" size="40065" compressedSize="23004" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.NoteTakerCard.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/InPlaceEdit.js"/>
+      <module name="sap/ui/commons/Label.js"/>
+      <module name="sap/ui/commons/Link.js"/>
+      <module name="sap/ui/commons/ListBox.js"/>
+      <module name="sap/ui/commons/MessageBox.js"/>
+      <module name="sap/ui/commons/TextArea.js"/>
+      <module name="sap/ui/commons/TextField.js"/>
+      <module name="sap/ui/commons/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/commons/layout/VerticalLayout.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/ListItem.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/ux3/OverlayContainer.js"/>
+      <module name="sap/ui/ux3/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NoteTakerCardRenderer.js" size="6155" compressedSize="3773" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/util/RenderUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NoteTakerFeeder.js" size="24206" compressedSize="16568" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/NoteTakerCard.js"/>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/FileUploader.js"/>
+      <module name="sap/ui/commons/Label.js"/>
+      <module name="sap/ui/commons/Link.js"/>
+      <module name="sap/ui/commons/ListBox.js"/>
+      <module name="sap/ui/commons/TextArea.js"/>
+      <module name="sap/ui/commons/TextField.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ListItem.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NoteTakerFeederRenderer.js" size="5824" compressedSize="4140" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NoteTakerRenderer.js" size="4072" compressedSize="2791" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NumericContent.js" size="1177" compressedSize="343" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/NumericContent.js"/>
+      <module name="sap/m/NumericContentRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NumericTile.js" size="3565" compressedSize="1823" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/InfoTile.js"/>
+      <module name="sap/suite/ui/commons/NumericContent.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/NumericTileRenderer.js" size="1765" compressedSize="576" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/InfoTileRenderer.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/PictureZoomIn.js" size="4629" compressedSize="2525" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/PictureZoomInRenderer.js" size="1499" compressedSize="752" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlow.js" size="158919" compressedSize="65258">
+    <description>Provides control sap.suite.ui.commons.ProcessFlow.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnection.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeader.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowConnection.js" size="14613" compressedSize="5429">
+    <description>Provides control sap.suite.ui.commons.ProcessFlowConnection.</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowConnectionLabel.js" size="10283" compressedSize="4334">
+    <description>Provides control sap.suite.ui.commons.ProcessFlowConnectionLabel.</description>
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowConnectionLabelRenderer.js" size="450" compressedSize="241">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/ButtonRenderer.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowConnectionRenderer.js" size="25026" compressedSize="15912">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowLaneHeader.js" size="31599" compressedSize="9565">
+    <description>Provides control sap.suite.ui.commons.ProcessFlowLaneHeader.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowLaneHeaderRenderer.js" size="6746" compressedSize="3291">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeader.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowNode.js" size="49930" compressedSize="27803">
+    <description>Provides control sap.suite.ui.commons.ProcessFlowNode.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowNodeRenderer.js" size="24243" compressedSize="13461">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ProcessFlowRenderer.js" size="22287" compressedSize="7388">
+    <description>SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeader.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowZoomLevel.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/RepeaterViewConfiguration.js" size="4505" compressedSize="1048" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/RepeaterViewConfigurationRenderer.js" size="752" compressedSize="206" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/SplitButton.js" size="11178" compressedSize="4474" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.SplitButton.</description>
+    <requires>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/MenuButton.js"/>
+      <module name="sap/ui/commons/MenuItem.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/SplitButtonRenderer.js" size="1043" compressedSize="410" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TargetFilter.js" size="44865" compressedSize="27290" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.TargetFilter.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/GroupHeaderListItem.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/SelectDialog.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TargetFilterColumn.js" size="2596" compressedSize="838" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/model/SimpleType.js"/>
+      <module name="sap/ui/model/type/String.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TargetFilterMeasureColumn.js" size="2103" compressedSize="766" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.TargetFilterMeasureColumn.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/model/SimpleType.js"/>
+      <module name="sap/ui/model/type/Integer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TargetFilterRenderer.js" size="2062" compressedSize="1256" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ThingCollection.js" size="9800" compressedSize="6062" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.ThingCollection.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/commons/Link.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/events/jquery/EventSimulation.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ThingCollectionRenderer.js" size="2776" compressedSize="1750" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ThreePanelThingInspector.js" size="4473" compressedSize="2279" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.ThreePanelThingInspector.</description>
+    <requires>
+      <module name="sap/suite/ui/commons/ThreePanelThingViewer.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/ux3/ThingInspector.js"/>
+      <module name="sap/ui/ux3/ThingInspectorRenderer.js"/>
+      <module name="sap/ui/ux3/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ThreePanelThingViewer.js" size="8051" compressedSize="4424">
+    <description>Provides control sap.suite.ui.commons.ThreePanelThingViewer.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/ThreePanelThingViewerRenderer.js"/>
+      <module name="sap/suite/ui/commons/VerticalNavigationBar.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/ux3/ThingViewer.js"/>
+      <module name="sap/ui/ux3/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ThreePanelThingViewerRenderer.js" size="5958" compressedSize="3957">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/ux3/ThingViewerRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TileContent.js" size="1201" compressedSize="342" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.TileContent.</description>
+    <requires>
+      <module name="sap/m/TileContent.js"/>
+      <module name="sap/m/TileContentRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TileContent2X2.js" size="3877" compressedSize="1885" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.TileContent2X2.</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TileContent2X2Renderer.js" size="3267" compressedSize="1460" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/Timeline.designtime.js" size="2993" compressedSize="1679">
+    <description>Provides the Design Time Metadata for the sap.m.Button control</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/Timeline.js" size="97159" compressedSize="36896">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/base/assert.js"/>
+      <module name="sap/suite/ui/commons/TimelineItem.js"/>
+      <module name="sap/suite/ui/commons/TimelineNavigator.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderManager.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/suite/ui/commons/util/ManagedObjectRegister.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/delegate/ScrollEnablement.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/model/ClientListBinding.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FilterType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/v4/ODataListBinding.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TimelineFilterListItem.js" size="1452" compressedSize="428">
+    <description>Provides control sap.suite.ui.commons.TimelineFilterListItem.</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TimelineItem.js" size="31546" compressedSize="13709">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/suite/ui/commons/util/ManagedObjectRegister.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/model/odata/v4/ODataModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TimelineItemRenderer.js" size="19216" compressedSize="9767">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TimelineNavigator.js" size="18354" compressedSize="6577">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/assert.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TimelineRenderManager.js" size="45080" compressedSize="21261">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/MessageStrip.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js"/>
+      <module name="sap/m/OverflowToolbarPriority.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/RangeSlider.js"/>
+      <module name="sap/m/ResponsiveScale.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SliderTooltip.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/ViewSettingsCustomItem.js"/>
+      <module name="sap/m/ViewSettingsDialog.js"/>
+      <module name="sap/m/ViewSettingsFilterItem.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderManagerTimestamp.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/StringSliderTooltip.js"/>
+      <module name="sap/ui/core/CSSSize.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TimelineRenderManagerTimestamp.js" size="7853" compressedSize="3486">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/RadioButtonGroup.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/TimelineRenderer.js" size="22055" compressedSize="9843">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/UnifiedThingGroup.js" size="1683" compressedSize="608" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/UnifiedThingGroupRenderer.js" size="2032" compressedSize="1133" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/UnifiedThingInspector.js" size="38523" compressedSize="20995" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.UnifiedThingInspector.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/ObjectAttribute.js"/>
+      <module name="sap/m/ObjectHeader.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/LinkActionSheet.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="sap/ui/layout/Grid.js"/>
+      <module name="sap/ui/layout/GridData.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/UnifiedThingInspectorRenderer.js" size="1121" compressedSize="475" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/VerticalNavigationBar.js" size="3776" compressedSize="1829" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.VerticalNavigationBar.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/commons/RichTooltip.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/ux3/NavigationBar.js"/>
+      <module name="sap/ui/ux3/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/VerticalNavigationBarRenderer.js" size="4432" compressedSize="2367" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/ux3/NavigationBarRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ViewRepeater.js" size="18257" compressedSize="9207" excludeFromAllInOne="true">
+    <description>Provides control sap.suite.ui.commons.ViewRepeater.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/RowRepeater.js"/>
+      <module name="sap/ui/commons/SearchField.js"/>
+      <module name="sap/ui/commons/SegmentedButton.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/ViewRepeaterRenderer.js" size="3780" compressedSize="1725" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/commons/RowRepeaterRenderer.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/designtime/library-preload.designtime.js" size="1783">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/suite/ui/commons/Timeline.designtime.js"/>
+    </includes>
+  </module>
+  <module name="sap/suite/ui/commons/flexibility/Timeline.flexibility.js" size="1173" compressedSize="778">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/flexibility/changeHandler/PropertyChangeMapper.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/flexibility/changeHandler/PropertyChangeMapper.js" size="3358" compressedSize="994">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/fl/changeHandler/PropertyChange.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/library-h2-preload.js" size="58053">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/base/assert.js"/>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/base/security/sanitizeHTML.js"/>
+      <module name="sap/base/util/uid.js"/>
+      <module name="sap/m/ActionSheet.js"/>
+      <module name="sap/m/ActionSheetRenderer.js"/>
+      <module name="sap/m/Bar.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonRenderer.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/ComboBox.js"/>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/FeedContent.js"/>
+      <module name="sap/m/FeedContentRenderer.js"/>
+      <module name="sap/m/FlexAlignItems.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexDirection.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/FlexRendertype.js"/>
+      <module name="sap/m/GenericTile.js"/>
+      <module name="sap/m/GenericTileRenderer.js"/>
+      <module name="sap/m/GroupHeaderListItem.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/IconTabBar.js"/>
+      <module name="sap/m/IconTabFilter.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/InputType.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListItemBase.js"/>
+      <module name="sap/m/ListItemBaseRenderer.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/ListType.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageStrip.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/NewsContent.js"/>
+      <module name="sap/m/NewsContentRenderer.js"/>
+      <module name="sap/m/NumericContent.js"/>
+      <module name="sap/m/NumericContentRenderer.js"/>
+      <module name="sap/m/ObjectAttribute.js"/>
+      <module name="sap/m/ObjectHeader.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js"/>
+      <module name="sap/m/OverflowToolbarPriority.js"/>
+      <module name="sap/m/OverflowToolbarToggleButton.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/PanelRenderer.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/RadioButtonGroup.js"/>
+      <module name="sap/m/RangeSlider.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ResponsiveScale.js"/>
+      <module name="sap/m/ScrollContainer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SelectDialog.js"/>
+      <module name="sap/m/SelectionDetails.js"/>
+      <module name="sap/m/SelectionDetailsItem.js"/>
+      <module name="sap/m/SelectionDetailsItemLine.js"/>
+      <module name="sap/m/SlideTile.js"/>
+      <module name="sap/m/SlideTileRenderer.js"/>
+      <module name="sap/m/SliderTooltip.js"/>
+      <module name="sap/m/SliderTooltipBase.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StepInput.js"/>
+      <module name="sap/m/SuggestionItem.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/TileContent.js"/>
+      <module name="sap/m/TileContentRenderer.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/m/ViewSettingsCustomItem.js"/>
+      <module name="sap/m/ViewSettingsDialog.js"/>
+      <module name="sap/m/ViewSettingsFilterItem.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowZoomLevel.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Orientation.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartItem.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartLabel.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartPoint.js"/>
+      <module name="sap/suite/ui/microchart/AreaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/BulletMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartLabel.js"/>
+      <module name="sap/suite/ui/microchart/ColumnMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartData.js"/>
+      <module name="sap/suite/ui/microchart/ComparisonMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/DeltaMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChart.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartItem.js"/>
+      <module name="sap/suite/ui/microchart/HarveyBallMicroChartRenderer.js"/>
+      <module name="sap/suite/ui/microchart/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/Event.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/base/ObjectPool.js"/>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/Carousel.js"/>
+      <module name="sap/ui/commons/FileUploader.js"/>
+      <module name="sap/ui/commons/InPlaceEdit.js"/>
+      <module name="sap/ui/commons/Label.js"/>
+      <module name="sap/ui/commons/Link.js"/>
+      <module name="sap/ui/commons/ListBox.js"/>
+      <module name="sap/ui/commons/MenuButton.js"/>
+      <module name="sap/ui/commons/MenuItem.js"/>
+      <module name="sap/ui/commons/MessageBox.js"/>
+      <module name="sap/ui/commons/RangeSlider.js"/>
+      <module name="sap/ui/commons/RangeSliderRenderer.js"/>
+      <module name="sap/ui/commons/RichTooltip.js"/>
+      <module name="sap/ui/commons/RowRepeater.js"/>
+      <module name="sap/ui/commons/RowRepeaterRenderer.js"/>
+      <module name="sap/ui/commons/SearchField.js"/>
+      <module name="sap/ui/commons/SegmentedButton.js"/>
+      <module name="sap/ui/commons/Slider.js"/>
+      <module name="sap/ui/commons/TextArea.js"/>
+      <module name="sap/ui/commons/TextField.js"/>
+      <module name="sap/ui/commons/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/commons/layout/VerticalLayout.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/comp/library.js"/>
+      <module name="sap/ui/comp/variants/VariantManagement.js"/>
+      <module name="sap/ui/core/CSSColor.js"/>
+      <module name="sap/ui/core/CSSSize.js"/>
+      <module name="sap/ui/core/Configuration.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/HTML.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/ListItem.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/TitleLevel.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/core/delegate/ScrollEnablement.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/dom/containsOrEquals.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="sap/ui/events/jquery/EventSimulation.js"/>
+      <module name="sap/ui/fl/changeHandler/PropertyChange.js"/>
+      <module name="sap/ui/layout/Grid.js"/>
+      <module name="sap/ui/layout/GridData.js"/>
+      <module name="sap/ui/layout/HorizontalLayout.js"/>
+      <module name="sap/ui/model/ClientListBinding.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FilterType.js"/>
+      <module name="sap/ui/model/SimpleType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/v4/ODataListBinding.js"/>
+      <module name="sap/ui/model/odata/v4/ODataModel.js"/>
+      <module name="sap/ui/model/type/Integer.js"/>
+      <module name="sap/ui/model/type/String.js"/>
+      <module name="sap/ui/model/xml/XMLModel.js"/>
+      <module name="sap/ui/performance/Measurement.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-core.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-selectable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-widget.js"/>
+      <module name="sap/ui/ux3/NavigationBar.js"/>
+      <module name="sap/ui/ux3/NavigationBarRenderer.js"/>
+      <module name="sap/ui/ux3/NavigationItem.js"/>
+      <module name="sap/ui/ux3/OverlayContainer.js"/>
+      <module name="sap/ui/ux3/ThingInspector.js"/>
+      <module name="sap/ui/ux3/ThingInspectorRenderer.js"/>
+      <module name="sap/ui/ux3/ThingViewer.js"/>
+      <module name="sap/ui/ux3/ThingViewerRenderer.js"/>
+      <module name="sap/ui/ux3/library.js"/>
+      <module name="sap/viz/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/manifest.json"/>
+      <module name="sap/suite/ui/commons/BulletChart.js"/>
+      <module name="sap/suite/ui/commons/BulletChartData.js"/>
+      <module name="sap/suite/ui/commons/BusinessCard.js"/>
+      <module name="sap/suite/ui/commons/BusinessCardRenderer.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilder.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderExpression.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderFunction.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderGroup.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderInput.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderItem.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderValidationResult.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderVariable.js"/>
+      <module name="sap/suite/ui/commons/ChartContainer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerContent.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerContentRenderer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerRenderer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerToolbarPlaceholder.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerToolbarPlaceholderRenderer.js"/>
+      <module name="sap/suite/ui/commons/ChartTile.js"/>
+      <module name="sap/suite/ui/commons/ChartTileRenderer.js"/>
+      <module name="sap/suite/ui/commons/ColumnData.js"/>
+      <module name="sap/suite/ui/commons/ColumnMicroChart.js"/>
+      <module name="sap/suite/ui/commons/ColumnMicroChartLabel.js"/>
+      <module name="sap/suite/ui/commons/ComparisonChart.js"/>
+      <module name="sap/suite/ui/commons/ComparisonData.js"/>
+      <module name="sap/suite/ui/commons/ControlProxy.js"/>
+      <module name="sap/suite/ui/commons/CountingNavigationItem.js"/>
+      <module name="sap/suite/ui/commons/DateRangeScroller.js"/>
+      <module name="sap/suite/ui/commons/DateRangeScrollerRenderer.js"/>
+      <module name="sap/suite/ui/commons/DateRangeSlider.js"/>
+      <module name="sap/suite/ui/commons/DateRangeSliderInternal.js"/>
+      <module name="sap/suite/ui/commons/DateRangeSliderInternalRenderer.js"/>
+      <module name="sap/suite/ui/commons/DateRangeSliderRenderer.js"/>
+      <module name="sap/suite/ui/commons/DeltaMicroChart.js"/>
+      <module name="sap/suite/ui/commons/DynamicContainer.js"/>
+      <module name="sap/suite/ui/commons/FacetOverview.js"/>
+      <module name="sap/suite/ui/commons/FacetOverviewRenderer.js"/>
+      <module name="sap/suite/ui/commons/FeedItem.js"/>
+      <module name="sap/suite/ui/commons/FeedItemHeader.js"/>
+      <module name="sap/suite/ui/commons/FeedItemHeaderRenderer.js"/>
+      <module name="sap/suite/ui/commons/FeedTile.js"/>
+      <module name="sap/suite/ui/commons/FeedTileRenderer.js"/>
+      <module name="sap/suite/ui/commons/GenericTile.js"/>
+      <module name="sap/suite/ui/commons/GenericTile2X2.js"/>
+      <module name="sap/suite/ui/commons/GenericTile2X2Renderer.js"/>
+      <module name="sap/suite/ui/commons/HarveyBallMicroChart.js"/>
+      <module name="sap/suite/ui/commons/HarveyBallMicroChartItem.js"/>
+      <module name="sap/suite/ui/commons/HeaderCell.js"/>
+      <module name="sap/suite/ui/commons/HeaderCellItem.js"/>
+      <module name="sap/suite/ui/commons/HeaderCellRenderer.js"/>
+      <module name="sap/suite/ui/commons/HeaderContainer.js"/>
+      <module name="sap/suite/ui/commons/HeaderContainerRenderer.js"/>
+      <module name="sap/suite/ui/commons/InfoTile.js"/>
+      <module name="sap/suite/ui/commons/InfoTileRenderer.js"/>
+      <module name="sap/suite/ui/commons/JamContent.js"/>
+      <module name="sap/suite/ui/commons/KpiTile.js"/>
+      <module name="sap/suite/ui/commons/KpiTileRenderer.js"/>
+      <module name="sap/suite/ui/commons/LaunchTile.js"/>
+      <module name="sap/suite/ui/commons/LaunchTileRenderer.js"/>
+      <module name="sap/suite/ui/commons/LinkActionSheet.js"/>
+      <module name="sap/suite/ui/commons/LinkActionSheetRenderer.js"/>
+      <module name="sap/suite/ui/commons/MicroAreaChart.js"/>
+      <module name="sap/suite/ui/commons/MicroAreaChartItem.js"/>
+      <module name="sap/suite/ui/commons/MicroAreaChartLabel.js"/>
+      <module name="sap/suite/ui/commons/MicroAreaChartPoint.js"/>
+      <module name="sap/suite/ui/commons/MicroProcessFlow.js"/>
+      <module name="sap/suite/ui/commons/MicroProcessFlowItem.js"/>
+      <module name="sap/suite/ui/commons/MonitoringContent.js"/>
+      <module name="sap/suite/ui/commons/MonitoringContentRenderer.js"/>
+      <module name="sap/suite/ui/commons/MonitoringTile.js"/>
+      <module name="sap/suite/ui/commons/MonitoringTileRenderer.js"/>
+      <module name="sap/suite/ui/commons/NewsContent.js"/>
+      <module name="sap/suite/ui/commons/NoteTaker.js"/>
+      <module name="sap/suite/ui/commons/NoteTakerCard.js"/>
+      <module name="sap/suite/ui/commons/NoteTakerCardRenderer.js"/>
+      <module name="sap/suite/ui/commons/NoteTakerFeeder.js"/>
+      <module name="sap/suite/ui/commons/NoteTakerFeederRenderer.js"/>
+      <module name="sap/suite/ui/commons/NoteTakerRenderer.js"/>
+      <module name="sap/suite/ui/commons/NumericContent.js"/>
+      <module name="sap/suite/ui/commons/NumericTile.js"/>
+      <module name="sap/suite/ui/commons/NumericTileRenderer.js"/>
+      <module name="sap/suite/ui/commons/PictureZoomIn.js"/>
+      <module name="sap/suite/ui/commons/PictureZoomInRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlow.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnection.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionLabel.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionLabelRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeader.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeaderRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowNode.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowNodeRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowRenderer.js"/>
+      <module name="sap/suite/ui/commons/RepeaterViewConfiguration.js"/>
+      <module name="sap/suite/ui/commons/RepeaterViewConfigurationRenderer.js"/>
+      <module name="sap/suite/ui/commons/SplitButton.js"/>
+      <module name="sap/suite/ui/commons/SplitButtonRenderer.js"/>
+      <module name="sap/suite/ui/commons/TargetFilter.js"/>
+      <module name="sap/suite/ui/commons/TargetFilterColumn.js"/>
+      <module name="sap/suite/ui/commons/TargetFilterMeasureColumn.js"/>
+      <module name="sap/suite/ui/commons/TargetFilterRenderer.js"/>
+      <module name="sap/suite/ui/commons/ThingCollection.js"/>
+      <module name="sap/suite/ui/commons/ThingCollectionRenderer.js"/>
+      <module name="sap/suite/ui/commons/ThreePanelThingInspector.js"/>
+      <module name="sap/suite/ui/commons/ThreePanelThingViewer.js"/>
+      <module name="sap/suite/ui/commons/ThreePanelThingViewerRenderer.js"/>
+      <module name="sap/suite/ui/commons/TileContent.js"/>
+      <module name="sap/suite/ui/commons/TileContent2X2.js"/>
+      <module name="sap/suite/ui/commons/TileContent2X2Renderer.js"/>
+      <module name="sap/suite/ui/commons/Timeline.designtime.js"/>
+      <module name="sap/suite/ui/commons/Timeline.js"/>
+      <module name="sap/suite/ui/commons/TimelineFilterListItem.js"/>
+      <module name="sap/suite/ui/commons/TimelineItem.js"/>
+      <module name="sap/suite/ui/commons/TimelineItemRenderer.js"/>
+      <module name="sap/suite/ui/commons/TimelineNavigator.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderManager.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderManagerTimestamp.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderer.js"/>
+      <module name="sap/suite/ui/commons/UnifiedThingGroup.js"/>
+      <module name="sap/suite/ui/commons/UnifiedThingGroupRenderer.js"/>
+      <module name="sap/suite/ui/commons/UnifiedThingInspector.js"/>
+      <module name="sap/suite/ui/commons/UnifiedThingInspectorRenderer.js"/>
+      <module name="sap/suite/ui/commons/VerticalNavigationBar.js"/>
+      <module name="sap/suite/ui/commons/VerticalNavigationBarRenderer.js"/>
+      <module name="sap/suite/ui/commons/ViewRepeater.js"/>
+      <module name="sap/suite/ui/commons/ViewRepeaterRenderer.js"/>
+      <module name="sap/suite/ui/commons/flexibility/Timeline.flexibility.js"/>
+      <module name="sap/suite/ui/commons/flexibility/changeHandler/PropertyChangeMapper.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/ActionButton.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Coordinate.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/ElementAttribute.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/ElementBase.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Graph.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/GraphMap.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/GraphMapRenderer.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/GraphRenderer.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Group.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/KeyboardNavigator.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Line.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Node.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/NodeImage.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/NodeRenderer.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Status.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/SvgBase.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Tooltip.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Utils.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/D3ForceWrapper.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/ForceBasedLayout.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/ForceDirectedLayout.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/KlayWrapper.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayeredLayout.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutAlgorithm.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutTask.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/NoopLayout.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/SwimLaneChainLayout.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/TwoColumnsLayout.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/util/Dijkstra.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Circle.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/DiscreteThreshold.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/FillingOption.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/LibraryShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Path.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/PropertyThreshold.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Rectangle.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Shape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/ShapeGroup.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/StatusIndicator.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/StatusIndicatorRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/shapes/ShapeFactory.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/AnimationPropertiesResolver.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ProgressHandler.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ThemingUtil.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccount.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountGroup.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountItem.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountItemProperty.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountPanel.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountPanelRenderer.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountUtils.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/suite/ui/commons/util/FeedAggregator.js"/>
+      <module name="sap/suite/ui/commons/util/FeedItemUtils.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElementRenderer.js"/>
+      <module name="sap/suite/ui/commons/util/ManagedObjectRegister.js"/>
+      <module name="sap/suite/ui/commons/util/RenderUtils.js"/>
+      <module name="sap/suite/ui/commons/util/StringSliderTooltip.js"/>
+    </includes>
+  </module>
+  <module name="sap/suite/ui/commons/library-preload.js" size="486024">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/base/assert.js"/>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonRenderer.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/FlexAlignItems.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexDirection.js"/>
+      <module name="sap/m/FlexRendertype.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/InputType.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/ListType.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageStrip.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js"/>
+      <module name="sap/m/OverflowToolbarPriority.js"/>
+      <module name="sap/m/OverflowToolbarToggleButton.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/PanelRenderer.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/RadioButtonGroup.js"/>
+      <module name="sap/m/RangeSlider.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ResponsiveScale.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SelectionDetails.js"/>
+      <module name="sap/m/SelectionDetailsItem.js"/>
+      <module name="sap/m/SelectionDetailsItemLine.js"/>
+      <module name="sap/m/SliderTooltip.js"/>
+      <module name="sap/m/SliderTooltipBase.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StepInput.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/m/ViewSettingsCustomItem.js"/>
+      <module name="sap/m/ViewSettingsDialog.js"/>
+      <module name="sap/m/ViewSettingsFilterItem.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowZoomLevel.js"/>
+      <module name="sap/suite/ui/commons/VerticalNavigationBar.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/Event.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/CSSColor.js"/>
+      <module name="sap/ui/core/CSSSize.js"/>
+      <module name="sap/ui/core/Configuration.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/TitleLevel.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/core/delegate/ScrollEnablement.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="sap/ui/fl/changeHandler/PropertyChange.js"/>
+      <module name="sap/ui/model/ClientListBinding.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FilterType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/v4/ODataListBinding.js"/>
+      <module name="sap/ui/model/odata/v4/ODataModel.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-core.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-selectable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-widget.js"/>
+      <module name="sap/ui/ux3/ThingViewer.js"/>
+      <module name="sap/ui/ux3/ThingViewerRenderer.js"/>
+      <module name="sap/ui/ux3/library.js"/>
+      <module name="sap/viz/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/suite/ui/commons/CalculationBuilder.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderExpression.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderFunction.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderGroup.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderInput.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderItem.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderValidationResult.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderVariable.js"/>
+      <module name="sap/suite/ui/commons/ChartContainer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerContent.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerContentRenderer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerRenderer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerToolbarPlaceholder.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerToolbarPlaceholderRenderer.js"/>
+      <module name="sap/suite/ui/commons/ControlProxy.js"/>
+      <module name="sap/suite/ui/commons/MicroProcessFlow.js"/>
+      <module name="sap/suite/ui/commons/MicroProcessFlowItem.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlow.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnection.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionLabel.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionLabelRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeader.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeaderRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowNode.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowNodeRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowRenderer.js"/>
+      <module name="sap/suite/ui/commons/ThreePanelThingViewer.js"/>
+      <module name="sap/suite/ui/commons/ThreePanelThingViewerRenderer.js"/>
+      <module name="sap/suite/ui/commons/Timeline.js"/>
+      <module name="sap/suite/ui/commons/TimelineFilterListItem.js"/>
+      <module name="sap/suite/ui/commons/TimelineItem.js"/>
+      <module name="sap/suite/ui/commons/TimelineItemRenderer.js"/>
+      <module name="sap/suite/ui/commons/TimelineNavigator.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderManager.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderManagerTimestamp.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderer.js"/>
+      <module name="sap/suite/ui/commons/flexibility/Timeline.flexibility.js"/>
+      <module name="sap/suite/ui/commons/flexibility/changeHandler/PropertyChangeMapper.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/manifest.json"/>
+      <module name="sap/suite/ui/commons/networkgraph/util/Dijkstra.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Circle.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/DiscreteThreshold.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/FillingOption.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/LibraryShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Path.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/PropertyThreshold.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Rectangle.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Shape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/ShapeGroup.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/StatusIndicator.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/StatusIndicatorRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/shapes/ShapeFactory.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/AnimationPropertiesResolver.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ProgressHandler.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ThemingUtil.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccount.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountGroup.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountItem.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountItemProperty.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountPanel.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountPanelRenderer.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountUtils.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElementRenderer.js"/>
+      <module name="sap/suite/ui/commons/util/ManagedObjectRegister.js"/>
+      <module name="sap/suite/ui/commons/util/RenderUtils.js"/>
+      <module name="sap/suite/ui/commons/util/StringSliderTooltip.js"/>
+    </includes>
+  </module>
+  <module name="sap/suite/ui/commons/library-preload.json" size="0">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/base/assert.js"/>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonRenderer.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/DateTimePicker.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/FlexAlignItems.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexDirection.js"/>
+      <module name="sap/m/FlexRendertype.js"/>
+      <module name="sap/m/Image.js"/>
+      <module name="sap/m/Input.js"/>
+      <module name="sap/m/InputType.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/Link.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/ListMode.js"/>
+      <module name="sap/m/ListType.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/MessageBox.js"/>
+      <module name="sap/m/MessageStrip.js"/>
+      <module name="sap/m/MessageToast.js"/>
+      <module name="sap/m/NavContainer.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js"/>
+      <module name="sap/m/OverflowToolbarPriority.js"/>
+      <module name="sap/m/OverflowToolbarToggleButton.js"/>
+      <module name="sap/m/Page.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/PanelRenderer.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/RadioButton.js"/>
+      <module name="sap/m/RadioButtonGroup.js"/>
+      <module name="sap/m/RangeSlider.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/ResponsiveScale.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/Select.js"/>
+      <module name="sap/m/SelectionDetails.js"/>
+      <module name="sap/m/SelectionDetailsItem.js"/>
+      <module name="sap/m/SelectionDetailsItemLine.js"/>
+      <module name="sap/m/SliderTooltip.js"/>
+      <module name="sap/m/SliderTooltipBase.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StepInput.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/TextArea.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarDesign.js"/>
+      <module name="sap/m/ToolbarSeparator.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/m/ViewSettingsCustomItem.js"/>
+      <module name="sap/m/ViewSettingsDialog.js"/>
+      <module name="sap/m/ViewSettingsFilterItem.js"/>
+      <module name="sap/m/library-preload.json"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowZoomLevel.js"/>
+      <module name="sap/suite/ui/commons/VerticalNavigationBar.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/Event.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/commons/Button.js"/>
+      <module name="sap/ui/commons/library.js"/>
+      <module name="sap/ui/core/CSSColor.js"/>
+      <module name="sap/ui/core/CSSSize.js"/>
+      <module name="sap/ui/core/Configuration.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/InvisibleText.js"/>
+      <module name="sap/ui/core/Item.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/TextAlign.js"/>
+      <module name="sap/ui/core/TitleLevel.js"/>
+      <module name="sap/ui/core/ValueState.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/core/delegate/ScrollEnablement.js"/>
+      <module name="sap/ui/core/format/DateFormat.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="sap/ui/fl/changeHandler/PropertyChange.js"/>
+      <module name="sap/ui/model/ClientListBinding.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/FilterType.js"/>
+      <module name="sap/ui/model/Sorter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/odata/v4/ODataListBinding.js"/>
+      <module name="sap/ui/model/odata/v4/ODataModel.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-core.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-selectable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-widget.js"/>
+      <module name="sap/ui/ux3/ThingViewer.js"/>
+      <module name="sap/ui/ux3/ThingViewerRenderer.js"/>
+      <module name="sap/ui/ux3/library.js"/>
+      <module name="sap/viz/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/suite/ui/commons/CalculationBuilder.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderExpression.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderFunction.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderGroup.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderInput.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderItem.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderValidationResult.js"/>
+      <module name="sap/suite/ui/commons/CalculationBuilderVariable.js"/>
+      <module name="sap/suite/ui/commons/ChartContainer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerContent.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerContentRenderer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerRenderer.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerToolbarPlaceholder.js"/>
+      <module name="sap/suite/ui/commons/ChartContainerToolbarPlaceholderRenderer.js"/>
+      <module name="sap/suite/ui/commons/ControlProxy.js"/>
+      <module name="sap/suite/ui/commons/MicroProcessFlow.js"/>
+      <module name="sap/suite/ui/commons/MicroProcessFlowItem.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlow.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnection.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionLabel.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionLabelRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowConnectionRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeader.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowLaneHeaderRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowNode.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowNodeRenderer.js"/>
+      <module name="sap/suite/ui/commons/ProcessFlowRenderer.js"/>
+      <module name="sap/suite/ui/commons/ThreePanelThingViewer.js"/>
+      <module name="sap/suite/ui/commons/ThreePanelThingViewerRenderer.js"/>
+      <module name="sap/suite/ui/commons/Timeline.js"/>
+      <module name="sap/suite/ui/commons/TimelineFilterListItem.js"/>
+      <module name="sap/suite/ui/commons/TimelineItem.js"/>
+      <module name="sap/suite/ui/commons/TimelineItemRenderer.js"/>
+      <module name="sap/suite/ui/commons/TimelineNavigator.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderManager.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderManagerTimestamp.js"/>
+      <module name="sap/suite/ui/commons/TimelineRenderer.js"/>
+      <module name="sap/suite/ui/commons/flexibility/Timeline.flexibility.js"/>
+      <module name="sap/suite/ui/commons/flexibility/changeHandler/PropertyChangeMapper.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/manifest.json"/>
+      <module name="sap/suite/ui/commons/networkgraph/util/Dijkstra.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Circle.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/DiscreteThreshold.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/FillingOption.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/LibraryShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Path.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/PropertyThreshold.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Rectangle.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Shape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/ShapeGroup.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/StatusIndicator.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/StatusIndicatorRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/shapes/ShapeFactory.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/AnimationPropertiesResolver.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ProgressHandler.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ThemingUtil.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccount.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountGroup.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountItem.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountItemProperty.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountPanel.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountPanelRenderer.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountUtils.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElementRenderer.js"/>
+      <module name="sap/suite/ui/commons/util/ManagedObjectRegister.js"/>
+      <module name="sap/suite/ui/commons/util/RenderUtils.js"/>
+      <module name="sap/suite/ui/commons/util/StringSliderTooltip.js"/>
+    </includes>
+  </module>
+  <module name="sap/suite/ui/commons/library.js" size="44492" compressedSize="12974">
+    <description>Initialization Code and shared classes of library sap.suite.ui.commons.</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/manifest.json" size="9279">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle.properties" size="27461">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_ar.properties" size="45728">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_bg.properties" size="52489">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_ca.properties" size="28733">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_cs.properties" size="30382">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_da.properties" size="27927">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_de.properties" size="28579">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_el.properties" size="52478">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_en.properties" size="27407">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_en_US_sappsd.properties" size="58632">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_en_US_saptrc.properties" size="33389">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_es.properties" size="28761">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_et.properties" size="28474">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_fi.properties" size="29352">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_fr.properties" size="29260">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_hi.properties" size="47855">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_hr.properties" size="28585">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_hu.properties" size="31090">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_it.properties" size="28274">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_iw.properties" size="42152">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_ja.properties" size="35320">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_kk.properties" size="51095">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_ko.properties" size="33952">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_lt.properties" size="29972">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_lv.properties" size="30387">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_ms.properties" size="27672">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_nl.properties" size="27987">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_no.properties" size="27946">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_pl.properties" size="29504">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_pt.properties" size="28983">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_ro.properties" size="29929">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_ru.properties" size="51296">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_sh.properties" size="28628">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_sk.properties" size="30342">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_sl.properties" size="28307">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_sv.properties" size="28543">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_th.properties" size="48681">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_tr.properties" size="30370">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_uk.properties" size="51508">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_vi.properties" size="35796">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_zh_CN.properties" size="31136">
+  </module>
+  <module name="sap/suite/ui/commons/messagebundle_zh_TW.properties" size="31222">
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/ActionButton.js" size="1966" compressedSize="934" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/Coordinate.js" size="1125" compressedSize="562" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/ElementAttribute.js" size="4615" compressedSize="2526" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/ElementBase.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/ElementBase.js" size="13269" compressedSize="6872" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/SvgBase.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/Graph.js" size="79631" compressedSize="41245" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/base/util/uid.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/OverflowToolbarButton.js"/>
+      <module name="sap/m/OverflowToolbarLayoutData.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SuggestionItem.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/GraphRenderer.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Group.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/KeyboardNavigator.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Line.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Node.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/SvgBase.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Tooltip.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Utils.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayeredLayout.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/CustomData.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/performance/Measurement.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/GraphMap.js" size="14174" compressedSize="7789" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/networkgraph/GraphMapRenderer.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/SvgBase.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/GraphMapRenderer.js" size="1208" compressedSize="823" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/GraphRenderer.js" size="5261" compressedSize="3675" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/Group.js" size="21316" compressedSize="12050" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/ElementBase.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/KeyboardNavigator.js" size="18364" compressedSize="9805" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Group.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Line.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Node.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/dom/containsOrEquals.js"/>
+      <module name="sap/ui/events/KeyCodes.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/Line.js" size="35803" compressedSize="16997" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Coordinate.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/ElementBase.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Utils.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/Node.js" size="94670" compressedSize="49704" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/base/security/sanitizeHTML.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/ElementAttribute.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/ElementBase.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/NodeRenderer.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/NodeImage.js" size="1025" compressedSize="490" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/NodeRenderer.js" size="367" compressedSize="272" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/Status.js" size="5120" compressedSize="1650" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/SvgBase.js" size="11938" compressedSize="5784" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/Tooltip.js" size="11654" compressedSize="7102" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/CustomListItem.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/HBox.js"/>
+      <module name="sap/m/IconTabBar.js"/>
+      <module name="sap/m/IconTabFilter.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/OverflowToolbar.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/PlacementType.js"/>
+      <module name="sap/m/Popover.js"/>
+      <module name="sap/m/ResponsivePopover.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Group.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Line.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Node.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/SvgBase.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/thirdparty/jquery.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/Utils.js" size="1406" compressedSize="437" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/D3ForceWrapper.js" size="1329" compressedSize="726" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/ForceBasedLayout.js" size="4129" compressedSize="1706" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/D3ForceWrapper.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutAlgorithm.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutTask.js"/>
+      <module name="sap/ui/performance/Measurement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/ForceDirectedLayout.js" size="7611" compressedSize="3187" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutAlgorithm.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutTask.js"/>
+      <module name="sap/ui/performance/Measurement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js" size="20155" compressedSize="6695" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/KlayWrapper.js" size="2601" compressedSize="1193" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/ObjectPool.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/LayeredLayout.js" size="11796" compressedSize="5939" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/KlayWrapper.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutAlgorithm.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutTask.js"/>
+      <module name="sap/ui/performance/Measurement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/LayoutAlgorithm.js" size="11414" compressedSize="5988" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/LayoutTask.js" size="2364" compressedSize="705" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/NoopLayout.js" size="1767" compressedSize="645" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutAlgorithm.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutTask.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/SwimLaneChainLayout.js" size="29434" compressedSize="13465" excludeFromAllInOne="true">
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Orientation.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutAlgorithm.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutTask.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/layout/TwoColumnsLayout.js" size="17936" compressedSize="9189" excludeFromAllInOne="true">
+    <requires>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/Orientation.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/Geometry.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutAlgorithm.js"/>
+      <module name="sap/suite/ui/commons/networkgraph/layout/LayoutTask.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/networkgraph/util/Dijkstra.js" size="4780" compressedSize="1520">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/Circle.js" size="2390" compressedSize="915">
+    <description>Provides control sap.suite.ui.commons.statusindicator.Circle.</description>
+    <requires>
+      <module name="sap/suite/ui/commons/statusindicator/Shape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/CustomShape.js" size="13831" compressedSize="5836">
+    <description>Provides control sap.suite.ui.commons.statusindicator.CustomShape.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Circle.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Path.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Rectangle.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Shape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/ShapeGroup.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/CustomShapeRenderer.js" size="2496" compressedSize="1050">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/DiscreteThreshold.js" size="1602" compressedSize="427">
+    <description>Provides control sap.suite.ui.commons.StatusIndicator.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/FillingOption.js" size="3837" compressedSize="615">
+    <description>Provides control sap.suite.ui.commons.statusindicator.FillingOption.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/LibraryShape.js" size="1933" compressedSize="731">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/shapes/ShapeFactory.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/Path.js" size="2091" compressedSize="822">
+    <description>Provides control sap.suite.ui.commons.statusindicator.Path.</description>
+    <requires>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/PropertyThreshold.js" size="2044" compressedSize="697">
+    <description>Provides control sap.suite.ui.commons.statusindicator.Threshold.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ThemingUtil.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/Rectangle.js" size="2658" compressedSize="929">
+    <requires>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/SimpleShapeRenderer.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/Shape.js" size="19684" compressedSize="8132">
+    <description>Provides control sap.suite.ui.commons.statusindicator.Shape.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ThemingUtil.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/ShapeGroup.js" size="7848" compressedSize="3209">
+    <description>Provides control sap.suite.ui.commons.statusindicator.ShapeGroup.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ProgressHandler.js"/>
+      <module name="sap/ui/core/Configuration.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/SimpleShape.js" size="4319" compressedSize="1905">
+    <description>Provides control sap.suite.ui.commons.statusindicator.SimpleShape.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Shape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ThemingUtil.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/SimpleShapeRenderer.js" size="4401" compressedSize="1893">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/StatusIndicator.js" size="15421" compressedSize="7115">
+    <description>Provides control sap.suite.ui.commons.StatusIndicator.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/AnimationPropertiesResolver.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/util/ThemingUtil.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/StatusIndicatorRenderer.js" size="6769" compressedSize="3237">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElement.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/shapes/ShapeFactory.js" size="1442" compressedSize="718">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/util/AnimationPropertiesResolver.js" size="5546" compressedSize="2779">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/CustomShape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/Shape.js"/>
+      <module name="sap/suite/ui/commons/statusindicator/ShapeGroup.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/util/ProgressHandler.js" size="1496" compressedSize="1008">
+    <description>globals Promise:true</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/statusindicator/util/ThemingUtil.js" size="766" compressedSize="477">
+    <requires>
+      <module name="sap/m/ValueCSSColor.js"/>
+      <module name="sap/m/ValueColor.js"/>
+      <module name="sap/ui/core/CSSColor.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/taccount/TAccount.js" size="12707" compressedSize="7645">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountGroup.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountUtils.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-core.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-draggable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-droppable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-mouse.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-selectable.js"/>
+      <module name="sap/ui/thirdparty/jqueryui/jquery-ui-widget.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/taccount/TAccountGroup.js" size="10944" compressedSize="6774">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountPanel.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountUtils.js"/>
+      <module name="sap/ui/core/Configuration.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/delegate/ItemNavigation.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/taccount/TAccountItem.js" size="7235" compressedSize="3727">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountGroup.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountPanel.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountUtils.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/library.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/taccount/TAccountItemProperty.js" size="2636" compressedSize="1071">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/taccount/TAccountPanel.js" size="17917" compressedSize="8883">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/security/encodeXML.js"/>
+      <module name="sap/m/Button.js"/>
+      <module name="sap/m/ButtonType.js"/>
+      <module name="sap/m/CheckBox.js"/>
+      <module name="sap/m/Dialog.js"/>
+      <module name="sap/m/FlexBox.js"/>
+      <module name="sap/m/Label.js"/>
+      <module name="sap/m/List.js"/>
+      <module name="sap/m/Panel.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/SegmentedButton.js"/>
+      <module name="sap/m/SegmentedButtonItem.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/suite/ui/commons/library.js"/>
+      <module name="sap/suite/ui/commons/taccount/TAccountUtils.js"/>
+      <module name="sap/ui/core/Configuration.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="sap/ui/core/theming/Parameters.js"/>
+      <module name="sap/ui/model/Filter.js"/>
+      <module name="sap/ui/model/FilterOperator.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/taccount/TAccountPanelRenderer.js" size="1392" compressedSize="836">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/PanelRenderer.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/taccount/TAccountUtils.js" size="1179" compressedSize="560">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/core/Core.js"/>
+      <module name="sap/ui/core/format/NumberFormat.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/util/DateUtils.js" size="10941" compressedSize="3418" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/util/FeedAggregator.js" size="4411" compressedSize="1466" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/model/xml/XMLModel.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/util/FeedItemUtils.js" size="2382" compressedSize="1034" excludeFromAllInOne="true">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/suite/ui/commons/util/DateUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/util/HtmlElement.js" size="5637" compressedSize="2489">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/base/assert.js"/>
+      <module name="sap/suite/ui/commons/util/HtmlElementRenderer.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/util/HtmlElementRenderer.js" size="3007" compressedSize="1374">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/util/ManagedObjectRegister.js" size="4842" compressedSize="1684">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/base/assert.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/util/RenderUtils.js" size="2088" compressedSize="957">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/suite/ui/commons/util/StringSliderTooltip.js" size="2193" compressedSize="965">
+    <description>! &#xA;		SAP UI development toolkit for HTML5 (SAPUI5)&#xA;		(c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/SliderTooltipBase.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+</library>

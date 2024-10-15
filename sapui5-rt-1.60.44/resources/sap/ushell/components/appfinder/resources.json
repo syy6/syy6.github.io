@@ -1,0 +1,389 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "AppFinder-dbg.controller.js",
+			"module": "sap/ushell/components/appfinder/AppFinder.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/CatalogsManager.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui5service/ShellUIService.js"
+			]
+		},
+		{
+			"name": "AppFinder-dbg.view.js",
+			"module": "sap/ushell/components/appfinder/AppFinder.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "AppFinder.controller.js",
+			"module": "sap/ushell/components/appfinder/AppFinder.controller.js",
+			"required": [
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/CatalogsManager.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui5service/ShellUIService.js"
+			]
+		},
+		{
+			"name": "AppFinder.view.js",
+			"module": "sap/ushell/components/appfinder/AppFinder.view.js"
+		},
+		{
+			"name": "Catalog-dbg.controller.js",
+			"module": "sap/ushell/components/appfinder/Catalog.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/components/_HomepageManager/PagingManager.js",
+				"sap/ushell/utils/WindowUtils.js"
+			]
+		},
+		{
+			"name": "Catalog-dbg.view.js",
+			"module": "sap/ushell/components/appfinder/Catalog.view.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/HTML.js",
+				"sap/ushell/ui/appfinder/AppBox.js",
+				"sap/ushell/ui/appfinder/PinButton.js",
+				"sap/ushell/ui/launchpad/CatalogEntryContainer.js",
+				"sap/ushell/ui/launchpad/CatalogsContainer.js",
+				"sap/ushell/ui/launchpad/Panel.js",
+				"sap/ushell/ui/launchpad/Tile.js"
+			]
+		},
+		{
+			"name": "Catalog.controller.js",
+			"module": "sap/ushell/components/appfinder/Catalog.controller.js",
+			"required": [
+				"sap/ushell/components/_HomepageManager/PagingManager.js",
+				"sap/ushell/utils/WindowUtils.js"
+			]
+		},
+		{
+			"name": "Catalog.view.js",
+			"module": "sap/ushell/components/appfinder/Catalog.view.js",
+			"required": [
+				"sap/ui/core/HTML.js",
+				"sap/ushell/ui/appfinder/AppBox.js",
+				"sap/ushell/ui/appfinder/PinButton.js",
+				"sap/ushell/ui/launchpad/CatalogEntryContainer.js",
+				"sap/ushell/ui/launchpad/CatalogsContainer.js",
+				"sap/ushell/ui/launchpad/Panel.js",
+				"sap/ushell/ui/launchpad/Tile.js"
+			]
+		},
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/components/appfinder/Component.js",
+			"isDebug": true,
+			"required": [
+				"sap/m/routing/Router.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/CatalogsManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload-dbg.js",
+			"module": "Component-h2-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/m/routing/Router.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/odata/ODataUtils.js",
+				"sap/ui/thirdparty/datajs.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/CatalogsManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/components/_HomepageManager/PagingManager.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/appfinder/AppBox.js",
+				"sap/ushell/ui/appfinder/PinButton.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/CatalogEntryContainer.js",
+				"sap/ushell/ui/launchpad/CatalogsContainer.js",
+				"sap/ushell/ui/launchpad/Panel.js",
+				"sap/ushell/ui/launchpad/Tile.js",
+				"sap/ushell/ui5service/ShellUIService.js",
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"included": [
+				"sap/ushell/components/appfinder/AppFinder.controller.js",
+				"sap/ushell/components/appfinder/AppFinder.view.js",
+				"sap/ushell/components/appfinder/Catalog.controller.js",
+				"sap/ushell/components/appfinder/Catalog.view.js",
+				"sap/ushell/components/appfinder/Component.js",
+				"sap/ushell/components/appfinder/EasyAccess.controller.js",
+				"sap/ushell/components/appfinder/EasyAccess.view.js",
+				"sap/ushell/components/appfinder/GroupListPopover.controller.js",
+				"sap/ushell/components/appfinder/GroupListPopover.view.js",
+				"sap/ushell/components/appfinder/HierarchyApps.controller.js",
+				"sap/ushell/components/appfinder/HierarchyApps.view.js",
+				"sap/ushell/components/appfinder/HierarchyFolders.controller.js",
+				"sap/ushell/components/appfinder/HierarchyFolders.view.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "Component-h2-preload.js",
+			"merged": true,
+			"required": [
+				"sap/m/routing/Router.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/odata/ODataUtils.js",
+				"sap/ui/thirdparty/datajs.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/CatalogsManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/components/_HomepageManager/PagingManager.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/appfinder/AppBox.js",
+				"sap/ushell/ui/appfinder/PinButton.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/CatalogEntryContainer.js",
+				"sap/ushell/ui/launchpad/CatalogsContainer.js",
+				"sap/ushell/ui/launchpad/Panel.js",
+				"sap/ushell/ui/launchpad/Tile.js",
+				"sap/ushell/ui5service/ShellUIService.js",
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"included": [
+				"sap/ushell/components/appfinder/AppFinder.controller.js",
+				"sap/ushell/components/appfinder/AppFinder.view.js",
+				"sap/ushell/components/appfinder/Catalog.controller.js",
+				"sap/ushell/components/appfinder/Catalog.view.js",
+				"sap/ushell/components/appfinder/Component.js",
+				"sap/ushell/components/appfinder/EasyAccess.controller.js",
+				"sap/ushell/components/appfinder/EasyAccess.view.js",
+				"sap/ushell/components/appfinder/GroupListPopover.controller.js",
+				"sap/ushell/components/appfinder/GroupListPopover.view.js",
+				"sap/ushell/components/appfinder/HierarchyApps.controller.js",
+				"sap/ushell/components/appfinder/HierarchyApps.view.js",
+				"sap/ushell/components/appfinder/HierarchyFolders.controller.js",
+				"sap/ushell/components/appfinder/HierarchyFolders.view.js"
+			]
+		},
+		{
+			"name": "Component-preload-dbg.js",
+			"module": "Component-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"sap/m/routing/Router.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/odata/ODataUtils.js",
+				"sap/ui/thirdparty/datajs.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/CatalogsManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/components/_HomepageManager/PagingManager.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/appfinder/AppBox.js",
+				"sap/ushell/ui/appfinder/PinButton.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/CatalogEntryContainer.js",
+				"sap/ushell/ui/launchpad/CatalogsContainer.js",
+				"sap/ushell/ui/launchpad/Panel.js",
+				"sap/ushell/ui/launchpad/Tile.js",
+				"sap/ushell/ui5service/ShellUIService.js",
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"included": [
+				"sap/ushell/components/appfinder/AppFinder.controller.js",
+				"sap/ushell/components/appfinder/AppFinder.view.js",
+				"sap/ushell/components/appfinder/Catalog.controller.js",
+				"sap/ushell/components/appfinder/Catalog.view.js",
+				"sap/ushell/components/appfinder/Component.js",
+				"sap/ushell/components/appfinder/EasyAccess.controller.js",
+				"sap/ushell/components/appfinder/EasyAccess.view.js",
+				"sap/ushell/components/appfinder/GroupListPopover.controller.js",
+				"sap/ushell/components/appfinder/GroupListPopover.view.js",
+				"sap/ushell/components/appfinder/HierarchyApps.controller.js",
+				"sap/ushell/components/appfinder/HierarchyApps.view.js",
+				"sap/ushell/components/appfinder/HierarchyFolders.controller.js",
+				"sap/ushell/components/appfinder/HierarchyFolders.view.js"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "Component-preload.js",
+			"merged": true,
+			"required": [
+				"sap/m/routing/Router.js",
+				"sap/ui/core/HTML.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/model/odata/ODataUtils.js",
+				"sap/ui/thirdparty/datajs.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/CatalogsManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/components/_HomepageManager/PagingManager.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/appfinder/AppBox.js",
+				"sap/ushell/ui/appfinder/PinButton.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/CatalogEntryContainer.js",
+				"sap/ushell/ui/launchpad/CatalogsContainer.js",
+				"sap/ushell/ui/launchpad/Panel.js",
+				"sap/ushell/ui/launchpad/Tile.js",
+				"sap/ushell/ui5service/ShellUIService.js",
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"included": [
+				"sap/ushell/components/appfinder/AppFinder.controller.js",
+				"sap/ushell/components/appfinder/AppFinder.view.js",
+				"sap/ushell/components/appfinder/Catalog.controller.js",
+				"sap/ushell/components/appfinder/Catalog.view.js",
+				"sap/ushell/components/appfinder/Component.js",
+				"sap/ushell/components/appfinder/EasyAccess.controller.js",
+				"sap/ushell/components/appfinder/EasyAccess.view.js",
+				"sap/ushell/components/appfinder/GroupListPopover.controller.js",
+				"sap/ushell/components/appfinder/GroupListPopover.view.js",
+				"sap/ushell/components/appfinder/HierarchyApps.controller.js",
+				"sap/ushell/components/appfinder/HierarchyApps.view.js",
+				"sap/ushell/components/appfinder/HierarchyFolders.controller.js",
+				"sap/ushell/components/appfinder/HierarchyFolders.view.js"
+			]
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/components/appfinder/Component.js",
+			"required": [
+				"sap/m/routing/Router.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/CatalogsManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "EasyAccess-dbg.controller.js",
+			"module": "sap/ushell/components/appfinder/EasyAccess.controller.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/model/odata/ODataUtils.js",
+				"sap/ui/thirdparty/datajs.js"
+			]
+		},
+		{
+			"name": "EasyAccess-dbg.view.js",
+			"module": "sap/ushell/components/appfinder/EasyAccess.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "EasyAccess.controller.js",
+			"module": "sap/ushell/components/appfinder/EasyAccess.controller.js",
+			"required": [
+				"sap/ui/model/odata/ODataUtils.js",
+				"sap/ui/thirdparty/datajs.js"
+			]
+		},
+		{
+			"name": "EasyAccess.view.js",
+			"module": "sap/ushell/components/appfinder/EasyAccess.view.js"
+		},
+		{
+			"name": "GroupListPopover-dbg.controller.js",
+			"module": "sap/ushell/components/appfinder/GroupListPopover.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "GroupListPopover-dbg.view.js",
+			"module": "sap/ushell/components/appfinder/GroupListPopover.view.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/Config.js"
+			]
+		},
+		{
+			"name": "GroupListPopover.controller.js",
+			"module": "sap/ushell/components/appfinder/GroupListPopover.controller.js"
+		},
+		{
+			"name": "GroupListPopover.view.js",
+			"module": "sap/ushell/components/appfinder/GroupListPopover.view.js",
+			"required": [
+				"sap/ushell/Config.js"
+			]
+		},
+		{
+			"name": "HierarchyApps-dbg.controller.js",
+			"module": "sap/ushell/components/appfinder/HierarchyApps.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "HierarchyApps-dbg.view.js",
+			"module": "sap/ushell/components/appfinder/HierarchyApps.view.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/ui/appfinder/AppBox.js",
+				"sap/ushell/ui/appfinder/PinButton.js"
+			]
+		},
+		{
+			"name": "HierarchyApps.controller.js",
+			"module": "sap/ushell/components/appfinder/HierarchyApps.controller.js"
+		},
+		{
+			"name": "HierarchyApps.view.js",
+			"module": "sap/ushell/components/appfinder/HierarchyApps.view.js",
+			"required": [
+				"sap/ushell/ui/appfinder/AppBox.js",
+				"sap/ushell/ui/appfinder/PinButton.js"
+			]
+		},
+		{
+			"name": "HierarchyFolders-dbg.controller.js",
+			"module": "sap/ushell/components/appfinder/HierarchyFolders.controller.js",
+			"isDebug": true
+		},
+		{
+			"name": "HierarchyFolders-dbg.view.js",
+			"module": "sap/ushell/components/appfinder/HierarchyFolders.view.js",
+			"isDebug": true
+		},
+		{
+			"name": "HierarchyFolders.controller.js",
+			"module": "sap/ushell/components/appfinder/HierarchyFolders.controller.js"
+		},
+		{
+			"name": "HierarchyFolders.view.js",
+			"module": "sap/ushell/components/appfinder/HierarchyFolders.view.js"
+		},
+		{
+			"name": "resources.json"
+		}
+	]
+}

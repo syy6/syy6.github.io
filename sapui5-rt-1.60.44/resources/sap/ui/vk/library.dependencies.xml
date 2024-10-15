@@ -1,0 +1,2216 @@
+<?xml version="1.0" ?>
+<library  version="2.0" name="sap.ui.vk">
+  <module name="sap/ui/vk/BaseNodeProxy.js" size="3137" compressedSize="291">
+    <description>Provides the BaseNodeProxy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Camera.js" size="1381" compressedSize="493">
+    <description>Provides the Camera class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ContainerBase.js" size="23076" compressedSize="11844">
+    <description>Provides control sap.ui.vk.ContainerBase.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/thirdparty/URI.js" conditional="true"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ContainerBaseRenderer.js" size="2095" compressedSize="1001">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ContainerContent.js" size="1824" compressedSize="670">
+    <description>Provides control sap.ui.vk.ContainerContent.</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ContainerContentRenderer.js" size="862" compressedSize="246">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ContentConnector.js" size="39743" compressedSize="11933" dynamicDependencies="true">
+    <description>Provides object sap.ui.vk.ContentConnector.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/vk/Core.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ContentManager.js" size="5852" compressedSize="1193">
+    <description>Provides object sap.ui.vk.ContentManager.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ContentResource.js" size="6912" compressedSize="1550">
+    <description>Provides class sap.ui.vk.ContentResource.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Core.js" size="2516" compressedSize="881">
+    <description>Provides the Core class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/DownloadManager.js" size="10131" compressedSize="4285">
+    <description>Provides the DownloadManager class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/DvlException.js" size="783" compressedSize="314">
+    <description>Provides an exception class for DVL errors.</description>
+    <requires>
+      <module name="sap/ui/base/Exception.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/FlexibleControl.js" size="2003" compressedSize="784">
+    <description>Provides control sap.ui.vk.FlexibleControl.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/EnabledPropagator.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/FlexibleControlLayoutData.js" size="2151" compressedSize="644">
+    <description>Provides control sap.ui.vk.FlexibleControlLayoutData.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/LayoutData.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/FlexibleControlRenderer.js" size="2615" compressedSize="1213">
+    <description>Provides default renderer for control sap.ui.vk.FlexibleControl</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ImageContentManager.js" size="7198" compressedSize="3409">
+    <description>Provides object sap.ui.vk.ImageContentManager.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/ContentManager.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/LayerProxy.js" size="2374" compressedSize="288">
+    <description>Provides the LayerProxy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/LegendItem.js" size="1566" compressedSize="476">
+    <description>Provides control sap.ui.vk.LegendItem.</description>
+    <requires>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/LegendItemRenderer.js" size="1698" compressedSize="1164">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/m/StandardListItemRenderer.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ListPanel.js" size="9159" compressedSize="3963">
+    <description>Provides control sap.ui.vk.ListPanel.</description>
+    <requires>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ListPanelRenderer.js" size="991" compressedSize="354">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ListPanelStack.js" size="6944" compressedSize="3397">
+    <description>Provides control sap.ui.vk.ListPanelStack.</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/layout/library.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ListPanelStackRenderer.js" size="837" compressedSize="292">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Loco.js" size="7392" compressedSize="4069">
+    <description>Provides control sap.ui.vk.Loco.</description>
+    <requires>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/MapContainer.js" size="16427" compressedSize="8458">
+    <description>Provides control sap.ui.vk.MapContainer.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/vbm/lib/sapvbi.js"/>
+      <module name="sap/ui/vk/ContainerBase.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/MapContainerRenderer.js" size="2115" compressedSize="1342">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/vk/ContainerBaseRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Material.js" size="3322" compressedSize="1288">
+    <description>Provides the Material class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Messages.js" size="9757" compressedSize="8482">
+    <description>Provides an exception class for DVL errors.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/NativeViewport.js" size="24296" compressedSize="11846">
+    <description>Provides control sap.ui.vk.Viewport.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/ViewportHandler.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/NativeViewportRenderer.js" size="940" compressedSize="391">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/NodeHierarchy.js" size="27794" compressedSize="3356">
+    <description>Provides the NodeHierarchy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/NodeProxy.js" size="3323" compressedSize="1091">
+    <description>Provides the NodeProxy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Notifications.js" size="5907" compressedSize="3365">
+    <description>Provides control sap.ui.vk.Notifications.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/NotificationsRenderer.js" size="965" compressedSize="424">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/OrthographicCamera.js" size="817" compressedSize="311">
+    <description>Provides the OrthographicCamera class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Camera.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Overlay.js" size="36937" compressedSize="16267">
+    <description>Provides control sap.ui.vk.Overlay.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/vbm/lib/sapvbi.js"/>
+      <module name="sap/ui/vbm/library.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/OverlayArea.js" size="10033" compressedSize="3845">
+    <description>Provides control sap.ui.vk.OverlayArea.</description>
+    <requires>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/OverlayRenderer.js" size="1151" compressedSize="368">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/PerspectiveCamera.js" size="824" compressedSize="303">
+    <description>Provides the PerspectiveCamera class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Camera.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ProgressIndicator.js" size="2649" compressedSize="1126">
+    <description>Provides control sap.ui.vk.ProgressIndicator.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ProgressIndicator.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ProgressIndicatorRenderer.js" size="385" compressedSize="238">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/ProgressIndicatorRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineDesign.js" size="6004" compressedSize="2620">
+    <description>Provides control sap.ui.vk.RedlineDesign.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/RedlineDesignHandler.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="sap/ui/vk/RedlineGesturesHandler.js"/>
+      <module name="sap/ui/vk/RedlineSurface.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineDesignHandler.js" size="5859" compressedSize="2392">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineDesignRenderer.js" size="769" compressedSize="454">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/vk/RedlineSurfaceRenderer.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineElement.js" size="4433" compressedSize="2053">
+    <description>Provides a class for the redlining elements.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineElementEllipse.js" size="7230" compressedSize="3496">
+    <description>Provides a class for the redlining ellipse elements.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineElementFreehand.js" size="6846" compressedSize="2966">
+    <description>Provides a class for the redlining freehand elements.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineElementLine.js" size="6764" compressedSize="3319">
+    <description>Provides a class for the redlining line elements.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineElementRectangle.js" size="7684" compressedSize="3763">
+    <description>Provides a class for the redlining elements.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineElementText.js" size="6903" compressedSize="3416">
+    <description>Provides a class for the redlining text elements.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineGesturesHandler.js" size="7507" compressedSize="3026">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineSurface.js" size="7470" compressedSize="3008">
+    <description>Provides control sap.ui.vk.RedlineSurface.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/RedlineGesturesHandler.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/RedlineSurfaceRenderer.js" size="785" compressedSize="502">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Scene.js" size="1761" compressedSize="351">
+    <description>Provides the Scene class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/SceneTree.js" size="16574" compressedSize="9669">
+    <description>Provides control sap.ui.vk.SceneTree.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarLayoutData.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/ViewStateManager.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/SceneTreeRenderer.js" size="1007" compressedSize="431">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Smart2DHandler.js" size="5268" compressedSize="2901">
+    <description>Provides control sap.ui.vk.Smart2DHandler.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/StepNavigation.js" size="49745" compressedSize="26015">
+    <description>Provides control sap.ui.vk.StepNavigation.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/StepNavigationRenderer.js" size="1799" compressedSize="910">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Texture.js" size="2356" compressedSize="824">
+    <description>Provides the Texture class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Toolbar.js" size="7440" compressedSize="4947">
+    <description>Provides control sap.ui.vk.SceneTree.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ToolbarRenderer.js" size="962" compressedSize="399">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/TransformationMatrix.js" size="1988" compressedSize="635">
+    <description>Provides data type sap.ui.vk.TransformationMatrix.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/View.js" size="1811" compressedSize="382">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ViewStateManager.js" size="20632" compressedSize="7972" dynamicDependencies="true">
+    <description>Provides the ViewStateManager class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/Core.js"/>
+      <module name="sap/ui/vk/Scene.js"/>
+      <module name="sap/ui/vk/ViewStateManagerBase.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ViewStateManagerBase.js" size="11308" compressedSize="1278">
+    <description>Provides the ViewStateManagerBase class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/Scene.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Viewer.js" size="45850" compressedSize="24860">
+    <description>Provides control sap.ui.vk.Viewer.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/layout/Splitter.js"/>
+      <module name="sap/ui/layout/SplitterLayoutData.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/ContentResource.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/FlexibleControl.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/NativeViewport.js"/>
+      <module name="sap/ui/vk/Notifications.js"/>
+      <module name="sap/ui/vk/Overlay.js" conditional="true"/>
+      <module name="sap/ui/vk/ProgressIndicator.js"/>
+      <module name="sap/ui/vk/RedlineDesign.js"/>
+      <module name="sap/ui/vk/Scene.js"/>
+      <module name="sap/ui/vk/SceneTree.js"/>
+      <module name="sap/ui/vk/StepNavigation.js"/>
+      <module name="sap/ui/vk/Toolbar.js"/>
+      <module name="sap/ui/vk/ViewStateManager.js"/>
+      <module name="sap/ui/vk/Viewport.js"/>
+      <module name="sap/ui/vk/dvl/ContentManager.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ViewerRenderer.js" size="1151" compressedSize="538">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/Viewport.js" size="21885" compressedSize="8322" dynamicDependencies="true">
+    <description>Provides control sap.ui.vk.Viewport.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/ViewStateManager.js"/>
+      <module name="sap/ui/vk/ViewportBase.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ViewportBase.js" size="9077" compressedSize="3019">
+    <description>Provides control sap.ui.vk.ViewportBase.</description>
+    <requires>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ViewportHandler.js" size="7132" compressedSize="4194">
+    <description>Provides control sap.ui.vk.ViewportHandler.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/ViewportRenderer.js" size="1369" compressedSize="596">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/BaseNodeProxy.js" size="4640" compressedSize="1349">
+    <description>Provides the BaseNodeProxy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/ContentManager.js" size="9133" compressedSize="3094">
+    <description>Provides object sap.ui.vk.dvl.ContentManager.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/ContentManager.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/GraphicsCore.js" size="75823" compressedSize="25717">
+    <description>Provides the GraphicsCore class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/thirdparty/URI.js"/>
+      <module name="sap/ui/vk/ContentResource.js"/>
+      <module name="sap/ui/vk/DownloadManager.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/dvl/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/dvl/Scene.js"/>
+      <module name="sap/ui/vk/dvl/ViewStateManager.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="sap/ui/vk/ve/dvl.js"/>
+      <module name="sap/ui/vk/ve/thirdparty/html2canvas.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/LayerProxy.js" size="3519" compressedSize="1359">
+    <description>Provides the LayerProxy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/LayerProxy.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/NodeHierarchy.js" size="22176" compressedSize="6306">
+    <description>Provides the NodeHierarchy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ObjectPool.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/dvl/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/dvl/LayerProxy.js"/>
+      <module name="sap/ui/vk/dvl/NodeProxy.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/NodeProxy.js" size="5066" compressedSize="3558">
+    <description>Provides the NodeProxy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/NodeProxy.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/Scene.js" size="2731" compressedSize="1172">
+    <description>Provides the Scene class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Scene.js"/>
+      <module name="sap/ui/vk/dvl/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/ViewStateManager.js" size="29747" compressedSize="11534">
+    <description>Provides the ViewStateManager class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/ViewStateManagerBase.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/Viewport.js" size="64417" compressedSize="27169">
+    <description>Provides control sap.ui.vk.Viewport.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/Smart2DHandler.js"/>
+      <module name="sap/ui/vk/ViewStateManager.js"/>
+      <module name="sap/ui/vk/ViewportBase.js"/>
+      <module name="sap/ui/vk/ViewportHandler.js"/>
+      <module name="sap/ui/vk/dvl/GraphicsCore.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/dvl/ViewportRenderer.js" size="1632" compressedSize="694">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/helpers/RotateOrbitHelperDvl.js" size="2084" compressedSize="1075">
+    <description>Provides control sap.ui.vk.helpers.RotateOrbitHelper.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/helpers/RotateOrbitHelperThree.js" size="1757" compressedSize="826">
+    <description>Provides control sap.ui.vk.helpers.RotateOrbitHelper.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/helpers/RotateTurntableHelperDvl.js" size="1873" compressedSize="1087">
+    <description>Provides control sap.ui.vk.helpers.RotateTurntableHelperDvl.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/helpers/RotateTurntableHelperThree.js" size="1996" compressedSize="872">
+    <description>Provides control sap.ui.vk.helpers.RotateTurntableHelper.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle.properties" size="19244">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_ar.properties" size="38397">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_bg.properties" size="48565">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_ca.properties" size="20119">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_cs.properties" size="21535">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_da.properties" size="19536">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_de.properties" size="20635">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_el.properties" size="48745">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_en.properties" size="18828">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_en_US_sappsd.properties" size="58888">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_en_US_saptrc.properties" size="22446">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_es.properties" size="20393">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_et.properties" size="19367">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_fi.properties" size="20132">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_fr.properties" size="21246">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_hi.properties" size="43763">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_hr.properties" size="20079">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_hu.properties" size="22651">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_it.properties" size="20191">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_iw.properties" size="35153">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_ja.properties" size="32583">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_kk.properties" size="46195">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_ko.properties" size="27357">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_lt.properties" size="21007">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_lv.properties" size="21528">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_ms.properties" size="18943">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_nl.properties" size="19446">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_no.properties" size="19175">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_pl.properties" size="22035">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_pt.properties" size="20915">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_ro.properties" size="21554">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_ru.properties" size="46294">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_sh.properties" size="19850">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_sk.properties" size="22013">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_sl.properties" size="19312">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_sv.properties" size="19689">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_th.properties" size="45332">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_tr.properties" size="21865">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_uk.properties" size="47275">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_vi.properties" size="30018">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_zh_CN.properties" size="22747">
+  </module>
+  <module name="sap/ui/vk/i18n/messagebundle_zh_TW.properties" size="22562">
+  </module>
+  <module name="sap/ui/vk/library-h2-preload.js" size="29315" dynamicDependencies="true">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/ProgressIndicator.js"/>
+      <module name="sap/m/ProgressIndicatorRenderer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StandardListItemRenderer.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarLayoutData.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/base/Exception.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/base/ObjectPool.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/EnabledPropagator.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/LayoutData.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/layout/Splitter.js"/>
+      <module name="sap/ui/layout/SplitterLayoutData.js"/>
+      <module name="sap/ui/layout/library.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+      <module name="sap/ui/thirdparty/URI.js"/>
+      <module name="sap/ui/vbm/lib/sapvbi.js"/>
+      <module name="sap/ui/vbm/library.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="sap/ui/vk/ve/dvl.js"/>
+      <module name="sap/ui/vk/ve/thirdparty/html2canvas.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="sap/ui/vk/manifest.json"/>
+      <module name="sap/ui/vk/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/Camera.js"/>
+      <module name="sap/ui/vk/ContainerBase.js"/>
+      <module name="sap/ui/vk/ContainerBaseRenderer.js"/>
+      <module name="sap/ui/vk/ContainerContent.js"/>
+      <module name="sap/ui/vk/ContainerContentRenderer.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/ContentManager.js"/>
+      <module name="sap/ui/vk/ContentResource.js"/>
+      <module name="sap/ui/vk/Core.js"/>
+      <module name="sap/ui/vk/DownloadManager.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/FlexibleControl.js"/>
+      <module name="sap/ui/vk/FlexibleControlLayoutData.js"/>
+      <module name="sap/ui/vk/FlexibleControlRenderer.js"/>
+      <module name="sap/ui/vk/ImageContentManager.js"/>
+      <module name="sap/ui/vk/LayerProxy.js"/>
+      <module name="sap/ui/vk/LegendItem.js"/>
+      <module name="sap/ui/vk/LegendItemRenderer.js"/>
+      <module name="sap/ui/vk/ListPanel.js"/>
+      <module name="sap/ui/vk/ListPanelRenderer.js"/>
+      <module name="sap/ui/vk/ListPanelStack.js"/>
+      <module name="sap/ui/vk/ListPanelStackRenderer.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/MapContainer.js"/>
+      <module name="sap/ui/vk/MapContainerRenderer.js"/>
+      <module name="sap/ui/vk/Material.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/NativeViewport.js"/>
+      <module name="sap/ui/vk/NativeViewportRenderer.js"/>
+      <module name="sap/ui/vk/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/NodeProxy.js"/>
+      <module name="sap/ui/vk/Notifications.js"/>
+      <module name="sap/ui/vk/NotificationsRenderer.js"/>
+      <module name="sap/ui/vk/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/Overlay.js"/>
+      <module name="sap/ui/vk/OverlayArea.js"/>
+      <module name="sap/ui/vk/OverlayRenderer.js"/>
+      <module name="sap/ui/vk/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/ProgressIndicator.js"/>
+      <module name="sap/ui/vk/ProgressIndicatorRenderer.js"/>
+      <module name="sap/ui/vk/RedlineDesign.js"/>
+      <module name="sap/ui/vk/RedlineDesignHandler.js"/>
+      <module name="sap/ui/vk/RedlineDesignRenderer.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="sap/ui/vk/RedlineElementEllipse.js"/>
+      <module name="sap/ui/vk/RedlineElementFreehand.js"/>
+      <module name="sap/ui/vk/RedlineElementLine.js"/>
+      <module name="sap/ui/vk/RedlineElementRectangle.js"/>
+      <module name="sap/ui/vk/RedlineElementText.js"/>
+      <module name="sap/ui/vk/RedlineGesturesHandler.js"/>
+      <module name="sap/ui/vk/RedlineSurface.js"/>
+      <module name="sap/ui/vk/RedlineSurfaceRenderer.js"/>
+      <module name="sap/ui/vk/Scene.js"/>
+      <module name="sap/ui/vk/SceneTree.js"/>
+      <module name="sap/ui/vk/SceneTreeRenderer.js"/>
+      <module name="sap/ui/vk/Smart2DHandler.js"/>
+      <module name="sap/ui/vk/StepNavigation.js"/>
+      <module name="sap/ui/vk/StepNavigationRenderer.js"/>
+      <module name="sap/ui/vk/Texture.js"/>
+      <module name="sap/ui/vk/Toolbar.js"/>
+      <module name="sap/ui/vk/ToolbarRenderer.js"/>
+      <module name="sap/ui/vk/TransformationMatrix.js"/>
+      <module name="sap/ui/vk/View.js"/>
+      <module name="sap/ui/vk/ViewStateManager.js"/>
+      <module name="sap/ui/vk/ViewStateManagerBase.js"/>
+      <module name="sap/ui/vk/Viewer.js"/>
+      <module name="sap/ui/vk/ViewerRenderer.js"/>
+      <module name="sap/ui/vk/Viewport.js"/>
+      <module name="sap/ui/vk/ViewportBase.js"/>
+      <module name="sap/ui/vk/ViewportHandler.js"/>
+      <module name="sap/ui/vk/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/dvl/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/dvl/ContentManager.js"/>
+      <module name="sap/ui/vk/dvl/GraphicsCore.js"/>
+      <module name="sap/ui/vk/dvl/LayerProxy.js"/>
+      <module name="sap/ui/vk/dvl/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/dvl/NodeProxy.js"/>
+      <module name="sap/ui/vk/dvl/Scene.js"/>
+      <module name="sap/ui/vk/dvl/ViewStateManager.js"/>
+      <module name="sap/ui/vk/dvl/Viewport.js"/>
+      <module name="sap/ui/vk/dvl/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/helpers/RotateOrbitHelperDvl.js"/>
+      <module name="sap/ui/vk/helpers/RotateOrbitHelperThree.js"/>
+      <module name="sap/ui/vk/helpers/RotateTurntableHelperDvl.js"/>
+      <module name="sap/ui/vk/helpers/RotateTurntableHelperThree.js"/>
+      <module name="sap/ui/vk/threejs/BBoxSubdivider.js"/>
+      <module name="sap/ui/vk/threejs/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/threejs/ContentDeliveryService.js"/>
+      <module name="sap/ui/vk/threejs/ContentManager.js"/>
+      <module name="sap/ui/vk/threejs/MataiLoader.js"/>
+      <module name="sap/ui/vk/threejs/MataiLoaderWorker.js"/>
+      <module name="sap/ui/vk/threejs/Material.js"/>
+      <module name="sap/ui/vk/threejs/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/threejs/NodeProxy.js"/>
+      <module name="sap/ui/vk/threejs/NodesTransitionHelper.js"/>
+      <module name="sap/ui/vk/threejs/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/threejs/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/threejs/Scene.js"/>
+      <module name="sap/ui/vk/threejs/SceneBuilder.js"/>
+      <module name="sap/ui/vk/threejs/Texture.js"/>
+      <module name="sap/ui/vk/threejs/UsageCounter.js"/>
+      <module name="sap/ui/vk/threejs/ViewStateManager.js"/>
+      <module name="sap/ui/vk/threejs/Viewport.js"/>
+      <module name="sap/ui/vk/threejs/ViewportGestureHandler.js"/>
+      <module name="sap/ui/vk/threejs/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionTool.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/HitTestTool.js"/>
+      <module name="sap/ui/vk/tools/HitTestToolHandler.js"/>
+      <module name="sap/ui/vk/tools/MoveTool.js"/>
+      <module name="sap/ui/vk/tools/MoveToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/MoveToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RectSelectTool.js"/>
+      <module name="sap/ui/vk/tools/RectSelectToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RotateOrbitTool.js"/>
+      <module name="sap/ui/vk/tools/RotateTool.js"/>
+      <module name="sap/ui/vk/tools/RotateToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/RotateToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RotateTurntableTool.js"/>
+      <module name="sap/ui/vk/tools/ScaleTool.js"/>
+      <module name="sap/ui/vk/tools/ScaleToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/ScaleToolHandler.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationTool.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/TooltipTool.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolGizmoRenderer.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolHandler.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="sap/ui/vk/totara/CallbackHandler.js"/>
+      <module name="sap/ui/vk/totara/CameraHandler.js"/>
+      <module name="sap/ui/vk/totara/Coder.js"/>
+      <module name="sap/ui/vk/totara/Commands.js"/>
+      <module name="sap/ui/vk/totara/Generator.js"/>
+      <module name="sap/ui/vk/totara/GeometryFactory.js"/>
+      <module name="sap/ui/vk/totara/ImageHandler.js"/>
+      <module name="sap/ui/vk/totara/IndexCompressor.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/MaterialHandler.js"/>
+      <module name="sap/ui/vk/totara/MeshHandler.js"/>
+      <module name="sap/ui/vk/totara/NotificationHandler.js"/>
+      <module name="sap/ui/vk/totara/Parser.js"/>
+      <module name="sap/ui/vk/totara/Processor.js"/>
+      <module name="sap/ui/vk/totara/ProgressCounter.js"/>
+      <module name="sap/ui/vk/totara/RequestCommandGenerator.js"/>
+      <module name="sap/ui/vk/totara/SceneHandler.js"/>
+      <module name="sap/ui/vk/totara/SceneState.js"/>
+      <module name="sap/ui/vk/totara/SceneStateContext.js"/>
+      <module name="sap/ui/vk/totara/TotaraLoader.js"/>
+      <module name="sap/ui/vk/totara/TotaraLoaderWorker.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="sap/ui/vk/totara/TreeBuilder.js"/>
+      <module name="sap/ui/vk/totara/TreeHandler.js"/>
+      <module name="sap/ui/vk/totara/ViewBuilder.js"/>
+      <module name="sap/ui/vk/totara/ViewHandler.js"/>
+    </includes>
+  </module>
+  <module name="sap/ui/vk/library-preload.js" size="601689" dynamicDependencies="true">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/ProgressIndicator.js"/>
+      <module name="sap/m/ProgressIndicatorRenderer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StandardListItemRenderer.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarLayoutData.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/base/Exception.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/base/ObjectPool.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/EnabledPropagator.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/LayoutData.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/layout/Splitter.js"/>
+      <module name="sap/ui/layout/SplitterLayoutData.js"/>
+      <module name="sap/ui/layout/library.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+      <module name="sap/ui/thirdparty/URI.js"/>
+      <module name="sap/ui/vbm/lib/sapvbi.js"/>
+      <module name="sap/ui/vbm/library.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="sap/ui/vk/ve/dvl.js"/>
+      <module name="sap/ui/vk/ve/thirdparty/html2canvas.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/vk/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/Camera.js"/>
+      <module name="sap/ui/vk/ContainerBase.js"/>
+      <module name="sap/ui/vk/ContainerBaseRenderer.js"/>
+      <module name="sap/ui/vk/ContainerContent.js"/>
+      <module name="sap/ui/vk/ContainerContentRenderer.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/ContentManager.js"/>
+      <module name="sap/ui/vk/ContentResource.js"/>
+      <module name="sap/ui/vk/Core.js"/>
+      <module name="sap/ui/vk/DownloadManager.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/FlexibleControl.js"/>
+      <module name="sap/ui/vk/FlexibleControlLayoutData.js"/>
+      <module name="sap/ui/vk/FlexibleControlRenderer.js"/>
+      <module name="sap/ui/vk/ImageContentManager.js"/>
+      <module name="sap/ui/vk/LayerProxy.js"/>
+      <module name="sap/ui/vk/LegendItem.js"/>
+      <module name="sap/ui/vk/LegendItemRenderer.js"/>
+      <module name="sap/ui/vk/ListPanel.js"/>
+      <module name="sap/ui/vk/ListPanelRenderer.js"/>
+      <module name="sap/ui/vk/ListPanelStack.js"/>
+      <module name="sap/ui/vk/ListPanelStackRenderer.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/MapContainer.js"/>
+      <module name="sap/ui/vk/MapContainerRenderer.js"/>
+      <module name="sap/ui/vk/Material.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/NativeViewport.js"/>
+      <module name="sap/ui/vk/NativeViewportRenderer.js"/>
+      <module name="sap/ui/vk/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/NodeProxy.js"/>
+      <module name="sap/ui/vk/Notifications.js"/>
+      <module name="sap/ui/vk/NotificationsRenderer.js"/>
+      <module name="sap/ui/vk/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/Overlay.js"/>
+      <module name="sap/ui/vk/OverlayArea.js"/>
+      <module name="sap/ui/vk/OverlayRenderer.js"/>
+      <module name="sap/ui/vk/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/ProgressIndicator.js"/>
+      <module name="sap/ui/vk/ProgressIndicatorRenderer.js"/>
+      <module name="sap/ui/vk/RedlineDesign.js"/>
+      <module name="sap/ui/vk/RedlineDesignHandler.js"/>
+      <module name="sap/ui/vk/RedlineDesignRenderer.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="sap/ui/vk/RedlineElementEllipse.js"/>
+      <module name="sap/ui/vk/RedlineElementFreehand.js"/>
+      <module name="sap/ui/vk/RedlineElementLine.js"/>
+      <module name="sap/ui/vk/RedlineElementRectangle.js"/>
+      <module name="sap/ui/vk/RedlineElementText.js"/>
+      <module name="sap/ui/vk/RedlineGesturesHandler.js"/>
+      <module name="sap/ui/vk/RedlineSurface.js"/>
+      <module name="sap/ui/vk/RedlineSurfaceRenderer.js"/>
+      <module name="sap/ui/vk/Scene.js"/>
+      <module name="sap/ui/vk/SceneTree.js"/>
+      <module name="sap/ui/vk/SceneTreeRenderer.js"/>
+      <module name="sap/ui/vk/Smart2DHandler.js"/>
+      <module name="sap/ui/vk/StepNavigation.js"/>
+      <module name="sap/ui/vk/StepNavigationRenderer.js"/>
+      <module name="sap/ui/vk/Texture.js"/>
+      <module name="sap/ui/vk/Toolbar.js"/>
+      <module name="sap/ui/vk/ToolbarRenderer.js"/>
+      <module name="sap/ui/vk/TransformationMatrix.js"/>
+      <module name="sap/ui/vk/View.js"/>
+      <module name="sap/ui/vk/ViewStateManager.js"/>
+      <module name="sap/ui/vk/ViewStateManagerBase.js"/>
+      <module name="sap/ui/vk/Viewer.js"/>
+      <module name="sap/ui/vk/ViewerRenderer.js"/>
+      <module name="sap/ui/vk/Viewport.js"/>
+      <module name="sap/ui/vk/ViewportBase.js"/>
+      <module name="sap/ui/vk/ViewportHandler.js"/>
+      <module name="sap/ui/vk/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/dvl/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/dvl/ContentManager.js"/>
+      <module name="sap/ui/vk/dvl/GraphicsCore.js"/>
+      <module name="sap/ui/vk/dvl/LayerProxy.js"/>
+      <module name="sap/ui/vk/dvl/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/dvl/NodeProxy.js"/>
+      <module name="sap/ui/vk/dvl/Scene.js"/>
+      <module name="sap/ui/vk/dvl/ViewStateManager.js"/>
+      <module name="sap/ui/vk/dvl/Viewport.js"/>
+      <module name="sap/ui/vk/dvl/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/helpers/RotateOrbitHelperDvl.js"/>
+      <module name="sap/ui/vk/helpers/RotateOrbitHelperThree.js"/>
+      <module name="sap/ui/vk/helpers/RotateTurntableHelperDvl.js"/>
+      <module name="sap/ui/vk/helpers/RotateTurntableHelperThree.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="sap/ui/vk/manifest.json"/>
+      <module name="sap/ui/vk/threejs/BBoxSubdivider.js"/>
+      <module name="sap/ui/vk/threejs/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/threejs/ContentDeliveryService.js"/>
+      <module name="sap/ui/vk/threejs/ContentManager.js"/>
+      <module name="sap/ui/vk/threejs/MataiLoader.js"/>
+      <module name="sap/ui/vk/threejs/MataiLoaderWorker.js"/>
+      <module name="sap/ui/vk/threejs/Material.js"/>
+      <module name="sap/ui/vk/threejs/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/threejs/NodeProxy.js"/>
+      <module name="sap/ui/vk/threejs/NodesTransitionHelper.js"/>
+      <module name="sap/ui/vk/threejs/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/threejs/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/threejs/Scene.js"/>
+      <module name="sap/ui/vk/threejs/SceneBuilder.js"/>
+      <module name="sap/ui/vk/threejs/Texture.js"/>
+      <module name="sap/ui/vk/threejs/UsageCounter.js"/>
+      <module name="sap/ui/vk/threejs/ViewStateManager.js"/>
+      <module name="sap/ui/vk/threejs/Viewport.js"/>
+      <module name="sap/ui/vk/threejs/ViewportGestureHandler.js"/>
+      <module name="sap/ui/vk/threejs/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionTool.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/HitTestTool.js"/>
+      <module name="sap/ui/vk/tools/HitTestToolHandler.js"/>
+      <module name="sap/ui/vk/tools/MoveTool.js"/>
+      <module name="sap/ui/vk/tools/MoveToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/MoveToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RectSelectTool.js"/>
+      <module name="sap/ui/vk/tools/RectSelectToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RotateOrbitTool.js"/>
+      <module name="sap/ui/vk/tools/RotateTool.js"/>
+      <module name="sap/ui/vk/tools/RotateToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/RotateToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RotateTurntableTool.js"/>
+      <module name="sap/ui/vk/tools/ScaleTool.js"/>
+      <module name="sap/ui/vk/tools/ScaleToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/ScaleToolHandler.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationTool.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/TooltipTool.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolGizmoRenderer.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolHandler.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="sap/ui/vk/totara/CallbackHandler.js"/>
+      <module name="sap/ui/vk/totara/CameraHandler.js"/>
+      <module name="sap/ui/vk/totara/Coder.js"/>
+      <module name="sap/ui/vk/totara/Commands.js"/>
+      <module name="sap/ui/vk/totara/Generator.js"/>
+      <module name="sap/ui/vk/totara/GeometryFactory.js"/>
+      <module name="sap/ui/vk/totara/ImageHandler.js"/>
+      <module name="sap/ui/vk/totara/IndexCompressor.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/MaterialHandler.js"/>
+      <module name="sap/ui/vk/totara/MeshHandler.js"/>
+      <module name="sap/ui/vk/totara/NotificationHandler.js"/>
+      <module name="sap/ui/vk/totara/Parser.js"/>
+      <module name="sap/ui/vk/totara/Processor.js"/>
+      <module name="sap/ui/vk/totara/ProgressCounter.js"/>
+      <module name="sap/ui/vk/totara/RequestCommandGenerator.js"/>
+      <module name="sap/ui/vk/totara/SceneHandler.js"/>
+      <module name="sap/ui/vk/totara/SceneState.js"/>
+      <module name="sap/ui/vk/totara/SceneStateContext.js"/>
+      <module name="sap/ui/vk/totara/TotaraLoader.js"/>
+      <module name="sap/ui/vk/totara/TotaraLoaderWorker.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="sap/ui/vk/totara/TreeBuilder.js"/>
+      <module name="sap/ui/vk/totara/TreeHandler.js"/>
+      <module name="sap/ui/vk/totara/ViewBuilder.js"/>
+      <module name="sap/ui/vk/totara/ViewHandler.js"/>
+    </includes>
+  </module>
+  <module name="sap/ui/vk/library-preload.json" size="0" dynamicDependencies="true">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/m/FlexItemData.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/m/ProgressIndicator.js"/>
+      <module name="sap/m/ProgressIndicatorRenderer.js"/>
+      <module name="sap/m/SearchField.js"/>
+      <module name="sap/m/StandardListItem.js"/>
+      <module name="sap/m/StandardListItemRenderer.js"/>
+      <module name="sap/m/Text.js"/>
+      <module name="sap/m/Title.js"/>
+      <module name="sap/m/ToggleButton.js"/>
+      <module name="sap/m/Toolbar.js"/>
+      <module name="sap/m/ToolbarLayoutData.js"/>
+      <module name="sap/m/ToolbarSpacer.js"/>
+      <module name="sap/m/VBox.js"/>
+      <module name="sap/m/library.js"/>
+      <module name="sap/ui/Device.js"/>
+      <module name="sap/ui/base/DataType.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/base/Exception.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/base/Object.js"/>
+      <module name="sap/ui/base/ObjectPool.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/core/EnabledPropagator.js"/>
+      <module name="sap/ui/core/Icon.js"/>
+      <module name="sap/ui/core/IconPool.js"/>
+      <module name="sap/ui/core/LayoutData.js"/>
+      <module name="sap/ui/core/Popup.js"/>
+      <module name="sap/ui/core/Renderer.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/core/library-preload.json"/>
+      <module name="sap/ui/layout/Splitter.js"/>
+      <module name="sap/ui/layout/SplitterLayoutData.js"/>
+      <module name="sap/ui/layout/library.js"/>
+      <module name="sap/ui/model/json/JSONModel.js"/>
+      <module name="sap/ui/table/Column.js"/>
+      <module name="sap/ui/table/TreeTable.js"/>
+      <module name="sap/ui/thirdparty/URI.js"/>
+      <module name="sap/ui/vbm/lib/sapvbi.js"/>
+      <module name="sap/ui/vbm/library.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="sap/ui/vk/ve/dvl.js"/>
+      <module name="sap/ui/vk/ve/thirdparty/html2canvas.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+    <includes>
+      <module name="sap/ui/vk/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/Camera.js"/>
+      <module name="sap/ui/vk/ContainerBase.js"/>
+      <module name="sap/ui/vk/ContainerBaseRenderer.js"/>
+      <module name="sap/ui/vk/ContainerContent.js"/>
+      <module name="sap/ui/vk/ContainerContentRenderer.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/ContentManager.js"/>
+      <module name="sap/ui/vk/ContentResource.js"/>
+      <module name="sap/ui/vk/Core.js"/>
+      <module name="sap/ui/vk/DownloadManager.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/FlexibleControl.js"/>
+      <module name="sap/ui/vk/FlexibleControlLayoutData.js"/>
+      <module name="sap/ui/vk/FlexibleControlRenderer.js"/>
+      <module name="sap/ui/vk/ImageContentManager.js"/>
+      <module name="sap/ui/vk/LayerProxy.js"/>
+      <module name="sap/ui/vk/LegendItem.js"/>
+      <module name="sap/ui/vk/LegendItemRenderer.js"/>
+      <module name="sap/ui/vk/ListPanel.js"/>
+      <module name="sap/ui/vk/ListPanelRenderer.js"/>
+      <module name="sap/ui/vk/ListPanelStack.js"/>
+      <module name="sap/ui/vk/ListPanelStackRenderer.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/MapContainer.js"/>
+      <module name="sap/ui/vk/MapContainerRenderer.js"/>
+      <module name="sap/ui/vk/Material.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/NativeViewport.js"/>
+      <module name="sap/ui/vk/NativeViewportRenderer.js"/>
+      <module name="sap/ui/vk/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/NodeProxy.js"/>
+      <module name="sap/ui/vk/Notifications.js"/>
+      <module name="sap/ui/vk/NotificationsRenderer.js"/>
+      <module name="sap/ui/vk/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/Overlay.js"/>
+      <module name="sap/ui/vk/OverlayArea.js"/>
+      <module name="sap/ui/vk/OverlayRenderer.js"/>
+      <module name="sap/ui/vk/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/ProgressIndicator.js"/>
+      <module name="sap/ui/vk/ProgressIndicatorRenderer.js"/>
+      <module name="sap/ui/vk/RedlineDesign.js"/>
+      <module name="sap/ui/vk/RedlineDesignHandler.js"/>
+      <module name="sap/ui/vk/RedlineDesignRenderer.js"/>
+      <module name="sap/ui/vk/RedlineElement.js"/>
+      <module name="sap/ui/vk/RedlineElementEllipse.js"/>
+      <module name="sap/ui/vk/RedlineElementFreehand.js"/>
+      <module name="sap/ui/vk/RedlineElementLine.js"/>
+      <module name="sap/ui/vk/RedlineElementRectangle.js"/>
+      <module name="sap/ui/vk/RedlineElementText.js"/>
+      <module name="sap/ui/vk/RedlineGesturesHandler.js"/>
+      <module name="sap/ui/vk/RedlineSurface.js"/>
+      <module name="sap/ui/vk/RedlineSurfaceRenderer.js"/>
+      <module name="sap/ui/vk/Scene.js"/>
+      <module name="sap/ui/vk/SceneTree.js"/>
+      <module name="sap/ui/vk/SceneTreeRenderer.js"/>
+      <module name="sap/ui/vk/Smart2DHandler.js"/>
+      <module name="sap/ui/vk/StepNavigation.js"/>
+      <module name="sap/ui/vk/StepNavigationRenderer.js"/>
+      <module name="sap/ui/vk/Texture.js"/>
+      <module name="sap/ui/vk/Toolbar.js"/>
+      <module name="sap/ui/vk/ToolbarRenderer.js"/>
+      <module name="sap/ui/vk/TransformationMatrix.js"/>
+      <module name="sap/ui/vk/View.js"/>
+      <module name="sap/ui/vk/ViewStateManager.js"/>
+      <module name="sap/ui/vk/ViewStateManagerBase.js"/>
+      <module name="sap/ui/vk/Viewer.js"/>
+      <module name="sap/ui/vk/ViewerRenderer.js"/>
+      <module name="sap/ui/vk/Viewport.js"/>
+      <module name="sap/ui/vk/ViewportBase.js"/>
+      <module name="sap/ui/vk/ViewportHandler.js"/>
+      <module name="sap/ui/vk/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/dvl/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/dvl/ContentManager.js"/>
+      <module name="sap/ui/vk/dvl/GraphicsCore.js"/>
+      <module name="sap/ui/vk/dvl/LayerProxy.js"/>
+      <module name="sap/ui/vk/dvl/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/dvl/NodeProxy.js"/>
+      <module name="sap/ui/vk/dvl/Scene.js"/>
+      <module name="sap/ui/vk/dvl/ViewStateManager.js"/>
+      <module name="sap/ui/vk/dvl/Viewport.js"/>
+      <module name="sap/ui/vk/dvl/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/helpers/RotateOrbitHelperDvl.js"/>
+      <module name="sap/ui/vk/helpers/RotateOrbitHelperThree.js"/>
+      <module name="sap/ui/vk/helpers/RotateTurntableHelperDvl.js"/>
+      <module name="sap/ui/vk/helpers/RotateTurntableHelperThree.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="sap/ui/vk/manifest.json"/>
+      <module name="sap/ui/vk/threejs/BBoxSubdivider.js"/>
+      <module name="sap/ui/vk/threejs/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/threejs/ContentDeliveryService.js"/>
+      <module name="sap/ui/vk/threejs/ContentManager.js"/>
+      <module name="sap/ui/vk/threejs/MataiLoader.js"/>
+      <module name="sap/ui/vk/threejs/MataiLoaderWorker.js"/>
+      <module name="sap/ui/vk/threejs/Material.js"/>
+      <module name="sap/ui/vk/threejs/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/threejs/NodeProxy.js"/>
+      <module name="sap/ui/vk/threejs/NodesTransitionHelper.js"/>
+      <module name="sap/ui/vk/threejs/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/threejs/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/threejs/Scene.js"/>
+      <module name="sap/ui/vk/threejs/SceneBuilder.js"/>
+      <module name="sap/ui/vk/threejs/Texture.js"/>
+      <module name="sap/ui/vk/threejs/UsageCounter.js"/>
+      <module name="sap/ui/vk/threejs/ViewStateManager.js"/>
+      <module name="sap/ui/vk/threejs/Viewport.js"/>
+      <module name="sap/ui/vk/threejs/ViewportGestureHandler.js"/>
+      <module name="sap/ui/vk/threejs/ViewportRenderer.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionTool.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/HitTestTool.js"/>
+      <module name="sap/ui/vk/tools/HitTestToolHandler.js"/>
+      <module name="sap/ui/vk/tools/MoveTool.js"/>
+      <module name="sap/ui/vk/tools/MoveToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/MoveToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RectSelectTool.js"/>
+      <module name="sap/ui/vk/tools/RectSelectToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RotateOrbitTool.js"/>
+      <module name="sap/ui/vk/tools/RotateTool.js"/>
+      <module name="sap/ui/vk/tools/RotateToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/RotateToolHandler.js"/>
+      <module name="sap/ui/vk/tools/RotateTurntableTool.js"/>
+      <module name="sap/ui/vk/tools/ScaleTool.js"/>
+      <module name="sap/ui/vk/tools/ScaleToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/ScaleToolHandler.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationTool.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/TooltipTool.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolGizmoRenderer.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolHandler.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="sap/ui/vk/totara/CallbackHandler.js"/>
+      <module name="sap/ui/vk/totara/CameraHandler.js"/>
+      <module name="sap/ui/vk/totara/Coder.js"/>
+      <module name="sap/ui/vk/totara/Commands.js"/>
+      <module name="sap/ui/vk/totara/Generator.js"/>
+      <module name="sap/ui/vk/totara/GeometryFactory.js"/>
+      <module name="sap/ui/vk/totara/ImageHandler.js"/>
+      <module name="sap/ui/vk/totara/IndexCompressor.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/MaterialHandler.js"/>
+      <module name="sap/ui/vk/totara/MeshHandler.js"/>
+      <module name="sap/ui/vk/totara/NotificationHandler.js"/>
+      <module name="sap/ui/vk/totara/Parser.js"/>
+      <module name="sap/ui/vk/totara/Processor.js"/>
+      <module name="sap/ui/vk/totara/ProgressCounter.js"/>
+      <module name="sap/ui/vk/totara/RequestCommandGenerator.js"/>
+      <module name="sap/ui/vk/totara/SceneHandler.js"/>
+      <module name="sap/ui/vk/totara/SceneState.js"/>
+      <module name="sap/ui/vk/totara/SceneStateContext.js"/>
+      <module name="sap/ui/vk/totara/TotaraLoader.js"/>
+      <module name="sap/ui/vk/totara/TotaraLoaderWorker.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="sap/ui/vk/totara/TreeBuilder.js"/>
+      <module name="sap/ui/vk/totara/TreeHandler.js"/>
+      <module name="sap/ui/vk/totara/ViewBuilder.js"/>
+      <module name="sap/ui/vk/totara/ViewHandler.js"/>
+    </includes>
+  </module>
+  <module name="sap/ui/vk/library.js" size="14428" compressedSize="6337">
+    <description>Initialization Code and shared classes of library sap.ui.vk</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Core.js"/>
+      <module name="sap/ui/vk/DvlException.js"/>
+      <module name="sap/ui/vk/TransformationMatrix.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/manifest.json" size="2866">
+  </module>
+  <module name="sap/ui/vk/threejs/BBoxSubdivider.js" size="8644" compressedSize="3441">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/BaseNodeProxy.js" size="4013" compressedSize="828">
+    <description>Provides the BaseNodeProxy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/ContentDeliveryService.js" size="16028" compressedSize="6826">
+    <description>Provides control sap.ui.vk.threejs.ContentDeliveryService.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObject.js"/>
+      <module name="sap/ui/vk/View.js"/>
+      <module name="sap/ui/vk/threejs/Material.js"/>
+      <module name="sap/ui/vk/threejs/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/threejs/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="sap/ui/vk/totara/TotaraLoader.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/ContentManager.js" size="11921" compressedSize="4546">
+    <description>Provides object sap.ui.vk.threejs.ContentManager.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/ContentManager.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/TransformationMatrix.js"/>
+      <module name="sap/ui/vk/threejs/ContentDeliveryService.js" conditional="true"/>
+      <module name="sap/ui/vk/threejs/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/threejs/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/threejs/Scene.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/MataiLoader.js" size="9761" compressedSize="6241">
+    <description>Provides object sap.ui.vk.threejs.MataiLoader.</description>
+    <requires>
+      <module name="sap/base/Log.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/MataiLoaderWorker.js" size="3610" compressedSize="2410" requiresTopLevelScope="true" exposedGlobals="scriptDirectory" raw="true">
+  </module>
+  <module name="sap/ui/vk/threejs/Material.js" size="9993" compressedSize="6347">
+    <description>Provides the Material class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Material.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="sap/ui/vk/threejs/Texture.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/NodeHierarchy.js" size="21019" compressedSize="5483">
+    <description>Provides the NodeHierarchy class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ObjectPool.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/NodeHierarchy.js"/>
+      <module name="sap/ui/vk/threejs/BaseNodeProxy.js"/>
+      <module name="sap/ui/vk/threejs/NodeProxy.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/NodeProxy.js" size="11103" compressedSize="6575">
+    <description>Provides the NodeProxy class.</description>
+    <requires>
+      <module name="sap/ui/vk/NodeProxy.js"/>
+      <module name="sap/ui/vk/threejs/Material.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/NodesTransitionHelper.js" size="6557" compressedSize="3490">
+    <description>Provides class sap.ui.vk.threejs.NodesTransitionHelper</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/OrthographicCamera.js" size="7573" compressedSize="3810">
+    <description>Provides the OrthographicCamera class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/PerspectiveCamera.js" size="5466" compressedSize="2725">
+    <description>Provides the PerspectiveCamera class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/Scene.js" size="7472" compressedSize="3515">
+    <description>Provides the Scene class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Scene.js"/>
+      <module name="sap/ui/vk/threejs/NodeHierarchy.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/SceneBuilder.js" size="58641" compressedSize="19102">
+    <description>Provides object sap.ui.vk.threejs.SceneBuilder.</description>
+    <requires>
+      <module name="sap/base/Log.js"/>
+      <module name="sap/ui/vk/threejs/BBoxSubdivider.js"/>
+      <module name="sap/ui/vk/threejs/UsageCounter.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/Texture.js" size="5423" compressedSize="3249">
+    <description>Provides the Texture class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Texture.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/UsageCounter.js" size="1188" compressedSize="692">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/ViewStateManager.js" size="34816" compressedSize="14862">
+    <description>Provides the ViewStateManager class.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/ViewStateManagerBase.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/Viewport.js" size="50876" compressedSize="23682">
+    <description>Provides control sap.ui.vk.threejs.Viewport.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/ManagedObjectObserver.js"/>
+      <module name="sap/ui/core/ResizeHandler.js"/>
+      <module name="sap/ui/vk/ContentConnector.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/Messages.js"/>
+      <module name="sap/ui/vk/ViewStateManager.js"/>
+      <module name="sap/ui/vk/ViewportBase.js"/>
+      <module name="sap/ui/vk/library.js"/>
+      <module name="sap/ui/vk/threejs/NodesTransitionHelper.js"/>
+      <module name="sap/ui/vk/threejs/OrthographicCamera.js"/>
+      <module name="sap/ui/vk/threejs/PerspectiveCamera.js"/>
+      <module name="sap/ui/vk/threejs/ViewportGestureHandler.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/ViewportGestureHandler.js" size="23977" compressedSize="13835">
+    <description>Provides control sap.ui.vk.threejs.ViewportGestureHandler.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/threejs/ViewportRenderer.js" size="1090" compressedSize="628">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/CrossSectionTool.js" size="5122" compressedSize="1929">
+    <description>Provides control sap.ui.vk.tools.CrossSectionTool</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/CrossSectionToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/CrossSectionToolGizmo.js" size="8322" compressedSize="5220">
+    <description>Provides control sap.ui.vk.tools.CrossSectionToolGizmo</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/CrossSectionToolHandler.js" size="4099" compressedSize="2756">
+    <description>Provides control sap.ui.vk.tools.CrossSectionToolHandler</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/Gizmo.js" size="7362" compressedSize="4037">
+    <description>Provides base for all gizmo controls sap.ui.vk.tools namespace.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Control.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/HitTestTool.js" size="7385" compressedSize="2852">
+    <description>Provides class sap.ui.vk.tools.HitTestTool control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/tools/HitTestToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/HitTestToolHandler.js" size="4653" compressedSize="1824">
+    <description>Provides control sap.ve.js.LocoEventHandler.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/MoveTool.js" size="5442" compressedSize="2177">
+    <description>Provides control sap.ui.vk.tools.MoveTool</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/MoveToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/MoveToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/MoveToolGizmo.js" size="14693" compressedSize="9280">
+    <description>Provides control sap.ui.vk.tools.MoveToolGizmo</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/MoveToolHandler.js" size="5508" compressedSize="3863">
+    <description>Provides control sap.ui.vk.tools.MoveToolHandler</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/RectSelectTool.js" size="9727" compressedSize="3892">
+    <description>Provides class sap.ui.vk.tools.HitTestTool control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/Loco.js"/>
+      <module name="sap/ui/vk/tools/RectSelectToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/RectSelectToolHandler.js" size="3541" compressedSize="2372">
+    <description>Provides control sap.ve.js.LocoEventHandler.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/RotateOrbitTool.js" size="4463" compressedSize="1915">
+    <description>Provides class sap.ui.vk.tools.RotateObitTool control.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/helpers/RotateOrbitHelperDvl.js"/>
+      <module name="sap/ui/vk/helpers/RotateOrbitHelperThree.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/RotateTool.js" size="5511" compressedSize="2191">
+    <description>Provides control sap.ui.vk.tools.RotateTool</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/RotateToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/RotateToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/RotateToolGizmo.js" size="10952" compressedSize="6736">
+    <description>Provides control sap.ui.vk.tools.RotateToolGizmo</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/RotateToolHandler.js" size="5546" compressedSize="3810">
+    <description>Provides control sap.ui.vk.tools.RotateToolHandler</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/RotateTurntableTool.js" size="4725" compressedSize="1979">
+    <description>Provides class sap.ui.vk.tools.move.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/helpers/RotateTurntableHelperDvl.js"/>
+      <module name="sap/ui/vk/helpers/RotateTurntableHelperThree.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/ScaleTool.js" size="6235" compressedSize="2453">
+    <description>Provides control sap.ui.vk.tools.ScaleTool</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/ScaleToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/ScaleToolHandler.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/ScaleToolGizmo.js" size="12680" compressedSize="7422">
+    <description>Provides control sap.ui.vk.tools.ScaleToolGizmo</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/ScaleToolHandler.js" size="6378" compressedSize="4241">
+    <description>Provides control sap.ui.vk.tools.ScaleToolHandler</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/SceneOrientationTool.js" size="3893" compressedSize="1461">
+    <description>Provides control sap.ui.vk.tools.SceneOrientationTool</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/SceneOrientationToolGizmo.js" size="8187" compressedSize="5248">
+    <description>Provides control sap.ui.vk.tools.SceneOrientationToolGizmo</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/m/Menu.js"/>
+      <module name="sap/m/MenuButton.js"/>
+      <module name="sap/m/MenuItem.js"/>
+      <module name="sap/ui/vk/threejs/thirdparty/three.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/SceneOrientationToolGizmoRenderer.js" size="1026" compressedSize="442">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/Tool.js" size="5972" compressedSize="1834">
+    <description>Provides class sap.ui.vk.tools.Tool</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/core/Element.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/TooltipTool.js" size="4656" compressedSize="1835">
+    <description>Provides control sap.ui.vk.tools.TooltipTool</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/Tool.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolGizmo.js"/>
+      <module name="sap/ui/vk/tools/TooltipToolHandler.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/TooltipToolGizmo.js" size="3026" compressedSize="1368">
+    <description>Provides control sap.ui.vk.tools.TooltipToolGizmo</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/tools/Gizmo.js"/>
+      <module name="sap/ui/vk/tools/library.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/TooltipToolGizmoRenderer.js" size="932" compressedSize="355">
+    <description>! SAP UI development toolkit for HTML5 (SAPUI5)&#xA;&#xA;        (c) Copyright 2009-2015 SAP SE. All rights reserved</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/TooltipToolHandler.js" size="3203" compressedSize="1836">
+    <description>Provides control sap.ui.vk.tools.TooltipToolHandler</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/base/EventProvider.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/tools/library.js" size="3209" compressedSize="1282">
+    <description>Initialization Code and shared classes of library sap.suite.ui.generic.template.</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/CallbackHandler.js" size="683" compressedSize="298">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/CameraHandler.js" size="1071" compressedSize="477">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/Coder.js" size="1536" compressedSize="530">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/Commands.js" size="1365" compressedSize="905">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/Generator.js" size="3055" compressedSize="1334">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/Commands.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/GeometryFactory.js" size="10001" compressedSize="2905">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/IndexCompressor.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/ImageHandler.js" size="997" compressedSize="390">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/Coder.js"/>
+      <module name="sap/ui/vk/totara/MaterialHandler.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/IndexCompressor.js" size="16679" compressedSize="2511">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/ListMap.js" size="1217" compressedSize="621">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/MaterialHandler.js" size="2780" compressedSize="1058">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/MeshHandler.js" size="6585" compressedSize="2533">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/GeometryFactory.js"/>
+      <module name="sap/ui/vk/totara/MaterialHandler.js"/>
+      <module name="sap/ui/vk/totara/SceneStateContext.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/NotificationHandler.js" size="1035" compressedSize="433">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/Parser.js" size="3022" compressedSize="1057">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/Coder.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/Processor.js" size="4838" compressedSize="1869">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/CameraHandler.js"/>
+      <module name="sap/ui/vk/totara/Commands.js"/>
+      <module name="sap/ui/vk/totara/ImageHandler.js"/>
+      <module name="sap/ui/vk/totara/MaterialHandler.js"/>
+      <module name="sap/ui/vk/totara/MeshHandler.js"/>
+      <module name="sap/ui/vk/totara/NotificationHandler.js"/>
+      <module name="sap/ui/vk/totara/TreeHandler.js"/>
+      <module name="sap/ui/vk/totara/ViewHandler.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/ProgressCounter.js" size="1629" compressedSize="733">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/RequestCommandGenerator.js" size="4996" compressedSize="1768">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/Coder.js"/>
+      <module name="sap/ui/vk/totara/Commands.js"/>
+      <module name="sap/ui/vk/totara/Generator.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/SceneHandler.js" size="1802" compressedSize="815">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/SceneState.js" size="4650" compressedSize="2365">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/threejs/SceneBuilder.js"/>
+      <module name="sap/ui/vk/totara/CallbackHandler.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/RequestCommandGenerator.js"/>
+      <module name="sap/ui/vk/totara/SceneStateContext.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/SceneStateContext.js" size="4177" compressedSize="1844">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/CallbackHandler.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/ProgressCounter.js"/>
+      <module name="sap/ui/vk/totara/RequestCommandGenerator.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/TotaraLoader.js" size="19188" compressedSize="9194">
+    <description>eslint-disable no-console</description>
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/CallbackHandler.js"/>
+      <module name="sap/ui/vk/totara/Commands.js"/>
+      <module name="sap/ui/vk/totara/Generator.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/Processor.js"/>
+      <module name="sap/ui/vk/totara/RequestCommandGenerator.js"/>
+      <module name="sap/ui/vk/totara/SceneState.js"/>
+      <module name="sap/ui/vk/totara/SceneStateContext.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/TotaraLoaderWorker.js" size="13799" compressedSize="7061" requiresTopLevelScope="true" exposedGlobals="HttpConnection,WebSocketConnection,findChar,getContentLength,Parser,Decoder,LoaderProxy,loader,onmessage" raw="true">
+  </module>
+  <module name="sap/ui/vk/totara/TotaraUtils.js" size="5577" compressedSize="2468">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/Generator.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/TreeBuilder.js" size="6662" compressedSize="2340">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/TreeHandler.js" size="2931" compressedSize="1193">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/CameraHandler.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="sap/ui/vk/totara/TreeBuilder.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/ViewBuilder.js" size="6205" compressedSize="2003">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/CameraHandler.js"/>
+      <module name="sap/ui/vk/totara/ListMap.js"/>
+      <module name="sap/ui/vk/totara/TotaraUtils.js"/>
+      <module name="sap/ui/vk/totara/TreeBuilder.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+  <module name="sap/ui/vk/totara/ViewHandler.js" size="3071" compressedSize="1105">
+    <requires>
+      <module name="jquery.sap.global.js"/>
+      <module name="sap/ui/vk/totara/CameraHandler.js"/>
+      <module name="sap/ui/vk/totara/ViewBuilder.js"/>
+      <module name="ui5loader-autoconfig.js"/>
+    </requires>
+  </module>
+</library>

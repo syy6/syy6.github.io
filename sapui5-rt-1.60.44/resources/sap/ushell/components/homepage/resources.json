@@ -1,0 +1,386 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": "ActionMode-dbg.js",
+			"module": "sap/ushell/components/homepage/ActionMode.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"condRequired": [
+				"sap/m/MessageToast.js"
+			]
+		},
+		{
+			"name": "ActionMode.js",
+			"module": "sap/ushell/components/homepage/ActionMode.js",
+			"required": [
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"condRequired": [
+				"sap/m/MessageToast.js"
+			]
+		},
+		{
+			"name": "Component-dbg.js",
+			"module": "sap/ushell/components/homepage/Component.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/HomepageManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload-dbg.js",
+			"module": "Component-h2-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/FlexBox.js",
+				"sap/m/Page.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/InvisibleText.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/Layout.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/HomepageManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/AnchorItem.js",
+				"sap/ushell/ui/launchpad/AnchorNavigationBar.js",
+				"sap/ushell/ui/launchpad/DashboardGroupsContainer.js",
+				"sap/ushell/utils.js",
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"condRequired": [
+				"sap/m/MessageToast.js"
+			],
+			"included": [
+				"sap/ushell/components/homepage/ActionMode.js",
+				"sap/ushell/components/homepage/Component.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/components/homepage/DashboardContent.controller.js",
+				"sap/ushell/components/homepage/DashboardContent.view.js",
+				"sap/ushell/components/homepage/DashboardGroupsBox.js",
+				"sap/ushell/components/homepage/DashboardUIActions.js",
+				"sap/ushell/components/homepage/FLPAnalytics.js"
+			]
+		},
+		{
+			"name": "Component-h2-preload.js",
+			"module": "Component-h2-preload.js",
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/FlexBox.js",
+				"sap/m/Page.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/InvisibleText.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/Layout.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/HomepageManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/AnchorItem.js",
+				"sap/ushell/ui/launchpad/AnchorNavigationBar.js",
+				"sap/ushell/ui/launchpad/DashboardGroupsContainer.js",
+				"sap/ushell/utils.js",
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"condRequired": [
+				"sap/m/MessageToast.js"
+			],
+			"included": [
+				"sap/ushell/components/homepage/ActionMode.js",
+				"sap/ushell/components/homepage/Component.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/components/homepage/DashboardContent.controller.js",
+				"sap/ushell/components/homepage/DashboardContent.view.js",
+				"sap/ushell/components/homepage/DashboardGroupsBox.js",
+				"sap/ushell/components/homepage/DashboardUIActions.js",
+				"sap/ushell/components/homepage/FLPAnalytics.js"
+			]
+		},
+		{
+			"name": "Component-preload-dbg.js",
+			"module": "Component-preload.js",
+			"isDebug": true,
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/FlexBox.js",
+				"sap/m/Page.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/InvisibleText.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/Layout.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/HomepageManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/AnchorItem.js",
+				"sap/ushell/ui/launchpad/AnchorNavigationBar.js",
+				"sap/ushell/ui/launchpad/DashboardGroupsContainer.js",
+				"sap/ushell/utils.js",
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"condRequired": [
+				"sap/m/MessageToast.js"
+			],
+			"included": [
+				"sap/ushell/components/homepage/ActionMode.js",
+				"sap/ushell/components/homepage/Component.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/components/homepage/DashboardContent.controller.js",
+				"sap/ushell/components/homepage/DashboardContent.view.js",
+				"sap/ushell/components/homepage/DashboardGroupsBox.js",
+				"sap/ushell/components/homepage/DashboardUIActions.js",
+				"sap/ushell/components/homepage/FLPAnalytics.js"
+			]
+		},
+		{
+			"name": "Component-preload.js",
+			"module": "Component-preload.js",
+			"merged": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/FlexBox.js",
+				"sap/m/Page.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Component.js",
+				"sap/ui/core/InvisibleText.js",
+				"sap/ui/core/UIComponent.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/Layout.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/HomepageManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js",
+				"sap/ushell/ui/launchpad/AnchorItem.js",
+				"sap/ushell/ui/launchpad/AnchorNavigationBar.js",
+				"sap/ushell/ui/launchpad/DashboardGroupsContainer.js",
+				"sap/ushell/utils.js",
+				"sap/ushell/utils/WindowUtils.js"
+			],
+			"condRequired": [
+				"sap/m/MessageToast.js"
+			],
+			"included": [
+				"sap/ushell/components/homepage/ActionMode.js",
+				"sap/ushell/components/homepage/Component.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/components/homepage/DashboardContent.controller.js",
+				"sap/ushell/components/homepage/DashboardContent.view.js",
+				"sap/ushell/components/homepage/DashboardGroupsBox.js",
+				"sap/ushell/components/homepage/DashboardUIActions.js",
+				"sap/ushell/components/homepage/FLPAnalytics.js"
+			]
+		},
+		{
+			"name": "Component.js",
+			"module": "sap/ushell/components/homepage/Component.js",
+			"required": [
+				"sap/ui/core/UIComponent.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/UserActivityLog.js",
+				"sap/ushell/bootstrap/common/common.load.model.js",
+				"sap/ushell/components/HomepageManager.js",
+				"sap/ushell/components/SharedComponentUtils.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/resources.js"
+			]
+		},
+		{
+			"name": "ComponentKeysHandler-dbg.js",
+			"module": "sap/ushell/components/homepage/ComponentKeysHandler.js",
+			"isDebug": true,
+			"required": [
+				"sap/ushell/EventHub.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js"
+			]
+		},
+		{
+			"name": "ComponentKeysHandler.js",
+			"module": "sap/ushell/components/homepage/ComponentKeysHandler.js",
+			"required": [
+				"sap/ushell/EventHub.js",
+				"sap/ushell/ui/launchpad/AccessibilityCustomData.js"
+			]
+		},
+		{
+			"name": "DashboardContent-dbg.controller.js",
+			"module": "sap/ushell/components/homepage/DashboardContent.controller.js",
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/Device.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/components/homepage/DashboardUIActions.js",
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "DashboardContent-dbg.view.js",
+			"module": "sap/ushell/components/homepage/DashboardContent.view.js",
+			"isDebug": true,
+			"required": [
+				"jquery.sap.global.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/FlexBox.js",
+				"sap/m/Page.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/InvisibleText.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/homepage/DashboardGroupsBox.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/launchpad/AnchorItem.js",
+				"sap/ushell/ui/launchpad/AnchorNavigationBar.js",
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "DashboardContent.controller.js",
+			"module": "sap/ushell/components/homepage/DashboardContent.controller.js",
+			"required": [
+				"jquery.sap.global.js",
+				"sap/ui/Device.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/homepage/ComponentKeysHandler.js",
+				"sap/ushell/components/homepage/DashboardUIActions.js",
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "DashboardContent.view.js",
+			"module": "sap/ushell/components/homepage/DashboardContent.view.js",
+			"required": [
+				"jquery.sap.global.js",
+				"sap/m/Bar.js",
+				"sap/m/Button.js",
+				"sap/m/FlexBox.js",
+				"sap/m/Page.js",
+				"sap/m/ToolbarSpacer.js",
+				"sap/m/library.js",
+				"sap/ui/Device.js",
+				"sap/ui/core/InvisibleText.js",
+				"sap/ui/core/mvc/View.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/components/homepage/DashboardGroupsBox.js",
+				"sap/ushell/resources.js",
+				"sap/ushell/ui/launchpad/AnchorItem.js",
+				"sap/ushell/ui/launchpad/AnchorNavigationBar.js",
+				"sap/ushell/utils.js"
+			]
+		},
+		{
+			"name": "DashboardGroupsBox-dbg.js",
+			"module": "sap/ushell/components/homepage/DashboardGroupsBox.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Component.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/Layout.js",
+				"sap/ushell/ui/launchpad/DashboardGroupsContainer.js"
+			]
+		},
+		{
+			"name": "DashboardGroupsBox.js",
+			"module": "sap/ushell/components/homepage/DashboardGroupsBox.js",
+			"required": [
+				"sap/ui/base/Object.js",
+				"sap/ui/core/Component.js",
+				"sap/ushell/Config.js",
+				"sap/ushell/EventHub.js",
+				"sap/ushell/Layout.js",
+				"sap/ushell/ui/launchpad/DashboardGroupsContainer.js"
+			]
+		},
+		{
+			"name": "DashboardUIActions-dbg.js",
+			"module": "sap/ushell/components/homepage/DashboardUIActions.js",
+			"isDebug": true,
+			"required": [
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "DashboardUIActions.js",
+			"module": "sap/ushell/components/homepage/DashboardUIActions.js",
+			"required": [
+				"sap/ui/base/Object.js"
+			]
+		},
+		{
+			"name": "FLPAnalytics-dbg.js",
+			"module": "sap/ushell/components/homepage/FLPAnalytics.js",
+			"isDebug": true
+		},
+		{
+			"name": "FLPAnalytics.js",
+			"module": "sap/ushell/components/homepage/FLPAnalytics.js"
+		},
+		{
+			"name": "resources.json"
+		}
+	]
+}

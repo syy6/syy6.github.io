@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>smartmicrochart/SmartColumnMicroChart</name>
+    <derived/>
+    <documentation>The SmartColumnMicroChart control creates a {@link sap.suite.ui.microchart.ColumnMicroChart ColumnMicroChart} based on OData metadata and the configuration
+       specified. &lt;br&gt;The &lt;code&gt;entitySet&lt;/code&gt; property is required. The entity set you specify in this property is used
+       to fetch OData metadata and to generate the micro chart's UI. This property can also be used to fetch actual chart data.&lt;br&gt;
+       &lt;b&gt;&lt;i&gt;Note:&lt;/i&gt;&lt;/b&gt;&lt;br&gt;
+       Most properties are not dynamic and cannot be changed, once the control has been
+       initialized.</documentation>
+    <since>1.60</since>
+    <baseType>sap.ui.core/Control</baseType>
+    <properties>
+        <property name="entitySet" type="sap.ui.core/string" group="Misc">
+            <documentation>The OData entity set bound to the smart column micro chart.&lt;br&gt;
+This entity set is used to pull data into the micro chart and create its internal representation.&lt;br&gt;
+Please note that this property cannot be updated dynamically.</documentation>
+        </property>
+        <property name="chartType" type="sap.ui.core/string" defaultValue="Column" group="Misc">
+            <documentation>Specifies the type of chart. Note that this property is read-only.</documentation>
+        </property>
+        <property name="chartBindingPath" type="sap.ui.core/string" group="Misc">
+            <documentation>This property can be used to specify a relative path (without '/') to an entity set (not a single entity)
+that is used during the binding of the chart.&lt;br&gt;
+For example, it can be a navigation property that will be added to the context path.&lt;br&gt;
+If not specified, the &lt;code&gt;entitySet&lt;/code&gt; property is used instead.</documentation>
+        </property>
+        <property name="showLabel" type="sap.ui.core/boolean" defaultValue="true" group="Appearance">
+            <documentation>Determines if any label is shown or not.</documentation>
+        </property>
+        <property name="isResponsive" type="sap.ui.core/boolean" defaultValue="false" group="Appearance">
+            <documentation>If this property is set to &lt;code&gt;true&lt;/code&gt;, the width and height of the control are determined by the width and height of the container where the smart column micro chart is included.
+The size is no longer determined based on the device. The &lt;code&gt;width&lt;/code&gt; and &lt;code&gt;height&lt;/code&gt; properties are ignored.</documentation>
+        </property>
+        <property name="width" type="sap.ui.core/CSSSize" group="Misc">
+            <documentation>Defines the width.</documentation>
+        </property>
+        <property name="height" type="sap.ui.core/CSSSize" group="Misc">
+            <documentation>Defines the height.</documentation>
+        </property>
+    </properties>
+    <events>
+        <event name="initialize" allowPreventDefault="false">
+            <documentation>This event is fired after the control has been initialized.</documentation>
+        </event>
+    </events>
+    <aggregations default="_chart">
+        <aggregation name="_chart" type="sap.suite.ui.microchart/ColumnMicroChart" cardinality="0..1" visibility="hidden">
+            <documentation>This private aggregation is used for the internal binding of the {@link sap.suite.ui.microchart.ColumnMicroChart}</documentation>
+        </aggregation>
+    </aggregations>
+    <associations>
+        <association name="chartTitle" type="sap.m/Label" cardinality="0..1">
+            <documentation>If the associated control is provided, its &lt;code&gt;Text&lt;/code&gt; property is set to the &lt;code&gt;Title&lt;/code&gt; property of the Chart annotation.
+The &lt;code&gt;Title&lt;/code&gt; property of the DataPoint annotation is ignored.</documentation>
+        </association>
+        <association name="chartDescription" type="sap.m/Label" cardinality="0..1">
+            <documentation>If the associated control is provided, its &lt;code&gt;Text&lt;/code&gt; property is set to the &lt;code&gt;Description&lt;/code&gt; property of the Chart annotation.
+The &lt;code&gt;Description&lt;/code&gt; property of the DataPoint annotation is ignored.</documentation>
+        </association>
+        <association name="unitOfMeasure" type="sap.m/Label" cardinality="0..1">
+            <documentation>If the associated control is provided, its &lt;code&gt;Text&lt;/code&gt; property is set to the &lt;code&gt;Unit of Measure&lt;/code&gt; property of the Chart annotation.
+The &lt;code&gt;Value&lt;/code&gt; property of the DataPoint annotation should be annotated with this unit of measurement. It can be either ISOCurrency or Unit from the OData Measures annotations.</documentation>
+        </association>
+        <association name="ariaLabelledBy" type="sap.ui.core/Control" cardinality="0..n" since="1.60.0">
+            <documentation>Controls or IDs that label this control. Can be used by screen reader software.</documentation>
+        </association>
+    </associations>
+</control>

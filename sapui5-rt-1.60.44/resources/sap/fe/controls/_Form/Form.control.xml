@@ -1,0 +1,57 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1" xmlns="sap.m"
+xmlns:f="sap.ui.layout.form" xmlns:mdc="sap.ui.mdc" xmlns:core="sap.ui.core" template:require="sap.ui.model.odata.v4.AnnotationHelper">
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+		<f:Form editable="false">
+			<f:layout>
+				<f:ColumnLayout columnsM="1" columnsL="2" columnsXL="2" />
+			</f:layout>
+			<f:formContainers>
+				<f:FormContainer title="{this>formTitle}">
+					<f:formElements>
+						<template:with path="dataFieldCollection>" var="formElements">
+							<template:if test="{= ${formElements>Target} &amp;&amp; ${formElements>Target/$AnnotationPath}.indexOf('com.sap.vocabularies.UI.v1.DataPoint') > -1 }">
+								<template:then>
+									<template:with path="formElements>Target/$AnnotationPath" var="dataPoint">
+										<f:FormElement>
+											<!-- We probably don't need this label at all -->
+											<f:label>
+												<Label text="{dataPoint>./@@.MODEL.label}">
+													<layoutData>
+														<f:ColumnElementData cellsLarge="12" />
+													</layoutData>
+												</Label>
+											</f:label>
+											<f:fields>
+												<core:Fragment fragmentName="sap.fe.controls.field.DataPoint" type="XML"/>
+											</f:fields>
+										</f:FormElement>
+									</template:with>
+								</template:then>
+								<template:else>
+									<template:repeat list="{formElements>}" var="dataField">
+										<template:if test="{= ${dataField>$Type} !== 'com.sap.vocabularies.UI.v1.DataFieldForAction'}">
+											<template:then>
+												<f:FormElement label="{dataField>@@.MODEL.label}">
+													<f:label>
+														<Label text="{dataField>@@.MODEL.label}">
+															<layoutData>
+																<f:ColumnElementData cellsLarge="12" />
+															</layoutData>
+														</Label>
+													</f:label>
+													<f:fields>
+														<core:Fragment fragmentName="sap.fe.controls.field.Field" type="XML" />
+													</f:fields>
+												</f:FormElement>
+											</template:then>
+										</template:if>
+									</template:repeat>
+								</template:else>
+							</template:if>
+						</template:with>
+					</f:formElements>
+				</f:FormContainer>
+			</f:formContainers>
+		</f:Form>
+	</template:alias>
+</core:FragmentDefinition>

@@ -1,0 +1,127 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m"
+						 xmlns:u="sap.ui.unified"
+						 xmlns:core="sap.ui.core"
+						 xmlns:mdcBase="sap.ui.mdc.base"
+						 xmlns:info="sap.ui.mdc.base.info"
+						 xmlns:flpInfo="sap.ui.mdc.flp.info"
+						 template:require="{
+						 	CORE: 'sap/fe/core/AnnotationHelper',
+							OP: 'sap/fe/templates/ObjectPage/AnnotationHelper',
+							MODEL: 'sap/ui/model/odata/v4/AnnotationHelper',
+							FIELD: 'sap/fe/controls/field/FieldHelper'
+						 }">
+	<!--
+        /**
+         * This fragment renders a DataField
+         * @param dataField context to the DataField
+         * @param attributes context to the Attributes model of the field
+         * @returns
+         */
+    -->
+	<template:with path="property>$Path@com.sap.vocabularies.Common.v1.Text@com.sap.vocabularies.UI.v1.TextArrangement" var="textArrangement">
+		<!--  conditions="{= '{sap.fe.cm>/conditions/' + ${property>$Path} + '}'}" -->
+		<mdcBase:Field
+				editMode="{ parts: [{path: 'property>$Path'},{path: 'dataField>$Type'},{path:'entitySet>@com.sap.vocabularies.Common.v1.DraftRoot'}] ,formatter: 'FIELD.getEditMode' }"
+				   value="{= ${property>@@MODEL.value} }"
+
+				   dataType="{property>$Path/$Type}"
+				   width="100%"
+				   fieldHelp="{= (${property>$Path@com.sap.vocabularies.Common.v1.ValueListReferences} ||
+						${property>$Path@com.sap.vocabularies.Common.v1.ValueListMapping} ||
+						${property>$Path@com.sap.vocabularies.Common.v1.ValueList}) ? 'FVH-' + ${entitySet>@sapui.name} + '-' + ${property>$Path@@OP.replaceSpecialCharsInId} : undefined }"
+				   required="{property>$Path@com.sap.vocabularies.Common.v1.FieldControl@@FIELD.getRequiredForDataField}"
+				   dataTypeConstraints="{= '{ precision: ' + (${property>$Path/$Precision} || 0)+ ' }' }"
+				   dataTypeFormatOptions="{= ((${property>$Path/$Type} === 'Edm.Date' || ${property>$Path/$Type} === 'Edm.DateTimeOffset') ? '{ style : \'medium\' }' : '') }"
+				   additionalValue="{property>$Path@@FIELD.buildExpressionForTextValue}"
+				   display="{= ${property>$Path@com.sap.vocabularies.Common.v1.Text} ? ( (${textArrangement>$EnumMember} === 'com.sap.vocabularies.UI.v1.TextArrangementType/TextOnly') ? 'Description' : (${textArrangement>$EnumMember} === 'com.sap.vocabularies.UI.v1.TextArrangementType/TextFirst') ? 'DescriptionValue' : 'ValueDescription') : 'Value'}"
+				   multipleLines="{= ${property>$Path@com.sap.vocabularies.UI.v1.MultiLineText} }">
+			<mdcBase:dependents>
+			<!-- Value Help -->
+			<template:if test="{= ${property>$Path@com.sap.vocabularies.Common.v1.ValueListReferences} ||
+							${property>$Path@com.sap.vocabularies.Common.v1.ValueListMapping} ||
+							${property>$Path@com.sap.vocabularies.Common.v1.ValueList} }">
+				<mdcBase:FieldValueHelp id="FVH-{entitySet>@sapui.name}-{property>$Path@@OP.replaceSpecialCharsInId}"
+					showConditionPanel="true"
+					noDialog="{= ${property>$Path@@MODEL.getValueListType} === 'Fixed'}"
+					open="sap.ui.mdc.odata.v4.ValueListHelper.showValueListInfo('/{entitySet>@sapui.name}/{property>$Path}',$\{$source>\},$\{$parameters>/suggestion\}))" >
+					<mdcBase:FieldValueHelpMTableWrapper />
+				</mdcBase:FieldValueHelp>
+			</template:if>
+			</mdcBase:dependents>
+			<!-- TODO: add one Way Binding to additional Value -->
+
+			<template:if test="{= ${dataField>$Type} === 'com.sap.vocabularies.UI.v1.DataFieldWithIntentBasedNavigation'}">
+				<template:then>
+					<mdcBase:fieldInfo>
+						<mdcBase:FieldInfo>
+							<info:ContentHandler enablePersonalization="false">
+								<info:linkHandler>
+									<flpInfo:LinkHandler semanticObjects="{dataField>SemanticObject@@MODEL.value}"></flpInfo:LinkHandler>
+								</info:linkHandler>
+							</info:ContentHandler>
+						</mdcBase:FieldInfo>
+					</mdcBase:fieldInfo>
+				</template:then>
+
+				<template:elseif test="{= ${dataField>$Type} === 'com.sap.vocabularies.UI.v1.DataFieldWithUrl'}">
+					<mdcBase:fieldInfo>
+						<mdcBase:FieldInfo>
+							<info:ContentHandler enablePersonalization="false">
+								<info:linkHandler>
+									<info:LinkHandler>
+										<info:LinkItem text="{dataField>Value@@MODEL.value}" href="{dataField>Url@@MODEL.value}"/>
+									</info:LinkHandler>
+								</info:linkHandler>
+							</info:ContentHandler>
+						</mdcBase:FieldInfo>
+					</mdcBase:fieldInfo>
+				</template:elseif>
+
+				<template:else>
+					<!-- in case of semantic key render object identifier -->
+					<template:if test="{property>@@FIELD.isLineItem}">
+					<template:if test="{path: 'property>', formatter: 'FIELD.isSemanticKey'}">
+						<VBox>
+							<ObjectIdentifier title="{= ${property>$Path@com.sap.vocabularies.Common.v1.Text} ? ${property>$Path@@FIELD.buildExpressionForTextValue} : (${property>@@MODEL.value} || '{' + ${dataField>@sapui.name} + '}') }"
+								text="{= ${property>$Path@com.sap.vocabularies.Common.v1.Text} ? (${property>@@MODEL.value} || '{' + ${dataField>@sapui.name} + '}') : ''}"/>
+								<template:if test="{entitySet>@com.sap.vocabularies.Common.v1.DraftRoot}">
+									<!-- TODO: temp solution only, try to use the mdc_Link-->
+									<ObjectMarker type="{= !%{IsActiveEntity} ? 'Draft' : (%{HasDraftEntity} ? (%{DraftAdministrativeData/InProcessByUser} ? 'Locked' : 'Unsaved') : 'Flagged') }"
+										visibility="{= !%{HasDraftEntity} ? 'TextOnly' : 'IconAndText' }"
+										class="sapUiTinyMarginBottom"
+										press=".editFlow.onDraftLinkPressed($event, '{entitySet>@sapui.name}')"
+										visible="{= !${IsActiveEntity} || ${HasDraftEntity}}"
+										additionalInfo="{path: 'entitySet>$Type', formatter: 'CORE.getBindingForDraftAdminBlockInline'}"/>
+								</template:if>
+						</VBox>
+					</template:if>
+					</template:if>
+
+					<!-- Unit/Currency is not yet supported by MDC control therefore we add it as inner control -->
+					<template:if test="{property>$Path@Org.OData.Measures.V1.Unit}">
+						<ObjectNumber number="{= ${property>@@MODEL.value} || '{' + ${dataField>@sapui.name} + '}'}" emphasized="false"
+									  unit="{property>$Path@Org.OData.Measures.V1.Unit@@MODEL.value}"/>
+					</template:if>
+					<template:if test="{property>$Path@Org.OData.Measures.V1.ISOCurrency}">
+						<!-- should work with "{path:'$field>value'}", but this is limited to type String -->
+
+						<u:Currency value="{= ${property>@@MODEL.value} || '{' + ${dataField>@sapui.name} + '}'}"
+									currency="{property>$Path@Org.OData.Measures.V1.ISOCurrency@@MODEL.value}"
+									useSymbol="false"/>
+					</template:if>
+					<!-- Object Status -->
+					<template:if test="{path: 'dataField>Criticality/$Path'}">
+						<ObjectStatus
+								icon="{=(${dataField>CriticalityRepresentation/$EnumMember} === 'com.sap.vocabularies.UI.v1.CriticalityRepresentationType/WithoutIcon') ? '' : ${path: 'dataField>Criticality/$Path', formatter: 'FIELD.buildExpressionForCriticalityIcon'}}"
+								state="{path: 'dataField>Criticality/$Path', formatter: 'FIELD.buildExpressionForCriticalityColor'}"
+								text="{= ${property>$Path@com.sap.vocabularies.Common.v1.Text} ? ${property>$Path@@FIELD.buildExpressionForTextValue} : ${property>@@MODEL.value} }"/>
+					</template:if>
+				</template:else>
+			</template:if>
+
+		</mdcBase:Field>
+
+	</template:with>
+
+</core:FragmentDefinition>

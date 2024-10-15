@@ -1,0 +1,2 @@
+// Copyright (c) 2009-2017 SAP SE, All Rights Reserved
+sap.ui.define(["sap/ushell/User","sap/ui/thirdparty/jquery"],function(U,q){"use strict";var C=function(s,p,a){var u;this.load=function(){var b=q.extend(true,{id:""},a&&a.config&&a.config.userProfile&&a.config.userProfile.defaults);u=new U(b);return new q.Deferred().resolve().promise();};this.getSystem=function(){return s;};this.getUser=function(){return u;};this.logout=function(){return new q.Deferred().resolve().promise();};};return C;},true);

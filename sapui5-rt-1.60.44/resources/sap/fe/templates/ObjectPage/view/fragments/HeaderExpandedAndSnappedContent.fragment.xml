@@ -1,0 +1,12 @@
+<core:FragmentDefinition
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+    xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1">
+    <Text text="{entityType>@com.sap.vocabularies.UI.v1.HeaderInfo/Description/Value/@@.MODEL.value}"/>
+    <template:if test="{entitySet>@com.sap.vocabularies.Common.v1.DraftRoot}">
+        <ObjectMarker type="{= !%{IsActiveEntity} ? 'Draft' : (%{HasDraftEntity} ? (%{DraftAdministrativeData/InProcessByUser} ? 'Locked' : 'Unsaved') : 'Flagged') }"
+        visibility="IconOnly"
+        visible="{= !${ui>/editable} &amp;&amp; ${HasDraftEntity} }"
+        press=".editFlow.onDraftLinkPressed($event, '{entitySet>@sapui.name}')"/>
+    </template:if>
+</core:FragmentDefinition>

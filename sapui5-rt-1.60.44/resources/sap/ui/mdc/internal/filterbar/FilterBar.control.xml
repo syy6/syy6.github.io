@@ -1,0 +1,131 @@
+<core:FragmentDefinition xmlns:template="http://schemas.sap.com/sapui5/extension/sap.ui.core.template/1"
+						 xmlns="sap.m"
+						 xmlns:mdc="sap.ui.mdc"
+						 xmlns:base="sap.ui.mdc.base"
+						 xmlns:core="sap.ui.core"
+						 xmlns:l="sap.ui.layout"
+						 template:require="sap.ui.mdc.odata.v4.ValueListHelper">
+
+	<template:alias name=".MODEL" value="sap.ui.model.odata.v4.AnnotationHelper">
+		<template:alias name=".FILTERBAR" value="sap.ui.mdc.FilterBar._helper">
+			<template:alias name=".COMMON" value="sap.ui.mdc.odata.v4.CommonHelper">
+				<template:alias name=".FILTERFIELD" value="sap.ui.mdc.FilterField._helper">
+					<l:AlignedFlowLayout id="template::Filterbar::Layout">
+						<l:content>
+							<template:if
+									test="{= !(${this>hideBasicSearch}) &amp;&amp; !(${entitySet>@Org.OData.Capabilities.V1.SearchRestrictions/Searchable/Bool} === 'false') }">
+								<!-- Base Search -->
+								<VBox class="sapUiTinyMargin" id="template::Search">
+									<!-- TODO: other filterFields have two dashes instead of one - shall we do the same here? -->
+									<Label labelFor="template::Search-__searchField"
+										   text="{$i18n>filterbar.SEARCH}:"/>
+									<!-- <SearchField id="template::Search-__searchField"
+                                                 search="handleSearch"
+                                                 liveChange="handleSearchChange"/> -->
+									<base:FilterField
+											id="template::Search-__searchField"
+											dataType="sap.ui.model.type.String"
+											maxConditions="1"
+											width="100%"
+											fieldPath="$search"
+											conditions="{= '{' + ${this>conditionModelName} + '>/conditions/$search}' }"/>
+								</VBox>
+							</template:if>
+
+							<template:if
+									test="{= ${entitySet>@com.sap.vocabularies.Common.v1.DraftRoot} || ${entitySet>@com.sap.vocabularies.Common.v1.DraftNode} }">
+								<!-- Draft Edit State in case of Draft enabled entities -->
+								<VBox class="sapUiTinyMargin" id="template::DraftEditingStatus">
+									<!-- TODO: other filterFields have two dashes instead of one - shall we do the same here? -->
+									<Label labelFor="template::DraftEditingStatus-__comboBox"
+										   text="{$i18n>filterbar.EDITING_STATUS}:"/>
+									<ComboBox id="template::DraftEditingStatus-__comboBox"
+											  selectedKey="{= '{$draft>/entitySets/' + ${entitySet>@sapui.name} + '/editState}' }"
+											  items="{path: '$draft>/editStates'}"
+											  selectionChange="handleChange"
+											  width="100%">
+										<core:Item key="{$draft>id}" text="{$draft>name}"/>
+									</ComboBox>
+								</VBox>
+							</template:if>
+
+							<template:repeat list="{selectionFields>}" var="selectionField">
+								<!-- All Selection Fields -->
+								<!-- as selectionFields can be also an entitySet which does not have a $PropertyPath we need to call a resolver which at the end points to a property -->
+								<template:with path="selectionField>" var="property"
+											   helper=".FILTERBAR.resolveSelectionField">
+									<template:if test="{property>@@.COMMON.isPropertyFilterable}">
+										<VBox class="sapUiTinyMargin">
+											<Label labelFor="template::FilterField::{property>@@.FILTERBAR.replaceSpecialCharsInId}"
+												   text="{property>@com.sap.vocabularies.Common.v1.Label}:"></Label>
+											<template:with path="property>@com.sap.vocabularies.Common.v1.Text@com.sap.vocabularies.UI.v1.TextArrangement" var="textArrangement">
+											<base:FilterField2
+													id="template::FilterField::{property>@@.FILTERBAR.replaceSpecialCharsInId}"
+													fieldPath="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'property>'}], formatter: '.FILTERFIELD.getFieldPath'}"
+													dataType="{property>$Type}"
+													dataTypeConstraints="{property>@@.FILTERFIELD.typeConstraints}"
+													dataTypeFormatOptions="{property>@@.FILTERFIELD.typeFormatOptions}"
+													required="{property>@@.FILTERFIELD.isRequiredInFilter}"
+													maxConditions="{= (${property>$Type} === 'Edm.Date' || ${property>$Type} === 'Edm.DateTimeOffset') ? 2 : ((${property>$Type} === 'Edm.Boolean') ? 1 : undefined) }"
+													conditions="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'property>'}, {path: 'this>conditionModelName'}], formatter: '.FILTERFIELD.getConditionsBinding'}"
+													valueState="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'property>'}], formatter: '.FILTERFIELD.getValueStatePath'}"
+													valueStateText="{parts : [{path: 'entitySet>@sapui.name'}, {path: 'property>'}], formatter: '.FILTERFIELD.getValueStateTextPath'}"
+													width="100%"
+													display="{= ${property>@com.sap.vocabularies.Common.v1.Text} ? ( (${textArrangement>$EnumMember} === 'com.sap.vocabularies.UI.v1.TextArrangementType/TextOnly') ? 'Description' : (${textArrangement>$EnumMember} === 'com.sap.vocabularies.UI.v1.TextArrangementType/TextFirst') ? 'DescriptionValue' : 'ValueDescription') : 'Value'}"
+													fieldHelp="template::FilterField::{property>@@.FILTERBAR.replaceSpecialCharsInId}::ValueHelp"
+											>
+
+												<base:dependents>
+													<template:if
+															test="{= ${property>@@.MODEL.getValueListType} === 'Standard' || ${property>@@.MODEL.getValueListType} === 'Fixed'}">
+
+														<!-- Value Help -->
+														<template:then>
+															<base:FieldValueHelp
+																	id="template::FilterField::{property>@@.FILTERBAR.replaceSpecialCharsInId}::ValueHelp"
+																	showConditionPanel="true"
+																	noDialog="{= ${property>@@.MODEL.getValueListType} === 'Fixed'}"
+																	open="sap.ui.mdc.odata.v4.ValueListHelper.showValueListInfo('/{entitySet>@sapui.name}/{property>}',$\{$source>\},$\{$parameters>/suggestion\}))">
+																<base:FieldValueHelpMTableWrapper/>
+															</base:FieldValueHelp>
+														</template:then>
+														<template:else>
+																<!-- All Filter Fields can have the condition panel even without value help -->
+																<base:FieldValueHelp
+																		id="template::FilterField::{property>@@.FILTERBAR.replaceSpecialCharsInId}::ValueHelp"
+																		showConditionPanel="true"/>
+														</template:else>
+													</template:if>
+												</base:dependents>
+
+											</base:FilterField2>
+											</template:with>
+										</VBox>
+									</template:if>
+								</template:with>
+							</template:repeat>
+
+						</l:content>
+
+						<template:if test="{this>enablePersonalization}">
+							<!-- Personalization Button (Adapt Filters) -->
+							<l:endContent>
+								<!-- Button  id="template::Filterbar::Adapt" text="{$i18n>filterbar.ADAPT}"  press="handleAdapt" type="Transparent">
+                                    <customData>
+                                        <core:CustomData key="entitySetName" value="{entitySet>@sapui.name}"/>
+                                    </customData>
+                                </Button -->
+
+								<template:if test="{= ${this>liveUpdate} === false }">
+									<Button id="template::Filterbar::GoButton" text="{$i18n>filterbar.GO}"
+											type="Emphasized" press="handleGo"></Button>
+								</template:if>
+							</l:endContent>
+						</template:if>
+					</l:AlignedFlowLayout>
+				</template:alias>
+			</template:alias>
+		</template:alias>
+	</template:alias>
+
+</core:FragmentDefinition>

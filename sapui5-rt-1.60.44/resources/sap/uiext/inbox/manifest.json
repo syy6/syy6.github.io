@@ -1,0 +1,43 @@
+{
+  "_version": "1.9.0",
+  "sap.app": {
+    "id": "sap.uiext.inbox",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.60.42"
+    },
+    "title": "The Unified Inbox control",
+    "description": "The Unified Inbox control",
+    "ach": "CA-UI5-INB",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_bluecrystal",
+      "sap_hcb"
+    ]
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.60",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.60.42"
+        },
+        "sap.ui.commons": {
+          "minVersion": "1.60.42"
+        },
+        "sap.ui.ux3": {
+          "minVersion": "1.60.42"
+        }
+      }
+    },
+    "library": {
+      "i18n": "messagebundle.properties"
+    }
+  }
+}

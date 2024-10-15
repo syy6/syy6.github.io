@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd">
+    <name>cssgrid/GridResponsiveLayout</name>
+    <derived/>
+    <author>SAP SE</author>
+    <documentation>Applies a sap.ui.layout.cssgrid.GridSettings to a provided DOM element or Control.
+Have to possibility to hold multiple sap.ui.layout.cssgrid.GridSettings and apply the currently active GridSettings.</documentation>
+    <since>1.60</since>
+    <baseType>sap.ui.layout/cssgrid/GridLayoutBase</baseType>
+    <events>
+        <event name="layoutChange" allowPreventDefault="false">
+            <documentation>Fired when the currently active GridSettings changes</documentation>
+            <parameters>
+                <parameter name="layout" type="sap.ui.core/string">
+                    <documentation>The name of the newly active layout aggregation</documentation>
+                </parameter>
+            </parameters>
+        </event>
+    </events>
+    <aggregations>
+        <aggregation name="layout" type="sap.ui.layout/cssgrid/GridSettings" cardinality="0..1">
+            <documentation>The sap.ui.layout.cssgrid.GridSettings applied if no settings are provided for a specific size</documentation>
+        </aggregation>
+        <aggregation name="layoutS" type="sap.ui.layout/cssgrid/GridSettings" cardinality="0..1">
+            <documentation>The sap.ui.layout.cssgrid.GridSettings applied for size "S"</documentation>
+        </aggregation>
+        <aggregation name="layoutM" type="sap.ui.layout/cssgrid/GridSettings" cardinality="0..1">
+            <documentation>The sap.ui.layout.cssgrid.GridSettings applied for size "M"</documentation>
+        </aggregation>
+        <aggregation name="layoutL" type="sap.ui.layout/cssgrid/GridSettings" cardinality="0..1">
+            <documentation>The sap.ui.layout.cssgrid.GridSettings applied for size "L"</documentation>
+        </aggregation>
+        <aggregation name="layoutXL" type="sap.ui.layout/cssgrid/GridSettings" cardinality="0..1">
+            <documentation>The sap.ui.layout.cssgrid.GridSettings applied for size "XL"</documentation>
+        </aggregation>
+    </aggregations>
+</control>

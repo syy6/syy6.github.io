@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="overflow-y: auto; height: 100%">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>Enterprise Search</title>
+    <script src="../../../../../../sap-ui-core.js" id="sap-ui-bootstrap" data-sap-ui-theme="sap_belize" data-sap-ui-libs="sap.m, sap.ui.layout, sap.ushell">
+    </script>
+    <style type="text/css">
+        .sapSearchBar {
+            width: 100%;
+            background-color: #eff4f9;
+        }
+        .sapSearchBar .sapUiHLayoutChildWrapper {
+            width: 33%;
+            transition: padding-top 0.4s, padding-bottom 0.4s;
+            vertical-align: bottom;
+            height: 5.5rem;
+        }
+        .sapSearchBar .sapUiHLayoutChildWrapper .sapMImg{
+            padding-top: 1.5rem;
+        }
+        .sapSearchBar :first-of-type.sapUiHLayoutChildWrapper {
+            padding-left: 1rem;
+        }
+        .sapSearchBar :last-of-type.sapUiHLayoutChildWrapper {
+            text-align: right;
+        }
+        .sapSearchFieldGroup {
+            width: 100%;
+            margin: auto;
+            padding-top: 2.5rem;
+        }
+        .sapSearchFieldGroup .sapMFlexBox > div:nth-child(1) {
+            max-width: calc(50% - 1.5rem);
+        }
+        .sapSearchBar .sapSearchLogout {
+            padding-top: 2.6875rem;
+            padding-right: 0.8rem;
+        }
+        .sapSearchPage {
+            height: calc(100% - 5.5rem);
+        }
+        .sapUshellSearchFacetDialog .sapMDialogScroll .sapMDialogScrollCont {
+            padding: 0px;
+        }
+        .sapMListBGTranslucent .sapMLIB:not(.sapMLIBActive):not(.sapMLIBSelected):not(:hover) {
+            background-color: transparent;
+        }
+        .sapMListBGTranslucent .sapMCLI:not(.sapMLIBActive):not(.sapMLIBSelected):hover {
+            background-color: transparent;
+        }
+        .sapUshellSearchFacetDialogDetailPage .sapMLIB:not(.sapMLIBActive):not(.sapMLIBSelected):not(:hover) {
+            background-color: transparent;
+        }
+    </style>
+    <script type="text/javascript" src="ComponentScript.js"> 
+    </script>
+</head>
+
+<body class="sapUiBody sapUiSizeCompact" id="content">
+</body>
+
+</html>
